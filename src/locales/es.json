@@ -1,1 +1,486 @@
-{}
+{
+  "site": {
+    "name": "Plan B: Terraform Wiki",
+    "shortName": "Plan B Terraform",
+    "tagline": "Guías de terraformación, recursos y estrategias de colonia",
+    "description": "Tu guía definitiva de Plan B: Terraform: estrategias de terraformación, gestión de recursos, construcción de colonias, desarrollo planetario y consejos de juego.",
+    "legalNotice": "Wiki de fans no oficial. Hecha por jugadores, para jugadores."
+  },
+  "nav": {
+    "home": "Inicio",
+    "menu": "Menú",
+    "toggleTheme": "Cambiar tema",
+    "guide": "Guía",
+    "mechanics": "Mecánicas",
+    "layouts": "Diseños",
+    "progression": "Progresión",
+    "items": "Objetos",
+    "systems": "Sistemas"
+  },
+  "home": {
+    "meta": {
+      "title": "Wiki de Plan B Terraform: guías, mapas y recursos",
+      "description": "Explora la wiki de Plan B Terraform con guías detalladas, estrategias de terraformación, consejos de recursos, mapas, edificios e información de gestión de colonias para jugadores."
+    },
+    "hero": {
+      "eyebrow": "City builder de terraformación sci-fi",
+      "title": "Plan B: Terraform Wiki",
+      "description": "Una wiki completa de Plan B: Terraform con guías de terraformación, gestión de recursos, construcción de colonias, desarrollo planetario y estrategias de juego.",
+      "stats": [
+        "100K+ visitas totales",
+        "6 planetas disponibles",
+        "0 códigos activos",
+        "Actualizaciones mensuales"
+      ],
+      "primaryCta": "Guía para principiantes",
+      "secondaryCta": "Guía de terraformación",
+      "tertiaryCta": "Jugar en Steam",
+      "videoLabel": "Tráiler oficial"
+    },
+    "updates": {
+      "title": "Últimas actualizaciones",
+      "browse": "Ver todas las guías",
+      "viewAll": "Ver todo"
+    },
+    "start": {
+      "eyebrow": "Empieza aquí",
+      "title": "Tu aventura en Plan B Terraform",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guía para principiantes",
+          "description": "Coloca tus primeros extractores, monta la producción de hierro y hormigón y aprende el bucle básico de extracción, refinado y entrega que mantiene viva a una nueva colonia."
+        },
+        {
+          "number": "2",
+          "title": "Progresión del árbol tecnológico",
+          "description": "Haz crecer la población de tus ciudades para desbloquear niveles tecnológicos superiores, desde depósitos y camiones básicos hasta redes ferroviarias, centros de drones y equipos de terraformación planetaria."
+        },
+        {
+          "number": "3",
+          "title": "Extracción de recursos",
+          "description": "Encuentra los mejores yacimientos, campos de hielo y respiraderos de gas, y construye complejos modulares de minería y fundición que nunca bloqueen tus fábricas."
+        },
+        {
+          "number": "4",
+          "title": "Fundamentos de terraformación",
+          "description": "Aumenta la temperatura global con gases de efecto invernadero, derrite el hielo polar en océanos y planta bosques para generar oxígeno respirable."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Tendencias actuales",
+      "quickLinks": [
+        "Guía para principiantes",
+        "Árbol tecnológico",
+        "Terraformación",
+        "Diseño de ciudad"
+      ],
+      "cards": [
+        {
+          "badge": "Principiante",
+          "title": "Guía para principiantes",
+          "description": "Todo lo que necesitas desde tu primer aterrizaje hasta un bucle estable de extracción, refinado y entrega.",
+          "href": "/guide/plan-b-terraform-beginners-guide"
+        },
+        {
+          "badge": "Actualizado",
+          "title": "Guía del árbol tecnológico",
+          "description": "Hitos de población y prioridades de desbloqueo, desde el puesto avanzado hasta la biosfera planetaria.",
+          "href": "/progression/plan-b-terraform-tech-tree"
+        },
+        {
+          "badge": "Popular",
+          "title": "Guía de recursos",
+          "description": "Minerales brutos, materiales refinados y las cadenas de producción de las que depende cada ciudad.",
+          "href": "/mechanics/plan-b-terraform-resources"
+        },
+        {
+          "badge": "Popular",
+          "title": "Guía de terraformación",
+          "description": "Calienta el planeta, derrite el hielo y crea la primera atmósfera respirable.",
+          "href": "/mechanics/plan-b-terraform-temperature"
+        },
+        {
+          "badge": "Nuevo",
+          "title": "Diseño de ciudad",
+          "description": "Zonas de amortiguación, bucles de sentido único y cobertura de depósitos que mantienen el crecimiento de las ciudades.",
+          "href": "/layouts/plan-b-terraform-city-layout"
+        },
+        {
+          "badge": "Nuevo",
+          "title": "Diseño ferroviario",
+          "description": "Bucles ferroviarios de alta capacidad y diseños de estaciones para el transporte continental.",
+          "href": "/layouts/plan-b-terraform-train-layout"
+        },
+        {
+          "badge": "Popular",
+          "title": "Trucos y consejos",
+          "description": "Consejos de transporte, expansión y planificación que evitan errores comunes.",
+          "href": "/guide/plan-b-terraform-guide"
+        },
+        {
+          "badge": "Nuevo",
+          "title": "Requisitos del sistema",
+          "description": "Requisitos de PC, rendimiento en Steam Deck y optimización para colonias grandes.",
+          "href": "/systems/plan-b-terraform-system-requirements"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "¿Qué es Plan B: Terraform?",
+      "paragraphs": [
+        "Plan B: Terraform es un juego sci-fi de automatización y construcción de ciudades desarrollado por Florian van Strien. Aterrizas en un planeta helado y yermo, extraes y refinas sus recursos brutos y entregas mercancías a ciudades en crecimiento sobre una cuadrícula hexagonal.",
+        "El crecimiento de la población desbloquea nueva tecnología, desde camiones y depósitos hasta redes ferroviarias y calentadores atmosféricos. Tu objetivo es calentar el planeta, derretir el hielo en océanos, sembrar bosques y construir una biosfera respirable para una civilización próspera."
+      ],
+      "stats": [
+        {
+          "label": "Desarrollador",
+          "value": "Florian van Strien"
+        },
+        {
+          "label": "Distribuidora",
+          "value": "Gaddy Games"
+        },
+        {
+          "label": "Plataforma",
+          "value": "PC (Steam)"
+        },
+        {
+          "label": "Género",
+          "value": "City builder de automatización"
+        },
+        {
+          "label": "Visitas",
+          "value": "100K+"
+        },
+        {
+          "label": "Planetas",
+          "value": "6"
+        },
+        {
+          "label": "Temática",
+          "value": "Terraformación sci-fi"
+        }
+      ],
+      "cta": "Explorar todas las guías"
+    },
+    "explore": {
+      "title": "Explora la wiki de Plan B Terraform",
+      "description": "Domina la logística planetaria con tutoriales para principiantes, análisis del árbol tecnológico, cadenas de recursos y producción, mecánicas de terraformación y guías de diseño.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Guía para principiantes de Plan B Terraform",
+          "description": "Un tutorial completo para principiantes que cubre tu primer aterrizaje, la extracción de recursos, el crecimiento de la ciudad, la configuración del transporte y la progresión de la terraformación.",
+          "href": "/guide/plan-b-terraform-beginners-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Escanea el mapa y aterriza cerca de hierro, azufre y carbono para que tus primeras rutas de camiones sean cortas."
+            },
+            {
+              "label": "2",
+              "detail": "Construye extractores, fundiciones y ensambladoras para producir lingotes de hierro, hormigón y piezas mecánicas."
+            },
+            {
+              "label": "3",
+              "detail": "Coloca depósitos como amortiguadores para que las ensambladoras sigan funcionando mientras las líneas de transporte se ponen al día."
+            },
+            {
+              "label": "4",
+              "detail": "Entrega agua, hormigón y comida a tu primera ciudad para superar los 500 habitantes."
+            },
+            {
+              "label": "5",
+              "detail": "Desbloquea el ferrocarril y comienza la producción de gases de efecto invernadero para calentar el planeta por encima del punto de congelación."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Guía del árbol tecnológico de Plan B Terraform",
+          "description": "Comprende el árbol tecnológico ligado a la población, las prioridades de desbloqueo y la ruta de progresión desde el puesto de aterrizaje hasta la biosfera planetaria.",
+          "href": "/progression/plan-b-terraform-tech-tree",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Puesto avanzado",
+              "detail": "0-100 habitantes: extractores básicos, camiones y depósitos."
+            },
+            {
+              "label": "Asentamiento",
+              "detail": "500 habitantes: plantas de ensamblaje, suministro de oxígeno y depósitos de alta capacidad."
+            },
+            {
+              "label": "Pueblo",
+              "detail": "2000 habitantes: vías férreas, trenes de carga y estaciones de bombeo."
+            },
+            {
+              "label": "Ciudad",
+              "detail": "10 000 habitantes: trenes de alta velocidad, autopistas y producción de polímero."
+            },
+            {
+              "label": "Metrópolis",
+              "detail": "50 000 habitantes: plantas de calefacción atmosférica y centros de drones."
+            },
+            {
+              "label": "Biosfera",
+              "detail": "100 000+ habitantes: estaciones forestales y geomotores planetarios."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Guía de producción de Plan B Terraform",
+          "description": "Cubre cadenas de fábricas, procesamiento de recursos, gestión de suministros y estrategias de optimización de producción para ciudades en expansión.",
+          "href": "/mechanics/plan-b-terraform-resources",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Lingote de hierro",
+              "detail": "Fundido a partir de mineral de hierro; material base para acero, vías y piezas mecánicas."
+            },
+            {
+              "label": "Hormigón",
+              "detail": "Hecho de azufre y carbono para bloques urbanos, depósitos y cimientos de fábricas."
+            },
+            {
+              "label": "Acero",
+              "detail": "Refinado a partir de lingotes de hierro para locomotoras, vías y estructuras reforzadas."
+            },
+            {
+              "label": "Polímero",
+              "detail": "Carbono más agua o hielo; alimenta la electrónica y el equipo atmosférico."
+            },
+            {
+              "label": "Piezas mecánicas",
+              "detail": "Ensambladas a partir de lingotes de hierro para construir extractores, camiones y líneas de montaje."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Guía de terraformación de Plan B Terraform",
+          "description": "Explica la manipulación del clima, el control de la temperatura, la formación de agua, el crecimiento de la vegetación y el desarrollo del ecosistema.",
+          "href": "/mechanics/plan-b-terraform-temperature",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Construye fábricas de gases de efecto invernadero y libera gas fluorado para elevar la temperatura global a 0 °C."
+            },
+            {
+              "label": "2",
+              "detail": "Derrite el hielo polar y canaliza la escorrentía hacia cuencas para formar lagos, ríos y océanos."
+            },
+            {
+              "label": "3",
+              "detail": "Distribuye compost y semillas de árboles para establecer la primera vegetación y estabilizar el suelo."
+            },
+            {
+              "label": "4",
+              "detail": "Expande los bosques para que las plantas conviertan el dióxido de carbono en oxígeno respirable."
+            },
+            {
+              "label": "5",
+              "detail": "Alcanza el equilibrio atmosférico completo y saca a tu población de las cúpulas selladas."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Guía de edificios de Plan B Terraform",
+          "description": "Una referencia clasificada de edificios, fábricas, extractores, estructuras de transporte y dispositivos de terraformación clave, con su función y consejos de uso.",
+          "href": "/layouts/plan-b-terraform-factory-layout",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Depósito: el amortiguador universal del que depende toda cadena de producción."
+            },
+            {
+              "label": "A",
+              "detail": "Extractor y ensambladora: mineral bruto entra, componentes terminados salen."
+            },
+            {
+              "label": "B",
+              "detail": "Parada ferroviaria: transporte intercontinental a granel cuando los camiones se saturan."
+            },
+            {
+              "label": "C",
+              "detail": "Puesto de carretera: manejo económico de carga por camión a corta distancia."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Guía de planetas de Plan B Terraform",
+          "description": "Compara condiciones planetarias, semillas de mundo y desafíos ambientales que definen cada inicio de colonia y su estrategia recomendada.",
+          "href": "/systems/plan-b-terraform-seeds",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Semillas",
+              "detail": "Las semillas alfanuméricas definen mapas de altura, casquetes polares y distribución de minerales."
+            },
+            {
+              "label": "Casquetes polares",
+              "detail": "El hielo polar y de gran altitud alimenta el suministro temprano de agua y la posterior formación de océanos."
+            },
+            {
+              "label": "Yacimientos",
+              "detail": "Los mapas equilibrados colocan hierro, azufre y aluminio a corta distancia de camión."
+            },
+            {
+              "label": "Dificultad",
+              "detail": "El agua escasa o los minerales lejanos convierten un inicio tranquilo en un desafío logístico."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Trucos y consejos de Plan B Terraform",
+          "description": "Consejos prácticos sobre optimización del transporte, expansión de ciudades, planificación de recursos y errores comunes que evitar.",
+          "href": "/guide/plan-b-terraform-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Depósitos",
+              "detail": "Encadena depósitos entre fábricas y paradas de transporte para que ninguna ensambladora se quede sin suministro."
+            },
+            {
+              "label": "Sentido único",
+              "detail": "Construye bucles de entrega circulares de sentido único para evitar bloqueos de vehículos en las puertas de la ciudad."
+            },
+            {
+              "label": "Amortiguadores",
+              "detail": "Mantén un depósito amortiguador fuera de las ciudades para que los picos de demanda nunca dejen sin suministro a los residentes."
+            },
+            {
+              "label": "Ritmo",
+              "detail": "No superes tus rutas de entrega; las ciudades estancadas congelan la progresión tecnológica."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Requisitos del sistema de Plan B Terraform",
+          "description": "Consulta los requisitos oficiales de PC, el rendimiento en Steam Deck y consejos de optimización para que tu colonia siga funcionando sin problemas a medida que escala la producción.",
+          "href": "/systems/plan-b-terraform-system-requirements",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Windows",
+              "detail": "Compatibilidad nativa con versiones modernas de Windows de 64 bits."
+            },
+            {
+              "label": "Linux",
+              "detail": "Funciona sin problemas mediante Steam Proton en Linux y SteamOS."
+            },
+            {
+              "label": "Steam Deck",
+              "detail": "Jugable mediante Proton con ajustes adaptados a colonias grandes."
+            },
+            {
+              "label": "Optimización",
+              "detail": "Inicio ligero; las megafábricas del final del juego se benefician de una CPU potente."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas rápidas a las preguntas más comunes sobre Plan B Terraform.",
+      "items": [
+        {
+          "question": "¿Qué es Plan B Terraform?",
+          "answer": "Plan B Terraform es un juego sci-fi de automatización y construcción de ciudades en el que terraformas un planeta helado. Extraes y refinas recursos, haces crecer ciudades y calientas la atmósfera hasta que el agua líquida y los bosques puedan sostener a una población próspera."
+        },
+        {
+          "question": "¿Plan B Terraform es gratis?",
+          "answer": "No. Plan B Terraform es un título de PC de pago que se vende en Steam con una compra única, así que no hay suscripciones ni códigos de pago."
+        },
+        {
+          "question": "¿Cómo se empieza en Plan B Terraform?",
+          "answer": "Aterriza cerca de hierro, azufre y carbono, construye extractores y ensambladoras y entrega bienes básicos a tu primera ciudad. El crecimiento de la población desbloquea entonces el árbol tecnológico."
+        },
+        {
+          "question": "¿Cómo se terraforma un planeta en Plan B Terraform?",
+          "answer": "Eleva la temperatura global con gases de efecto invernadero, derrite el hielo en océanos, esparce semillas de árboles para crear biomasa y deja que los bosques conviertan el dióxido de carbono en oxígeno."
+        },
+        {
+          "question": "¿Qué planeta o semilla deberían elegir los principiantes en Plan B Terraform?",
+          "answer": "Elige una semilla donde hierro, azufre y aluminio estén cerca de un lugar de asentamiento plano, para que tus primeras rutas de camiones sean cortas y baratas."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para terraformar tu primer planeta?",
+      "description": "Desde tu primer aterrizaje hasta un mundo totalmente habitable, nuestra wiki comunitaria te acompaña con guías de Plan B: Terraform gratuitas y actualizadas.",
+      "primary": "Leer la guía para principiantes",
+      "secondary": "Jugar en Steam"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Guías de Plan B: Terraform",
+    "overviewDescription": "Guías paso a paso de Plan B: Terraform que cubren la configuración inicial, la terraformación, la logística y la gestión de colonias."
+  },
+  "mechanics": {
+    "overviewTitle": "Mecánicas de Plan B: Terraform",
+    "overviewDescription": "Las mecánicas clave de Plan B: Terraform explicadas: atmósfera, oxígeno, temperatura, agua, residuos y producción de recursos."
+  },
+  "layouts": {
+    "overviewTitle": "Diseños de Plan B: Terraform",
+    "overviewDescription": "Diseños de ciudad, fábrica, granja, minería y tren de Plan B: Terraform que mantienen la producción en marcha y el tráfico bajo control."
+  },
+  "progression": {
+    "overviewTitle": "Progresión de Plan B: Terraform",
+    "overviewDescription": "Árbol tecnológico, centro de investigación, niveles, logros e hitos de fin de partida de Plan B: Terraform para planificar el crecimiento de tu colonia."
+  },
+  "items": {
+    "overviewTitle": "Objetos de Plan B: Terraform",
+    "overviewDescription": "Recursos y objetos de Plan B: Terraform: aluminio, polímero, flúor, nanotubos de carbono, animales y mucho más."
+  },
+  "systems": {
+    "overviewTitle": "Sistemas de Plan B: Terraform",
+    "overviewDescription": "Mods, multijugador, semillas, compatibilidad con Steam Deck y requisitos del sistema para construir colonias sin problemas en Plan B: Terraform."
+  },
+  "shared": {
+    "wikiNavigation": "Navegación de la wiki",
+    "updated": "Actualizado",
+    "playOnRoblox": "Play on Roblox",
+    "inThisSection": "En esta sección",
+    "tableOfContents": "Tabla de contenidos",
+    "nextSteps": "Próximos pasos",
+    "needHelp": "¿Necesitas ayuda?",
+    "relatedReading": "Lecturas relacionadas",
+    "relatedGuides": "Guías relacionadas",
+    "readMore": "Leer más",
+    "officialMedia": "Medios oficiales",
+    "home": "Inicio",
+    "noGuidesAvailable": "Aún no hay guías disponibles. ¡Vuelve pronto!"
+  },
+  "footer": {
+    "aboutTitle": "Plan B: Terraform Wiki",
+    "about": "Plan B: Terraform Wiki es un centro de guías independiente creado por fans que cubre estrategias de terraformación, gestión de recursos, construcción de colonias, cadenas de producción y conocimientos esenciales del juego, tanto para jugadores nuevos como veteranos.",
+    "quickLinks": "Enlaces rápidos",
+    "guides": "Guías",
+    "legal": "Legal",
+    "copyright": "2026 Plan B: Terraform Wiki. Sin afiliación con Gaddy Games.",
+    "description": "City builder de terraformación sci-fi. Transforma planetas yermos en mundos prósperos y habitables.",
+    "playGame": "Jugar a Plan B: Terraform en Steam",
+    "officialDiscord": "Discord oficial",
+    "officialYoutube": "YouTube oficial",
+    "vvBuilder": "Reddit de la comunidad",
+    "beginnerGuide": "Guía para principiantes",
+    "mechanicsGuides": "Guías de mecánicas",
+    "progressionGuides": "Guías de progresión",
+    "layoutsGuides": "Guías de diseños",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio"
+  }
+}
