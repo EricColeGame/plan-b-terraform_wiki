@@ -38,27 +38,27 @@
     },
     "start": {
       "eyebrow": "Start Here",
-      "title": "Your Plan B: Terraform Journey",
+      "title": "Your Plan B Terraform Journey",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Land your first extractors, set up iron and concrete production, and learn the core extraction, refining, and delivery loop that keeps a new colony alive."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Tech Tree Progression",
+          "description": "Grow city populations to unlock higher tech tiers, from basic depots and trucks to rail networks, drone hubs, and planetary terraforming equipment."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Resource Farming",
+          "description": "Find the best ore patches, ice fields, and gas vents, then build modular mining and smelting clusters that never bottleneck your factories."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Plan B: Terraform."
+          "title": "Terraforming Basics",
+          "description": "Raise global temperature with greenhouse gases, melt the polar ice into oceans, and plant forests to build breathable oxygen."
         }
       ]
     },
@@ -66,237 +66,321 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Tech Tree",
+        "Terraforming",
+        "City Layout"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Everything you need from your first landing to a stable extraction, refining, and delivery loop.",
+          "href": "/guide/plan-b-terraform-beginners-guide"
         },
         {
           "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
-        },
-        {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "title": "Tech Tree Guide",
+          "description": "Population milestones and unlock priorities from outpost to planetary biosphere.",
+          "href": "/progression/plan-b-terraform-tech-tree"
         },
         {
           "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
-        },
-        {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "title": "Resource Guide",
+          "description": "Raw ores, refined materials, and the production chains every city depends on.",
+          "href": "/mechanics/plan-b-terraform-resources"
         },
         {
           "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
+          "title": "Terraforming Guide",
+          "description": "Warm the planet, melt the ice, and grow the first breathable atmosphere.",
+          "href": "/mechanics/plan-b-terraform-temperature"
+        },
+        {
+          "badge": "New",
+          "title": "City Layout",
+          "description": "Buffer zones, one-way loops, and depot coverage that keep cities growing.",
+          "href": "/layouts/plan-b-terraform-city-layout"
+        },
+        {
+          "badge": "New",
+          "title": "Train Layout",
+          "description": "High-capacity rail loops and station designs for continental freight.",
+          "href": "/layouts/plan-b-terraform-train-layout"
         },
         {
           "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
+          "title": "Tips and Tricks",
+          "description": "Transport, expansion, and planning advice that avoids common mistakes.",
+          "href": "/guide/plan-b-terraform-guide"
         },
         {
           "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
-        },
-        {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "title": "System Requirements",
+          "description": "PC specs, Steam Deck performance, and optimization for large colonies.",
+          "href": "/systems/plan-b-terraform-system-requirements"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Plan B: Terraform?",
       "paragraphs": [
-        "Plan B: Terraform is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Plan B: Terraform is a sci-fi automation and city-building game developed by Florian van Strien. You land on a frozen, barren planet, extract and refine its raw resources, and deliver goods to growing cities across a hexagonal grid.",
+        "Population growth unlocks new technology, from trucks and depots to rail networks and atmospheric heaters. Your goal is to warm the planet, melt the ice into oceans, seed forests, and build a breathable biosphere for a thriving civilization."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "Midnight Continent"
+          "value": "Florian van Strien"
+        },
+        {
+          "label": "Publisher",
+          "value": "Gaddy Games"
         },
         {
           "label": "Platform",
-          "value": "Roblox"
+          "value": "PC (Steam)"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Automation City Builder"
         },
         {
           "label": "Visits",
-          "value": "12.6M+"
+          "value": "100K+"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Planets",
+          "value": "6"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
-        },
-        {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Theme",
+          "value": "Sci-Fi Terraforming"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
-      "title": "Explore Plan B: Terraform Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "title": "Explore the Plan B Terraform Wiki",
+      "description": "Master planetary logistics with beginner walkthroughs, tech tree breakdowns, resource and production chains, terraforming mechanics, and layout guides.",
       "modules": [
         {
           "order": 1,
-          "name": "Plan B: Terraform Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/plan-b-terraform-codes",
-          "displayType": "code-box",
+          "name": "Plan B Terraform Beginner Guide",
+          "description": "A complete beginner walkthrough covering your first landing, resource extraction, city growth, transport setup, and terraforming progression.",
+          "href": "/guide/plan-b-terraform-beginners-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Scan the map and land near iron, sulfur, and carbon so your first truck routes stay short."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Build extractors, smelters, and assemblers to produce iron ingots, concrete, and mechanical parts."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Place depots as buffers so assemblers keep running while transport lines catch up."
+            },
+            {
+              "label": "4",
+              "detail": "Deliver water, concrete, and food to your first city to grow the population past 500."
+            },
+            {
+              "label": "5",
+              "detail": "Unlock rail, then start greenhouse gas production to warm the planet above freezing."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/plan-b-terraform-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "Plan B Terraform Tech Tree Guide",
+          "description": "Understand the population-driven tech tree, unlock priorities, and the progression path from a landing outpost to a planetary biosphere.",
+          "href": "/progression/plan-b-terraform-tech-tree",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Outpost",
+              "detail": "0-100 residents: basic extractors, trucks, and depots."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "Settlement",
+              "detail": "500 residents: assembly plants, oxygen supply, and high-capacity depots."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Town",
+              "detail": "2,000 residents: rail tracks, cargo trains, and pumping stations."
+            },
+            {
+              "label": "City",
+              "detail": "10,000 residents: high-speed trains, highways, and polymer production."
+            },
+            {
+              "label": "Metropolis",
+              "detail": "50,000 residents: atmospheric heating plants and drone hubs."
+            },
+            {
+              "label": "Biosphere",
+              "detail": "100,000+ residents: forester stations and planetary geo-engines."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/plan-b-terraform-tier-list",
-          "displayType": "tier-grid",
+          "name": "Plan B Terraform Production Guide",
+          "description": "Cover factory chains, resource processing, supply management, and production optimization strategies for expanding cities.",
+          "href": "/mechanics/plan-b-terraform-resources",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Iron Ingot",
+              "detail": "Smelted from iron ore; the base material for steel, rails, and mechanical parts."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Concrete",
+              "detail": "Made from sulfur and carbon for city blocks, depots, and factory foundations."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "Steel",
+              "detail": "Refined from iron ingots for train engines, rails, and reinforced frames."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Polymer",
+              "detail": "Carbon plus water or ice; feeds electronics and atmospheric equipment."
+            },
+            {
+              "label": "Mechanical Parts",
+              "detail": "Assembled from iron ingots to build extractors, trucks, and assembly lines."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/plan-b-terraform-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "Plan B Terraform Terraforming Guide",
+          "description": "Explain climate manipulation, temperature control, water formation, vegetation growth, and ecosystem development.",
+          "href": "/mechanics/plan-b-terraform-temperature",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "1",
+              "detail": "Build greenhouse gas factories and vent fluorinated gas to raise the global temperature to 0 C."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "2",
+              "detail": "Melt polar ice and route the runoff into basins to form lakes, rivers, and oceans."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "3",
+              "detail": "Distribute compost and tree seeds to establish the first vegetation and stabilize soil."
+            },
+            {
+              "label": "4",
+              "detail": "Expand forests so plants convert carbon dioxide into breathable oxygen."
+            },
+            {
+              "label": "5",
+              "detail": "Reach full atmospheric balance and move your population out of sealed domes."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/plan-b-terraform-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "Plan B Terraform Buildings Guide",
+          "description": "A ranked reference of key buildings, factories, extractors, transport structures, and terraforming devices, with purpose and usage tips.",
+          "href": "/layouts/plan-b-terraform-factory-layout",
+          "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "S",
+              "detail": "Depot - the universal buffer every production chain depends on."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "A",
+              "detail": "Extractor and Assembler - raw ore in, finished components out."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "B",
+              "detail": "Rail Stop - bulk inter-continental hauling once trucks choke."
+            },
+            {
+              "label": "C",
+              "detail": "Road Post - cheap short-range truck cargo handling."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/plan-b-terraform-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "Plan B Terraform Planet Guide",
+          "description": "Compare planetary conditions, world seeds, and environmental challenges that shape each colony start and its recommended strategy.",
+          "href": "/systems/plan-b-terraform-seeds",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Seeds",
+              "detail": "Alphanumeric world seeds shape heightmaps, ice caps, and ore distribution."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Ice Caps",
+              "detail": "Polar and high-elevation ice feeds early water supply and later ocean formation."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Ore Spots",
+              "detail": "Balanced maps place iron, sulfur, and aluminum within short trucking distance."
+            },
+            {
+              "label": "Difficulty",
+              "detail": "Scarce water or distant ores turn a calm start into a logistics challenge."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Plan B Terraform Tips and Tricks",
+          "description": "Practical gameplay advice on transport optimization, city expansion, resource planning, and common mistakes to avoid.",
+          "href": "/guide/plan-b-terraform-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Depots",
+              "detail": "Chain depots between factories and transport stops to keep every assembler fed."
+            },
+            {
+              "label": "One-Way",
+              "detail": "Build circular one-way delivery loops to prevent vehicle deadlocks at city gates."
+            },
+            {
+              "label": "Buffers",
+              "detail": "Keep a depot buffer outside cities so rush demand never starves residents."
+            },
+            {
+              "label": "Pacing",
+              "detail": "Do not outpace your delivery routes; stalled cities freeze tech progression."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Plan B Terraform System Requirements",
+          "description": "Check the official PC specs, Steam Deck performance, and optimization tips so your colony keeps running smoothly as production scales.",
+          "href": "/systems/plan-b-terraform-system-requirements",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Windows",
+              "detail": "Native support on modern 64-bit Windows builds."
+            },
+            {
+              "label": "Linux",
+              "detail": "Runs smoothly through Steam Proton on Linux and SteamOS."
+            },
+            {
+              "label": "Steam Deck",
+              "detail": "Playable via Proton with tuned settings for large colonies."
+            },
+            {
+              "label": "Optimization",
+              "detail": "Lightweight early game; late-game mega-factories benefit from a strong CPU."
             }
           ]
         }
@@ -304,27 +388,27 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Quick answers to the most common questions about Plan B: Terraform.",
+      "description": "Quick answers to the most common questions about Plan B Terraform.",
       "items": [
         {
-          "question": "What is Plan B: Terraform?",
-          "answer": "Plan B: Terraform is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "question": "What is Plan B Terraform?",
+          "answer": "Plan B Terraform is a sci-fi automation and city-building game where you terraform a frozen planet. You extract and refine resources, grow cities, and warm the atmosphere until liquid water and forests can sustain a thriving population."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "Is Plan B Terraform free to play?",
+          "answer": "No. Plan B Terraform is a paid PC title sold on Steam with a one-time purchase, so there are no subscriptions or paid codes."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How do you start in Plan B Terraform?",
+          "answer": "Land near iron, sulfur, and carbon, build extractors and assemblers, and deliver basic goods to your first city. Population growth then unlocks the tech tree."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "How do you terraform a planet in Plan B Terraform?",
+          "answer": "Raise the global temperature with greenhouse gases, melt the ice into oceans, spread tree seeds to build biomass, and let forests convert carbon dioxide into oxygen."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Which planet or seed should beginners pick in Plan B Terraform?",
+          "answer": "Choose a seed where iron, sulfur, and aluminum sit close to a flat settlement site, so your first truck routes stay short and cheap."
         }
       ]
     },
