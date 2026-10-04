@@ -9,7 +9,13 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "mechanics": "Mechanics",
+    "layouts": "Layouts",
+    "progression": "Progression",
+    "items": "Items",
+    "systems": "Systems"
   },
   "home": {
     "meta": {
@@ -419,12 +425,33 @@
       "secondary": "Play on Steam"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "Plan B: Terraform Guides",
+    "overviewDescription": "Step-by-step Plan B: Terraform guides covering beginner setup, terraforming, logistics, and colony management."
+  },
+  "mechanics": {
+    "overviewTitle": "Plan B: Terraform Mechanics",
+    "overviewDescription": "Core Plan B: Terraform mechanics explained: atmosphere, oxygen, temperature, water, waste, and resource production."
+  },
+  "layouts": {
+    "overviewTitle": "Plan B: Terraform Layouts",
+    "overviewDescription": "Plan B: Terraform city, factory, farm, mining, and train layouts that keep production flowing and traffic under control."
+  },
+  "progression": {
+    "overviewTitle": "Plan B: Terraform Progression",
+    "overviewDescription": "Plan B: Terraform tech tree, research center, levels, achievements, and endgame milestones to plan your colony's growth."
+  },
+  "items": {
+    "overviewTitle": "Plan B: Terraform Items",
+    "overviewDescription": "Plan B: Terraform resources and items: aluminum, polymer, fluorine, carbon nanotubes, animals, and more."
+  },
+  "systems": {
+    "overviewTitle": "Plan B: Terraform Systems",
+    "overviewDescription": "Plan B: Terraform mods, multiplayer, seeds, Steam Deck support, and system requirements for smooth colony building."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
-    "activeCodes": "Active Codes",
     "updated": "Updated",
-    "viewAllCodes": "View all codes",
     "playOnRoblox": "Play on Roblox",
     "inThisSection": "In this section",
     "tableOfContents": "Table of Contents",
@@ -450,9 +477,9 @@
     "officialYoutube": "Official YouTube",
     "vvBuilder": "Community Reddit",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
+    "mechanicsGuides": "Mechanics Guides",
+    "progressionGuides": "Progression Guides",
+    "layoutsGuides": "Layouts Guides",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }

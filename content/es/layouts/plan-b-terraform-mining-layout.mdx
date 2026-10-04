@@ -1,0 +1,144 @@
+export const metadata = {
+  title: "Guía de diseño de minería en Plan B Terraform: maximiza la extracción y el rendimiento",
+  description: "Domina cada diseño de minería en Plan B Terraform con patrones óptimos de extractores, ubicación de depósitos y logística ferroviaria a escala planetaria.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Transformar un planeta deshabitado en una potencia industrial activa requiere una cantidad descomunal de materias primas. En este simulador de gestión planetaria, perfeccionar tu diseño de minería en Plan B Terraform marca la diferencia entre un rápido crecimiento poblacional y una parálisis catastrófica de la cadena de suministro. Sin un diseño de minería optimizado en Plan B Terraform, los minerales fundamentales se quedan abandonados en los nodos de yacimiento mientras los centros de producción quedan desabastecidos a lo largo de continentes enteros.
+
+Cada nivel de ciudad y umbral de terraformación exige mayores volúmenes de azufre, hierro, cobre, aluminio y hielo. Al comprender la conectividad de casillas, las zonas de almacenamiento logístico y la integración del transporte, podrás extraer cada yacimiento de recursos de manera limpia sin tener que rediseñar tu red logística a mitad de la campaña.
+
+## Principios básicos para una extracción eficiente de mineral
+
+La extracción de recursos funciona en una cuadrícula geométrica estricta donde la proximidad y los límites de amortiguación determinan el rendimiento. Los extractores extraen material de los yacimientos naturales del planeta y lo transfieren a depósitos adyacentes, paradas de camiones o cintas transportadoras. Si un extractor carece de un destino inmediato, detiene su funcionamiento al instante. 
+
+Una cuadrícula de minería eficaz equilibra tres elementos: densidad de extracción, amortiguación de recolección y capacidad de salida. Al construir en yacimientos de mineral extensos, colocar extractores al azar genera cuellos de botella y bloqueos donde los vehículos entorpecen el paso o los depósitos se desbordan.
+
+```
+[ Extractor ] -> [ Extractor ] -> [ Depósito central / Parada ] <- [ Extractor ] <- [ Extractor ]
+```
+
+Cada nodo en tu esquema debe dirigir los materiales hacia el interior, en dirección a los centros logísticos. En lugar de llevar líneas de transporte directamente a cada extractor individual, un diseño de minería consolidado en Plan B Terraform concentra los materiales en puntos de transferencia unificados. Esta configuración reduce la proliferación desordenada de carreteras y simplifica las rutas de recogida de alta capacidad.
+
+| Componente | Rol en la cuadrícula | Ubicación óptima | Limitación clave |
+| :--- | :--- | :--- | :--- |
+| **Extractor** | Extrae mineral bruto del terreno | Contacto directo con nodos de recursos | Sin almacenamiento interno; se detiene si se bloquea la salida |
+| **Depósito** | Búfer de inventario local | Directamente adyacente a 2–4 extractores | Capacidad finita; vulnerable a bloqueos |
+| **Parada de camiones / Línea de depósitos** | Conexión con el transporte rodado | Flanqueando el perímetro de extracción | Rendimiento limitado en comparación con el ferrocarril |
+| **Estación de carga de tren** | Interfaz de transporte masivo a granel | Alineación lineal a lo largo del borde del recurso | Requiere espacio recto y bucles de vía dedicados |
+
+Los depósitos actúan como amortiguadores ante las fluctuaciones en los tiempos de transporte. Cuando los camiones encuentran tráfico o tramos de viaje largos, los depósitos acumulan existencias para que los extractores nunca detengan sus ciclos de producción.
+
+## Diseños de minería abastecidos por camiones para el inicio de la partida
+
+Durante las fases iniciales de la colonización, los camiones por carretera gestionan la mayor parte del transporte entre los yacimientos de recursos y tu base de producción central. Debido a que los camiones tienen límites de carga modestos, las redes de extracción tempranas deben priorizar tiempos rápidos de carga y rotación.
+
+Al planificar una configuración inicial, coloca dos filas de extractores que alimenten directamente una sola columna central de depósitos. Flanquea estos depósitos con tramos de carretera para permitir un acceso continuo a los vehículos. Este diseño en "columna vertebral" evita ramificaciones viales complejas, que suelen provocar atascos cuando aumenta el número de vehículos.
+
+```
+[Carretera] [Depósito] [Extractor] [Casilla de yacimiento]
+[Carretera] [Depósito] [Extractor] [Casilla de yacimiento]
+[Carretera] [Depósito] [Extractor] [Casilla de yacimiento]
+```
+
+Los informes de la comunidad demuestran que dedicar bucles unidireccionales alrededor de las zonas de minería evita la aglomeración de vehículos. Los camiones que ingresan al carril de carga deben abastecerse de inmediato en los depósitos saturados y salir en bucle hacia la autopista de destino sin retroceder por el mismo trayecto.
+
+| Tamaño del yacimiento (Casillas) | Cantidad de extractores | Depósitos dedicados | Flota de camiones recomendada | Producción objetivo (Objetos/min) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Pequeño (4–8)** | 4–8 | 2–3 | 4–6 camiones | 120–240 |
+| **Mediano (9–16)** | 10–14 | 4–6 | 8–14 camiones | 300–450 |
+| **Grande (17–30)** | 18–24 | 8–10 | 16–24 camiones | 550–750 |
+| **Masivo (30+)** | 28+ | 12+ | Transición al tren | 800+ |
+
+Adoptar este diseño modular de minería en Plan B Terraform te permite extender la columna vertebral a medida que tu tecnología desbloquea un acceso más amplio al yacimiento. Nunca traces rutas de transporte por el centro del campo de mineral bruto; reserva el espacio interno de la cuadrícula exclusivamente para extractores y depósitos de recolección.
+
+## Diseños de minería y estaciones ferroviarias de alta densidad
+
+A medida que las ciudades se expanden y consumen piezas avanzadas como componentes mecánicos y materiales compuestos, el transporte por carretera colapsa bajo el inmenso volumen de mercancías. La transición a un diseño de minería de alta capacidad en Plan B Terraform respaldado por una infraestructura ferroviaria dedicada se vuelve fundamental.
+
+Las estaciones de tren extraen mercancías con rapidez de los depósitos adyacentes, pero los trenes requieren una geometría de vías estructurada para evitar bloqueos en la red. Construye estaciones de carga a lo largo del borde exterior de los grandes yacimientos, utilizando un diseño en escalera donde los trenes se desvíen de la línea principal de tránsito, entren en un muelle de carga y se reincorporen de manera fluida.
+
+```
+Vía principal =====\                           /===== Vía principal
+                    \--- [ Estación de carga ] ---/
+                         [ Búfer de depósitos]
+                         [ Fila de extractores ]
+```
+
+Mantener el rendimiento de la estación exige una cadena ininterrumpida de materiales. En un diseño avanzado de minería en Plan B Terraform, la saturación de los depósitos debe coincidir con la tasa de carga completa de los trenes de varios vagones. Si un tren permanece esperando en una terminal vacía, bloquea a los convoyes siguientes y estrangula las líneas de montaje posteriores.
+
+| Configuración ferroviaria | Longitud del tren | Depósitos en estación | Objetivo de ida y vuelta | Aplicación ideal de recursos |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ramal directo** | 1 locomotora, 2 vagones | 2–4 | Corto (< 1.000 m) | Azufre, mineral de hierro para fundición local |
+| **Depósito de doble bucle** | 1 locomotora, 4 vagones | 4–8 | Medio (1.000–3.000 m) | Hormigón, carbono hacia centros fabriles |
+| **Troncal de carga exprés** | 2 locomotoras, 6 vagones | 8–12 | Largo (> 3.000 m) | Transporte de hielo y nitrógeno remotos |
+| **Intercambiador multimuelle** | 2 locomotoras, 6+ vagones | 12+ | Continental | Corredores de alimentos y suministros para megaciudades |
+
+La experiencia de los jugadores demuestra que separar los bucles de carga del tráfico de paso elimina las colas en las estaciones. Mantén despejadas tus arterias logísticas principales dotando a cada terminal minera de su propia vía de aceleración dedicada. Para conocer las mecánicas detalladas de los sistemas de juego y las actualizaciones, consulta la página oficial de [Plan B: Terraform on Steam](https://store.steampowered.com/app/1894430/Plan_B_Terraform/).
+
+## Estrategias de diseño específicas según el recurso
+
+No todos los minerales se comportan de forma idéntica en la logística planetaria. Mientras que el hierro y el aluminio constituyen la base de las estructuras físicas, elementos volátiles como el hielo y el nitrógeno implican consideraciones ambientales y de procesamiento singulares.
+
+Los yacimientos de hielo requieren una planificación cuidadosa porque la terraformación global altera las condiciones de la superficie. A medida que las temperaturas planetarias aumentan, el hielo superficial se funde en agua líquida, inundando permanentemente los extractores fijos construidos en cuencas bajas. Al establecer una base de extracción de hielo, da prioridad a las mesetas elevadas o crea redes dinámicas capaces de reubicarse con rapidez.
+
+```
+[Nodos de mineral] -> [Extractores] -> [Fundición/Trituración in situ] -> [Depósito] -> [Transporte]
+```
+
+Fundir minerales como el hierro y el azufre junto a los campos de extracción reduce a la mitad el volumen de transporte. El traslado de barras refinadas o contenedores químicos ocupa menos espacio de carga en los vehículos que el envío de roca en bruto, lo que disminuye la saturación del transporte a larga distancia.
+
+| Recurso | Riesgo de descongelación | Preprocesamiento local | Factor de volumen | Recomendación de diseño |
+| :--- | :--- | :--- | :--- | :--- |
+| **Mineral de hierro** | Ninguno | Sí (Barras de hierro) | Moderado | Columna vertebral lineal densa con fundiciones adyacentes |
+| **Azufre** | Ninguno | Opcional (Químicos) | Alto | Cuadrícula agrupada que alimenta depósitos de químicos |
+| **Hielo** | Alto (Se derrite con el calentamiento) | Sí (Extracción de agua) | Extremo | Diseño de recolección rápida; ferrocarril periférico |
+| **Aluminio** | Ninguno | Sí (Placas de aleación) | Bajo | Extractores de alta densidad; carga ferroviaria directa |
+| **Nitrógeno** | Bajo | Transporte directo | Moderado | Diseño de estación con amortiguación perimetral |
+
+Ajustar tu diseño de minería en Plan B Terraform para la logística ferroviaria de acuerdo con las particularidades de cada recurso asegura que nunca desperdicies capacidad en las vías transportando materiales intermedios que podrían haberse refinado en el propio lugar de extracción.
+
+## Optimización paso a paso y resolución de cuellos de botella
+
+Incluso las instalaciones de extracción mejor diseñadas pierden eficiencia con el tiempo a medida que se disparan las demandas planetarias. Auditar con regularidad el movimiento de materiales ayuda a detectar fricciones logísticas antes de que la producción fabril se paralice.
+
+Sigue esta lista de verificación secuencial para diagnosticar cuellos de botella en el rendimiento:
+
+1. **Verifica la actividad de los extractores:** Comprueba si los extractores muestran iconos de estado inactivo. Un extractor inactivo indica que su depósito de destino está completamente lleno.
+2. **Examina el equilibrio de los depósitos:** Si los depósitos permanecen al 100 % de su capacidad, incrementa el transporte de salida añadiendo vehículos o mejorando las vías férreas.
+3. **Inspecciona el tráfico de vehículos:** Busca congestiones en las intersecciones. Los vehículos que esperan para entrar a las zonas de carga reducen la frecuencia total de rotación.
+4. **Audita el agotamiento de los yacimientos:** Los extractores periféricos terminan por quedarse sin material a medida que se agotan las vetas de mineral. Compacta tu diseño hacia el interior para mantener una alta densidad de extracción.
+
+```
+[Estado del yacimiento] -> [¿Extractores inactivos?] -> [¿Depósitos llenos?] -> [Déficit de transporte]
+                                   |                           |
+                                 (No)                        (Sí)
+                                   v                           v
+                          [Sistema óptimo]         [Añadir líneas de tren/camión]
+```
+
+Aplicar ajustes sistemáticos mantiene tus zonas mineras funcionando a su máximo rendimiento teórico sin desperdiciar espacio.
+
+| Síntoma | Causa raíz | Diagnóstico inmediato | Solución definitiva |
+| :--- | :--- | :--- | :--- |
+| **Ciclos de extractor intermitentes** | El depósito de destino oscila en su capacidad máxima | Los depósitos rondan el 95–100 % de llenado | Añadir estaciones de carga paralelas; implementar un transporte más rápido |
+| **Desabastecimiento por depósitos vacíos** | La tasa de recogida supera la extracción | Los depósitos se mantienen constantemente por debajo del 10 % | Añadir más extractores o reducir la cantidad de vehículos en la ruta |
+| **Colapso vehicular en la entrada** | Intersecciones de un solo carril con tráfico bidireccional | Acumulación visible de vehículos en las vías de acceso | Convertir la vía en un bucle perimetral de sentido único |
+| **Retrasos en la carga de la estación** | Tasa inadecuada de transferencia del depósito al muelle | Los trenes esperan inactivos con vagones vacíos | Aumentar la superficie de contacto de los depósitos alrededor de la vía |
+
+Resolver los cuellos de botella comunes en tu diseño de minería en Plan B Terraform transforma los caóticos puestos avanzados de extracción en arterias de suministro automatizadas y fluidas.
+
+## Preguntas frecuentes (FAQ)
+
+### ¿Cuál es el diseño de minería más eficiente en Plan B Terraform para minerales en bruto?
+El patrón más eficiente es una columna vertebral central de depósitos rodeada a ambos lados por filas de extractores, con el transporte de salida circulando por el perímetro exterior. Esta configuración maximiza el contacto de los extractores con las casillas del yacimiento mientras mantiene a los vehículos de transporte alejados del equipo de producción.
+
+### ¿Por qué mis extractores dejan de funcionar aunque aún quede mineral en el suelo?
+Los extractores se detienen cuando su destino directo de salida —ya sea un depósito, cinta o parada de carga— se llena por completo. Si los camiones o trenes de salida no recogen el mineral almacenado con suficiente rapidez, los extractores conectados pasan de inmediato a un estado de pausa hasta que se libere espacio en el inventario.
+
+### ¿Conviene fundir el mineral de hierro directamente en la mina o transportar la roca en bruto?
+Fundir el mineral en barras directamente junto al yacimiento de extracción suele ser mucho más eficiente. Los bienes refinados requieren menos espacios de carga para su transporte, lo que reduce drásticamente el número de camiones o vagones de tren necesarios en toda tu red de transporte planetario.
+
+### ¿Cómo protejo los diseños de minería de hielo para que no se derritan a medida que el planeta se calienta?
+Supervisa de cerca los indicadores de temperatura planetaria durante los hitos de terraformación. Ubica las instalaciones de extracción de hielo en topografías elevadas o en zonas polares más frías, y prepárate para desmantelar las instalaciones en cuencas antes de que el nivel del mar aumente y sumerja tu infraestructura.

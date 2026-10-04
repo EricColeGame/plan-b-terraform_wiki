@@ -1,0 +1,142 @@
+export const metadata = {
+  title: "Plan B Terraform Factory Layout Guide: Modular Logistics & City Scaling",
+  description: "Master your Plan B Terraform factory layout with modular hub designs, depot mechanics, rail logistics, and scalable late-game production blueprints.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Mastering an efficient **plan b terraform factory layout** is the single most critical factor separating a stagnant colony from a thriving, self-sustaining biosphere. As resource extraction scales from modest iron veins into multi-continental supply webs, haphazard assembly lines quickly collapse under logistical paralysis. Adopting a modular **plan b terraform factory layout** early prevents catastrophic delivery deadlocks, ensuring that steel, polymers, and atmospheric greenhouse gases flow uninterrupted to your burgeoning cities.
+
+On the hex-based surface of the game, spatial awareness dictates economic power. Unlike traditional linear grid builders, this simulation thrives on circular dispersion, depot proximity, and low-friction transport loops.
+
+---
+
+## Fundamental Mechanics of Factory Design in Plan B: Terraform
+
+Designing an optimal base begins with understanding how the hexagonal tile grid processes inputs and outputs. In this title, production facilities do not rely on conveyor belts. Instead, they interact directly with adjacent inventory tiles, primarily **Depots**, extractors, and transport terminals.
+
+According to developer insights available on the [Plan B: Terraform Steam page](https://store.steampowered.com/app/1894430/Plan_B_Terraform/), physical space and throughput rate determine how quickly raw matter converts into planetary infrastructure. Because transport lines must keep up with factory processing speeds, structural spacing is critical.
+
+### The Role of Hex Depots
+
+A Depot serves as the universal buffer in every production chain. Any factory placed directly adjacent to a Depot automatically pulls matching ingredients and deposits finished goods into available capacity. 
+
+* **Direct Adjacency:** A factory can pull from any Depot tile within its direct 6-tile neighbor ring.
+* **Depot Chains:** Depots connected in a line propagate items slowly across tiles, functioning as pseudo-conveyors.
+* **Logistic Stops:** Truck and train stops load and unload exclusively into adjacent Depots, forming the primary interface between transport and processing.
+
+| Structure Type | Base Hex Footprint | Adjacent Interaction Range | Primary Logistical Function |
+| :--- | :--- | :--- | :--- |
+| **Extractor** | 1 Hex (Resource deposit) | 1 Neighbor Ring | Raw ore and gas harvesting |
+| **Factory / Assembler** | 1 Hex | 1 Neighbor Ring | Intermediate parts and finished goods fabrication |
+| **Depot** | 1 Hex (Stackable) | 1 Neighbor Ring | Buffering, cross-facility transfers, vehicle loading |
+| **Road Post / Stop** | 1 Hex | Adjacent Depots | Short-to-medium range truck cargo handling |
+| **Rail Stop** | 1 Hex (Linear track) | Adjacent Depots | High-volume, bulk inter-continental hauling |
+
+Understanding these base properties allows you to build compact, repeatable modules rather than sprawling, tangled factories that resist expansion.
+
+---
+
+## Modular Hub-and-Spoke: The Core Plan B Terraform Factory Layout
+
+The most versatile production template developed by experienced planners is the **Hub-and-Spoke modular layout**. In this setup, a small cluster of Depots forms the central core, surrounded by an operational ring of factories, which in turn borders truck stops or outbound transit rails.
+
+```
+       [ Factory ]   [ Factory ]
+            \             /
+    [ Truck Stop ] - [ Central Depot ] - [ Rail Stop ]
+            /             \
+       [ Factory ]   [ Factory ]
+```
+
+When organizing a **plan b terraform factory layout**, depots act as dynamic inventory pools. By centralizing raw inputs in a two- or three-hex Depot cluster, you can surround that cluster with four to six assemblers producing components simultaneously without routing separate supply lines to each machine.
+
+### Smelting and Primary Processing Rings
+
+Raw metals—Iron, Aluminum, and Sulfur—require rapid smelting before high-tier fabrication can occur. The primary advantage of a hub layout is that multiple extractors can feed inward to a processing hub, which then sends refined ingots directly to outgoing distribution.
+
+| Recipe | Raw Inputs | Output | Ideal Factory-to-Depot Ratio | Recommended Transport Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Iron Ingot** | 1x Iron Ore | 1x Iron Ingot | 6 Factories : 2 In/Out Depots | Direct Extractor Feed / Short Truck |
+| **Steel Ingot** | 2x Iron Ingot | 1x Steel Ingot | 4 Factories : 2 In/Out Depots | Dedicated Internal Truck Shuttle |
+| **Aluminum Ingot** | 1x Aluminum Ore | 1x Aluminum Ingot | 6 Factories : 2 In/Out Depots | Direct Extractor Feed / Short Truck |
+| **Mechanical Parts**| 1x Steel Ingot | 1x Mechanical Part | 4 Factories : 2 Central Depots | Intra-base Depot Daisy Chain |
+| **Concrete** | 1x Sulfur + 1x Sand | 2x Concrete | 5 Factories : 3 Balanced Depots| Multi-depot Splitter Loop |
+
+Community reports highlight that isolating smelting complexes directly near raw mining fields eliminates unnecessary transit overhead. Transporting refined ingots instead of unrefined ore effectively halves vehicle congestion across your primary shipping lanes.
+
+---
+
+## Designing High-Throughput Logistics Corridors
+
+Logistics networks are the circulatory system of your planet. A flawless industrial setup will stall within minutes if delivery trucks become stuck in intersection grids or trains sit waiting for cargo clearance.
+
+A modular **plan b terraform factory layout** relies on isolated, self-contained functional blocks connected by dedicated highway and rail spines. Avoid building continuous road loops that allow haulers to wander through assembly floors.
+
+### Trucks vs. Trains: Selecting the Right Artery
+
+Early-game players often make the mistake of using truck fleets for long-distance transport. While trucks require minimal capital and zero rail infrastructure, high vehicle counts quickly saturate road nodes around major factory gates.
+
+| Metric | Road Haulers (Trucks) | Freight Locomotives (Trains) |
+| :--- | :--- | :--- |
+| **Optimal Range** | 1 to 25 hex tiles | 25 to 150+ hex tiles |
+| **Setup Cost** | Extremely low (Dirt/Paved roads) | Moderate to High (Track investment) |
+| **Volume Capacity** | Low per unit (High unit count required) | Massive per train consist |
+| **Intersection Impact** | Prone to clustering and gridlock | Point-to-point signaling preserves line speed |
+| **Factory Interface** | Road stops fit into compact hex gaps | Rail stations require linear approach space |
+
+For best results, reserve trucks for local extraction gathering and short-run depot transfers. For cross-biome resource transfers—such as shipping ice from polar caps or fluorite from mountain peaks—rely exclusively on high-speed rail lines with decoupled loading loops.
+
+---
+
+## Mid-to-Late Game Blueprint: The Multi-Tier Advanced Factory
+
+As planetary development progresses, population demand transitions from basic mechanical supplies to advanced composites, high-tech components, and atmospheric greenhouse gas generators. Integrating long-range freight into your **plan b terraform factory layout** requires clean lane separation to handle multi-ingredient recipes.
+
+### The Double-Ring Modular Blueprint
+
+In late-game tiers, products frequently require three or four distinct sub-components. A double-ring assembly blueprint uses two concentric layers of Depots and Assemblers:
+
+1. **Inner Ring:** Accepts primary components (Steel, Polymers) via rail drop-off into dedicated filter Depots.
+2. **Intermediate Tier:** Assembles mid-level components (Electronics, High-Tech Parts).
+3. **Outer Ring:** Final assembly facilities pull directly from intermediate outputs and push finished terraforming equipment outward to city distribution tracks.
+
+| Complex Product | Ingredient 1 | Ingredient 2 | Ingredient 3 | Optimal Layout Configuration |
+| :--- | :--- | :--- | :--- | :--- |
+| **High-Tech Parts** | Mechanical Parts | Electronics | None | Linear Offset Depot Corridor |
+| **Greenhouse Gas Generator** | High-Tech Parts | Reinforced Concrete | Steel Bars | Dual-Depot Concentric Hub |
+| **Atmospheric Extractor** | Steel Bars | Mechanical Parts | Electronics | Double-Ring Cluster |
+| **Dam / Water Pump** | Reinforced Concrete | High-Tech Parts | Steel Cables | Railhead Integrated Terminal |
+
+Player experience demonstrates that dedicating one self-contained production sector per advanced commodity avoids the cascading starvation issues common in sprawling, unified megabases.
+
+---
+
+## Common Bottlenecks and Optimization Troubleshooting
+
+Even a well-calculated **plan b terraform factory layout** can buckle if raw resource buffers fail to clear or supply lines develop imbalances. Diagnosing these slowdowns requires systematic inspection of storage thresholds and transport intervals.
+
+### Resolving Depot Saturation
+
+When a multi-purpose Depot fills entirely with an excess ingredient (e.g., thousands of Iron Ingots), it loses the capacity to receive secondary ingredients (like Sulfur), shutting down downstream assemblers.
+
+* **Assign Single-Item Depots:** Avoid letting multiple raw materials share a single Depot hex. Configure adjacent storage cells to accept only one item profile.
+* **Overflow Burners & Construction Offloaders:** Send surplus components into construction vaults or equipment fabrication lines so production lines never halt completely.
+* **Balance Extraction Ratios:** If your smelters back up, throttle your extraction sites rather than letting road posts choke with idle haulers.
+
+### Maintaining Clearance Around Major Terminals
+
+Road and rail stops require empty adjacent tiles to facilitate smooth approach paths. Placing factories directly on both flanks of a busy loading dock frequently creates vehicle bottlenecking. Keep primary transport arteries at least one hex tile clear of heavy machinery to maintain maximum transit velocity.
+
+---
+
+## Frequently Asked Questions
+
+### What is the best starter plan b terraform factory layout for beginners?
+The best initial design is the **Compact Smelting Ring**. Place two Depots side by side—one designated for incoming ore and one for finished bars—and surround them with four to five smelters. Connect your mine directly to the intake Depot with a short road loop, and route the output Depot toward mechanical parts assemblers.
+
+### How much spacing should I leave between production hubs in my plan b terraform factory layout?
+Leave a buffer zone of at least 2 to 3 empty hex tiles between major production blocks. This empty space provides necessary clearance for future rail expansion, high-capacity depot storage arrays, and dedicated truck bypass lanes as supply demands intensify.
+
+### Should I combine food and industrial manufacturing within the same factory zone?
+No. Food production (Water and Greenhouse crops) scales directly with municipal population consumption, whereas industrial manufacturing fluctuates based on infrastructure projects. Isolating biological and agricultural shipping lanes from heavy machinery tracks prevents catastrophic food shortages during peak building phases.

@@ -1,0 +1,136 @@
+export const metadata = {
+  title: "Guía de Plan B Terraform para Steam Deck: rendimiento, controles y batería",
+  description: "Domina Plan B: Terraform en Steam Deck con ajustes gráficos óptimos, configuraciones de control personalizadas y consejos de rendimiento para juego portátil.",
+  category: "systems",
+  date: "2026-10-04",
+};
+
+Transformar un cuerpo celeste yermo y congelado en un paraíso próspero y rebosante habitado por millones de ciudadanos es un ciclo de juego intrínsecamente satisfactorio. Experimentar este magnífico bucle de gestión en un dispositivo portátil eleva la adicción, convirtiendo la experiencia de **plan b terraform steam deck** en uno de los viajes de construcción de fábricas más acogedores disponibles. Sin embargo, gestionar miles de camiones de transporte automatizados, extensas líneas ferroviarias, cúpulas de calentamiento atmosférico y ciudades en expansión en una APU portátil requiere la configuración adecuada. 
+
+Optimizar tu configuración de **plan b terraform steam deck** te permite equilibrar una fluidez de fotogramas impecable con la duración de la batería, facilitando al mismo tiempo una logística de precisión con los paneles táctiles y los joysticks. Ya sea que estés colocando tus primeros extractores mecánicos o viendo cómo se forman océanos líquidos sobre el globo digital, esta exhaustiva guía técnica y estratégica cubre todo lo que necesitas saber.
+
+## Compatibilidad con Steam Deck y experiencia inicial
+
+Desarrollado por Florian van Strien, la mente visionaria detrás de *Dig or Die*, *Plan B: Terraform* se enfoca en una gestión planetaria serena y tranquila sin mecánicas punitivas de invasión ni el estrés del combate. Al iniciarse a través de SteamOS, el juego se ejecuta de forma nativa mediante la traducción de Proton, requiriendo prácticamente cero ajustes preliminares dentro del modo escritorio. 
+
+Valve categoriza el título con comodidad dentro de su ecosistema Deck, aunque surgen ciertas peculiaridades en la interfaz de usuario al reducir una simulación de formato ancho a una pantalla de 7 o 7,4 pulgadas. Los reportes de la comunidad indican que, si bien el renderizado predeterminado funciona a la perfección sin artefactos gráficos ni cierres inesperados, la emulación de ratón por defecto puede sentirse rígida. Navegar por densas superposiciones de cadenas de suministro y cuadrículas de posicionamiento mejora enormemente con ajustes personalizados.
+
+La siguiente tabla detalla el estado del juego tal cual sale de la caja en versiones estándar de SteamOS:
+
+| Métrica de compatibilidad | Estado base | Recomendación / Notas |
+| :--- | :--- | :--- |
+| **Compatibilidad con Proton** | Proton 8.0+ / Proton Experimental | Funciona directamente con las capas estándar de Proton. |
+| **Soporte de pantalla nativa** | 1280x800 (16:10) | Relación de aspecto nativa 16:10 compatible sin franjas negras. |
+| **Esquema de control predeterminado** | Emulación de ratón y teclado | Requiere mapeo personalizado para construir cómodamente con trackpad. |
+| **Legibilidad de textos y fuentes** | Moderada | Los textos de ayuda pequeños cansan la vista; se recomienda ajustar escala de IU. |
+| **Sincronización en la nube** | Soporte completo de Steam Cloud | Transición perfecta entre PC de escritorio y la consola Steam Deck. |
+| **Estabilidad de suspensión / reanudación** | Excelente | Suspender el dispositivo a mitad de la simulación no genera desincronización de audio. |
+
+Dado que la simulación se ejecuta a escala global sobre una esfera planetaria de casillas hexagonales, el consumo de memoria y la carga de almacenamiento son mínimos. Los jugadores que ejecutan sesiones de **plan b terraform steam deck** directamente desde tarjetas MicroSD de alta velocidad informan tiempos de carga prácticamente indistinguibles del almacenamiento NVMe interno.
+
+## Ajustes óptimos de rendimiento y gráficos
+
+*Plan B: Terraform* está diseñado con una estética limpia y minimalista que prioriza una enorme capacidad de procesamiento de simulación por encima de pases pesados de sombreado e iluminación fotorrealista. Dado que las exigencias gráficas son modestas, la APU AMD personalizada de Steam Deck dedica la mayor parte de su margen de procesamiento a calcular el trazado de rutas logísticas, el despacho de vehículos de carga y la transformación dinámica del terreno.
+
+Lograr unos 40 FPS o 60 FPS sólidos como una roca manteniendo el ruido del ventilador al mínimo depende de fijar el límite de potencia de diseño térmico (TDP) y ajustar las cascadas de sombras. Durante las fases iniciales y medias de la partida, el juego consume una potencia mínima, pero a medida que te acercas al juego tardío con docenas de centros de extracción, la carga de la simulación aumenta.
+
+```
+Calidad visual vs. Eficiencia térmica:
+- Sombras: Medias (Diferencia insignificante en una pantalla de 7-8", ahorra 1,5 W)
+- Líneas de cuadrícula hexagonal: Siempre activadas (Esencial para una colocación precisa en pantallas pequeñas)
+- Frecuencia de fotogramas objetivo: 40 FPS / 40 Hz (El punto óptimo para la duración de la batería)
+```
+
+Para maximizar la duración de la batería portátil mientras previenes caídas de rendimiento en el juego tardío, configura tus opciones visuales dentro del juego y los ajustes del Menú de Acceso Rápido (QAM) de acuerdo con los siguientes parámetros:
+
+| Categoría de ajuste | Valor recomendado | Impacto estratégico |
+| :--- | :--- | :--- |
+| **Tasa de refresco objetivo** | 40 Hz (LCD) / 45 Hz (OLED) | Reduce drásticamente la carga de la APU en comparación con un bloqueo a 60 FPS. |
+| **Límite de fotogramas** | Igual a la tasa de refresco (40 / 45) | Elimina los microtirones de fluidez (frame pacing) al mover la cámara. |
+| **Límite de TDP (Acceso rápido)** | 8 vatios (Inicio) / 10 vatios (Final) | Mantiene los ventiladores silenciosos y brinda entre 3,5 y 5 horas de juego. |
+| **Frecuencia de reloj de GPU** | Automático / Dinámico | Permite a la Deck asignar energía a los ciclos de simulación de la CPU. |
+| **Calidad de sombras en el juego** | Media | Elimina llamadas de dibujo innecesarias en vistas planetarias alejadas. |
+| **Factor de escala de la interfaz** | 115% – 125% | Mejora en gran medida la legibilidad de gráficos de oferta y demanda. |
+| **FSR / Reescalado** | Desactivado (800p nativo) | La resolución nativa se ve más nítida en textos pequeños; FSR no es necesario. |
+
+Ajustar cuidadosamente tu configuración de **plan b terraform steam deck** garantiza que, cuando los gases de efecto invernadero se acumulen y se formen masas de agua dinámicas, la transición gráfica no arruine tus tiempos de cuadro.
+
+## Distribuciones de control: Dominando el planeta con Steam Input
+
+Los simuladores de fábricas y gestión viven o mueren por sus controles. Dado que el juego fue diseñado principalmente en torno a gestos de ratón —arrastrar redes ferroviarias, seleccionar depósitos de suministros y elegir recetas de fabricación especializadas—, jugar en hardware portátil exige un perfil de mando cuidadosamente asignado.
+
+Steam Input facilita salvar esta brecha de manera sencilla. En lugar de luchar con la emulación de ratón predeterminada en los joysticks, configurar el trackpad derecho como ratón con retroalimentación háptica te proporciona una precisión al nivel de un ordenador de escritorio. Además, asignar los menús secundarios de gestión a los cuatro botones de agarre traseros ergonómicos de Steam Deck (L4, L5, R4, R5) permite mantener los pulgares fijos en el movimiento de la cámara.
+
+Visita la [página oficial de Plan B: Terraform en Steam](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) para consultar las distribuciones básicas de la comunidad, o aplica la configuración optimizada que detallamos a continuación:
+
+| Control físico | Entrada / Comando asignado | Propósito práctico en el juego |
+| :--- | :--- | :--- |
+| **Trackpad derecho** | Ratón (Baja fricción, hápticos medios) | Selección precisa de casillas, edificios y trazado de carreteras. |
+| **Clic en trackpad derecho** | Botón izquierdo del ratón | Colocación primaria de construcciones y confirmación. |
+| **Trackpad izquierdo** | Rueda de desplazamiento (Giro circular) | Zoom fluido para acercar y alejar la vista planetaria. |
+| **Gatillo derecho (Pulsación suave)** | Botón izquierdo del ratón | Clic ergonómico y natural al construir largos corredores de tránsito. |
+| **Gatillo izquierdo** | Botón derecho del ratón | Cancelación rápida de modos de construcción o borrado de líneas. |
+| **Stick izquierdo** | WASD / Desplazar cámara | Desplazamiento horizontal y vertical fluido sobre las colonias. |
+| **Stick derecho** | Rotar / Inclinar cámara | Orbitar alrededor de accidentes geográficos y cordilleras planetarias. |
+| **Botón trasero L4** | Tecla Shift (Mantener) | Modificador de construcción masiva y colocación de edificios en lote. |
+| **Botón trasero R4** | Barra espaciadora | Pausar el tiempo para resolver desabastecimientos y cuellos de botella. |
+| **Botón trasero L5** | Alternar vista de datos / superposición | Comprobar al instante temperatura global, presión y niveles de agua. |
+| **Botón trasero R5** | Guardado rápido | Seguridad ante errores de cálculo en diseños ferroviarios experimentales. |
+
+Implementar un perfil de control personalizado para **plan b terraform steam deck** transforma lo que podría haber sido una experiencia tosca de arrastrar cursores en un panel de mandos intuitivo y táctil.
+
+## Optimización para el juego tardío y escalado de la simulación
+
+La ambición arquitectónica de *Plan B: Terraform* lo distingue de los constructores de fábricas localizados. No solo gestionas un recinto cerrado; estás terraformando un planeta entero. A medida que avanzas por los hitos tecnológicos, tu mundo albergará decenas de asentamientos humanos prósperos, miles de camiones de transporte en movimiento, cientos de trenes de carga con mercancías mixtas y purificadores atmosféricos en constante expansión.
+
+En las APU portátiles, este grado de simulación procedural traslada el estrés del hardware lejos del procesamiento gráfico y lo sitúa de lleno en la gestión de hilos de la CPU. Los jugadores que experimentan caídas de fotogramas en el juego tardío pueden sortear fácilmente estos cuellos de botella siguiendo las mejores prácticas logísticas.
+
+Utiliza este desglose para gestionar los puntos críticos de estrés de la simulación en Steam Deck:
+
+| Causa del cuello de botella | Síntoma de hardware | Táctica de mitigación y optimización |
+| :--- | :--- | :--- |
+| **Tráfico excesivo de camiones** | Saturación de hilos de CPU, caídas de fluidez | Reemplaza rutas de camiones de corta distancia por líneas de tren de gran capacidad. |
+| **Almacenamiento masivo y disperso** | Microtirones durante la actualización de inventarios | Usa configuraciones de inserción directa de fábricas a depósitos de carga. |
+| **Giro planetario con zoom alejado** | Picos momentáneos en la memoria de la GPU | Reduce la velocidad de movimiento de cámara en ajustes para suavizar la carga. |
+| **Fotogramas sin límite** | Rápido drenaje de batería, altas temperaturas | Bloquea siempre la pantalla de la Deck a 40 Hz o 45 Hz mediante el panel QAM. |
+| **Infraestructura en desuso** | Cálculos innecesarios de búsqueda de rutas | Demuele puestos mineros obsoletos cuando los yacimientos se agoten. |
+
+Al expandirte hacia las fases finales en el hardware de **plan b terraform steam deck**, optimizar las líneas de tránsito no es solo una buena práctica logística: es la técnica de optimización de hardware más eficaz a tu alcance. Los trenes de alta velocidad consumen drásticamente menos ciclos de simulación que enjambres de camiones autónomos navegando por complejas intersecciones de carreteras.
+
+## Estrategias de terraformación portátil: Construir sobre la marcha
+
+Jugar a un juego de estrategia planetaria en el tren, durante un vuelo o acurrucado en el sofá requiere un enfoque ligeramente diferente al de estar sentado frente a un escritorio con varios monitores. Diseñar sistemas que sean legibles, modulares y fáciles de mantener evita la sobrecarga cognitiva en la compacta pantalla de 800p.
+
+Para mantener un control impecable sobre tu colonia móvil, ten en cuenta estas probadas estrategias de construcción portátil:
+
+### 1. Construye en bloques modulares estandarizados
+En lugar de aglomeraciones desordenadas que dificulten seleccionar edificios individuales pequeños, organiza la manufactura industrial en patrones rectangulares o hexagonales uniformes. Mantén la extracción de hierro, la fabricación de piezas mecánicas y el moldeado de hormigón en sectores dedicados y aislados, conectados estrictamente por ferrocarril. Esto mantiene limpios los textos de información y simplifica la selección mediante trackpad.
+
+### 2. Aprovecha la construcción en pausa
+La gestión en tiempo real a ritmo rápido puede sentirse caótica al usar paneles táctiles. Haz uso habitual de tu acceso directo asignado para pausar (como el botón trasero R4). Congela el tiempo de simulación mientras diseñas bucles ferroviarios complejos o ajustas rutas de recursos de alta prioridad entre ciudades en crecimiento, y luego reanuda el tiempo para ver ejecutarse tu plan.
+
+### 3. Mantén un alto contraste visual
+A medida que el planeta se calienta, el hielo se derrite en canales de agua realistas y la vida biológica se extiende por el suelo, el contraste visual entre los recursos del terreno y las redes de transporte puede disminuir. Mantén activa la superposición de la cuadrícula hexagonal para asegurarte de que el cursor se fije directamente en las coordenadas deseadas sin clics erróneos accidentales.
+
+### 4. Monitorea los hitos ambientales globales
+La terraformación requiere paciencia. Vigila de cerca la progresión atmosférica del planeta:
+
+*   **Objetivos de temperatura:** Los generadores de gases de efecto invernadero deben espaciarse metódicamente para evitar sobrecalentamientos locales.
+*   **Gestión del nivel del mar:** Ten cuidado al ubicar fábricas costeras; el aumento del nivel del océano sumergirá terrenos de baja altitud, destruyendo carreteras y vías de tren.
+*   **Siembra de vegetación:** Los propagadores de árboles estabilizan el terreno y mejoran la densidad atmosférica, preparando las colonias para las explosiones demográficas de las etapas avanzadas.
+
+Adoptar estos hábitos estratégicos garantiza que tus aventuras en **plan b terraform steam deck** sigan siendo relajantes y gratificantes, sin importar dónde decidas jugar.
+
+## Preguntas frecuentes (FAQ)
+
+### ¿Está Plan B: Terraform verificado oficialmente para Steam Deck?
+Según las actualizaciones de desarrollo actuales, *Plan B: Terraform* está categorizado como totalmente jugable en Steam Deck. Aunque funciona directamente a través de la compatibilidad estándar de Proton con tasas de fotogramas estables, requiere pequeños ajustes manuales en la escala de la interfaz y en el mapeo de controles para ofrecer la experiencia más cómoda.
+
+### ¿Cuál es la duración esperada de la batería al jugar a Plan B: Terraform en Steam Deck?
+En la Steam Deck LCD estándar, los jugadores pueden esperar aproximadamente entre 3,5 y 4,5 horas de juego continuo con un límite de TDP de 8 W o 9 W y un tope de tasa de refresco a 40 Hz. En la nueva Steam Deck OLED, la batería más grande y el procesador más eficiente permiten alcanzar fácilmente sesiones de 5 a 6,5 horas, dependiendo del brillo de la pantalla.
+
+### ¿Cómo soluciono el texto pequeño y los elementos diminutos de la interfaz en modo portátil?
+Ve al menú de Ajustes dentro del juego y busca el control deslizante de Escala de la IU (UI Scale). Subir la escala de la interfaz al 115% o 125% mejora significativamente la legibilidad de las cifras de producción de recursos y las listas de demanda de las ciudades sin saturar la pantalla ni entorpecer la colocación de edificios.
+
+### ¿Puedo transferir mis partidas guardadas de PC de escritorio a mi Steam Deck?
+Sí. El juego cuenta con integración completa de guardado en Steam Cloud. Cualquier archivo de guardado creado en tu ordenador de escritorio se sincronizará automáticamente con tu instalación de **plan b terraform steam deck** al iniciar el juego, siempre que tu dispositivo cuente con una conexión Wi-Fi activa durante la sincronización.

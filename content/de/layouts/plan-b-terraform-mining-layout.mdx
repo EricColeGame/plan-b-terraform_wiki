@@ -1,0 +1,144 @@
+export const metadata = {
+  title: "Plan B Terraform Bergbau-Layout-Guide: Maximale Förderung & Durchsatz",
+  description: "Meistern Sie jedes Plan B Terraform Bergbau-Layout mit optimalen Extraktor-Mustern, Depot-Platzierungen und Schienenlogistik zur Skalierung der planetaren Förderung.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Einen unbewohnten Planeten in ein florierendes industrielles Kraftzentrum zu verwandeln, erfordert eine gewaltige Menge an Rohstoffen. In dieser Planeten-Managementsimulation entscheidet das Perfektionieren Ihres Plan B Terraform Bergbau-Layouts über schnelles Bevölkerungswachstum oder eine verheerende Lähmung der Lieferketten. Ohne ein optimiertes Plan B Terraform Bergbau-Layout bleiben kritische Erze ungenutzt auf den Vorkommen liegen, während Produktionszentren über ganze Kontinente hinweg darben.
+
+Jede Stadtstufe und jeder Terraforming-Meilenstein verlangt nach größeren Mengen an Schwefel, Eisen, Kupfer, Aluminium und Eis. Indem Sie Kachel-Verbindungen, logistische Puffer und die Verkehrsintegration verstehen, können Sie jedes Ressourcenfeld sauber abbauen, ohne Ihr gesamtes Logistik-Rückgrat mitten in der Kampagne neu entwerfen zu müssen.
+
+## Grundprinzipien effizienter Erzförderung
+
+Der Ressourcenabbau basiert auf einem strengen geometrischen Raster, bei dem Nähe und Puffergrenzen den Durchsatz bestimmen. Extraktoren fördern Material aus Rohstofffeldern des Planeten und befördern es in angrenzende Depots, Straßen-Haltestellen oder Förderbänder. Fehlt einem Extraktor ein unmittelbares Ziel, stellt er den Betrieb augenblicklich ein.
+
+Ein erfolgreiches Bergbau-Raster balanciert drei Elemente: Förderungsdichte, Sammelpufferung und Abtransportkapazität. Werden Extraktoren auf großen Erzfeldern planlos platziert, führt dies unweigerlich zu Blockaden, bei denen Fahrzeuge Zufahrten versperren oder Depots überlaufen.
+
+```
+[ Extraktor ] -> [ Extraktor ] -> [ Zentrales Depot / Haltestelle ] <- [ Extraktor ] <- [ Extraktor ]
+```
+
+Jedes Element Ihres Layouts sollte Güter nach innen in Richtung logistischer Knotenpunkte leiten. Anstatt Transportlinien direkt zu jedem einzelnen Extraktor zu führen, bündelt ein konsolidiertes Plan B Terraform Bergbau-Layout die Ressourcen an zentralen Sammelpunkten. Diese Konfiguration reduziert den Straßenwildwuchs und vereinfacht Abholrouten mit hoher Kapazität.
+
+| Komponente | Rolle im Raster | Optimale Platzierung | Hauptbeschränkung |
+| :--- | :--- | :--- | :--- |
+| **Extraktor** | Fördert Roherz aus dem Boden | Direkter Kontakt mit Ressourcenfeldern | Kein interner Speicher; stoppt sofort bei verstopftem Ausgang |
+| **Depot** | Lokaler Lagerpuffer | Direkt angrenzend an 2–4 Extraktoren | Begrenzte Kapazität; anfällig für Blockaden |
+| **LKW-Haltestelle / Depotlinie** | Schnittstelle zum Straßenverkehr | Entlang der äußeren Abbaugrenze | Begrenzter Durchsatz im Vergleich zur Schiene |
+| **Güterbahnhof** | Schnittstelle für Massengütertransport | Lineare Ausrichtung am Rand des Vorkommens | Erfordert geraden Raum und eigene Gleisschleifen |
+
+Depotpuffer fungieren als Stoßdämpfer bei schwankenden Transportzeiten. Wenn LKWs im Stau stehen oder weite Strecken zurücklegen müssen, sammeln Depots die Bestände an, sodass Extraktoren ihre Produktionszyklen niemals unterbrechen.
+
+## LKW-gestützte Bergbau-Baupläne für das frühe Spiel
+
+In den ersten Kolonisierungsphasen wickeln LKWs den Großteil des Transports zwischen Ressourcenfeldern und Ihrer zentralen Produktionsbasis ab. Da LKWs begrenzte Ladekapazitäten haben, müssen frühe Abbaunetzwerke kurzen Lade- und Wendezeiten höchste Priorität einräumen.
+
+Platzieren Sie bei einem Early-Game-Setup zwei Reihen von Extraktoren, die direkt in eine zentrale Depot-Spalte einspeisen. Flankieren Sie diese Depots mit Straßenabschnitten, um einen kontinuierlichen Fahrzeugzugang zu ermöglichen. Dieses „Rückgrat“-Design (Spine) vermeidet komplexe Straßenverzweigungen, die bei steigender Fahrzeugzahl häufig Staus verursachen.
+
+```
+[Straße] [Depot] [Extraktor] [Vorkommen-Kachel]
+[Straße] [Depot] [Extraktor] [Vorkommen-Kachel]
+[Straße] [Depot] [Extraktor] [Vorkommen-Kachel]
+```
+
+Erfahrungen aus der Community zeigen, dass Einbahnstraßen-Schleifen rund um Abbaugebiete Fahrzeugstaus verhindern. LKWs, die in die Ladespur einfahren, sollten sofort an gefüllten Depots beladen werden und in einer Schleife nach außen auf die Hauptverkehrsstraße abbiegen, ohne auf demselben Weg zurücksetzen zu müssen.
+
+| Vorkommensgröße (Kacheln) | Extraktor-Anzahl | Dedizierte Depots | Empfohlene LKW-Flotte | Zieldurchsatz (Einheiten/Min) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Klein (4–8)** | 4–8 | 2–3 | 4–6 LKWs | 120–240 |
+| **Mittel (9–16)** | 10–14 | 4–6 | 8–14 LKWs | 300–450 |
+| **Groß (17–30)** | 18–24 | 8–10 | 16–24 LKWs | 550–750 |
+| **Riesig (30+)** | 28+ | 12+ | Umstieg auf Schiene | 800+ |
+
+Durch den Einsatz dieses modularen Plan B Terraform Bergbau-Layouts können Sie das Rückgrat flexibel erweitern, sobald Technologien den Zugang zu größeren Teilen des Feldes freischalten. Führen Sie Verkehrsrouten niemals mitten durch das Roherzfeld; reservieren Sie den inneren Rasterbereich ausschließlich für Extraktoren und Sammeldepots.
+
+## Hochdichte Schienen- und Bahnhof-Bergbau-Layouts
+
+Wenn Städte wachsen und komplexe Güter wie mechanische Komponenten und Verbundwerkstoffe verbrauchen, bricht der Straßengüterverkehr unter dem schieren Warenvolumen zusammen. Der Übergang zu einem hochkapazitiven Plan B Terraform Bergbau-Layout mit dedizierter Schieneninfrastruktur wird unverzichtbar.
+
+Güterbahnhöfe laden Güter rasant aus angrenzenden Depots um, Züge erfordern jedoch eine strukturierte Gleisgeometrie, um Netzblockaden zu vermeiden. Errichten Sie Güterbahnhöfe am äußeren Rand großer Vorkommen und nutzen Sie ein Leiter-Layout, bei dem Züge von der Hauptstrecke abzweigen, ein Ladedock anfahren und sich nahtlos wieder einfädeln.
+
+```
+Hauptgleis ========\                           /======== Hauptgleis
+                    \--- [ Güterbahnhof   ] ---/
+                         [ Depot-Puffer   ]
+                         [ Extraktor-Reihe]
+```
+
+Um den Bahnhofsdurchsatz aufrechtzuerhalten, ist ein unterbrechungsfreier Materialfluss erforderlich. In einem fortgeschrittenen Plan B Terraform Bergbau-Layout muss die Depotsättigung der vollen Beladungsrate mehrteiliger Züge entsprechen. Steht ein Zug wartend an einem leeren Terminal, blockiert er nachfolgende Züge und drosselt nachgelagerte Produktionslinien.
+
+| Schienenkonfiguration | Zuglänge | Bahnhofsdepots | Ziel-Umlaufzeit | Idealer Ressourceneinsatz |
+| :--- | :--- | :--- | :--- | :--- |
+| **Direkte Abzweigung** | 1 Lok, 2 Waggons | 2–4 | Kurz (< 1.000 m) | Schwefel, Eisenerz zur lokalen Schmelze |
+| **Doppelschleifen-Depot** | 1 Lok, 4 Waggons | 4–8 | Mittel (1.000–3.000 m) | Beton, Kohlenstoff zu Fabrikzentren |
+| **Express-Güterhauptstrecke** | 2 Loks, 6 Waggons | 8–12 | Lang (> 3.000 m) | Eis- & Stickstofftransport über weite Strecken |
+| **Multi-Dock-Knotenpunkt** | 2 Loks, 6+ Waggons | 12+ | Kontinental | Versorgungs- und Nahrungskorridore für Megastädte |
+
+Praxiserfahrungen zeigen, dass die Trennung von Ladeschleifen und Durchgangsverkehr Warteschlangen an Bahnhöfen verhindert. Halten Sie Ihre Hauptverkehrsadern frei, indem Sie jedem Verladeterminal ein eigenes Beschleunigungsgleis zuweisen. Detaillierte Spielmechaniken und System-Updates finden Sie auf der offiziellen Seite zu [Plan B: Terraform on Steam](https://store.steampowered.com/app/1894430/Plan_B_Terraform/).
+
+## Ressourcenspezifische Layout-Strategien
+
+Nicht jedes Mineral verhält sich in der planetaren Logistik gleich. Während Eisen und Aluminium das Fundament physischer Bauwerke bilden, erfordern flüchtige Elemente wie Eis und Stickstoff besondere ökologische und verarbeitungstechnische Überlegungen.
+
+Eisvorkommen erfordern sorgfältige Planung, da das globale Terraforming die Oberflächenbedingungen verändert. Steigen die Planetentemperaturen, schmilzt Oberflächeneis zu flüssigem Wasser und überflutet fest installierte Extraktoren in Senken dauerhaft. Bevorzugen Sie beim Aufbau einer Eisförderbasis hochgelegene Plateaus oder errichten Sie flexible Netzwerke, die schnell verlegt werden können.
+
+```
+[Erzfelder] -> [Extraktoren] -> [Verarbeitung/Schmelze vor Ort] -> [Depot] -> [Transport]
+```
+
+Das Schmelzen von Erzen wie Eisen oder Schwefel direkt neben den Abbaufeldern halbiert das Transportvolumen. Der Transport von Barren oder Chemikalienbehältern belegt deutlich weniger Frachtplätze als der von Rohgestein, was Fernstrecken spürbar entlastet.
+
+| Ressource | Schmelzrisiko | Lokale Vorverarbeitung | Frachtvolumen-Faktor | Layout-Empfehlung |
+| :--- | :--- | :--- | :--- | :--- |
+| **Eisenerz** | Keines | Ja (Eisenbarren) | Moderat | Dichtes lineares Rückgrat mit angrenzenden Schmelzen |
+| **Schwefel** | Keines | Optional (Chemikalien) | Hoch | Gebündeltes Raster zur Speisung von Chemiedepots |
+| **Eis** | Hoch (Schmilzt bei Erwärmung) | Ja (Wassergewinnung) | Extrem | Schnellernte-Layout; Schiene am Rand |
+| **Aluminium** | Keines | Ja (Legierungsplatten) | Niedrig | Hochdichte Extraktoren; direkte Zugbeladung |
+| **Stickstoff** | Gering | Direkter Transport | Moderat | Randgepufferter Bahnhofsaufbau |
+
+Die Abstimmung Ihres Plan B Terraform Bergbau-Layouts auf die jeweiligen Ressourceneigenschaften stellt sicher, dass Sie keine Schienenkapazität an Zwischenprodukte verschwenden, die direkt am Abbauort hätten veredelt werden können.
+
+## Schritt-für-Schritt-Optimierung und Fehlerbehebung bei Engpässen
+
+Selbst sauber konzipierte Förderanlagen geraten mit der Zeit an ihre Grenzen, wenn der planetare Bedarf rasant steigt. Eine regelmäßige Überprüfung der Materialströme hilft dabei, logistische Reibungspunkte aufzudecken, bevor Fabrikausstöße ins Stocken geraten.
+
+Nutzen Sie diese Checkliste zur Diagnose von Durchsatzengpässen:
+
+1. **Extraktor-Aktivität prüfen:** Kontrollieren Sie, ob Extraktoren Inaktivitäts-Symbole anzeigen. Ein untätiger Extraktor signalisiert, dass das Zieldepot vollkommen voll ist.
+2. **Pufferstände analysieren:** Verharren Depots bei einer Auslastung von 100 %, erhöhen Sie die Abtransportkapazität durch zusätzliche Fahrzeuge oder den Ausbau der Schienenwege.
+3. **Fahrzeugverkehr überprüfen:** Achten Sie auf Stauungen an Kreuzungen. Fahrzeuge, die vor Beladestationen warten müssen, senken die Umlaufgeschwindigkeit erheblich.
+4. **Vorkommen-Erschöpfung prüfen:** Randständige Extraktoren laufen leer, sobald Vorkommen versiegen. Verkleinern Sie das Layout nach innen, um eine hohe Förderungsdichte beizubehalten.
+
+```
+[Feld-Status] -> [Untätige Extraktoren?] -> [Volle Depots?] -> [Transportmangel]
+                       |                         |
+                    (Nein)                      (Ja)
+                       v                         v
+               [System optimal]          [Züge/LKWs hinzufügen]
+```
+
+Durch systematische Anpassungen arbeiten Ihre Bergbauzonen stets am theoretischen Leistungsmaximum, ohne wertvolle Baufläche zu verschwenden.
+
+| Symptom | Ursache | Sofortige Diagnose | Dauerhafte Lösung |
+| :--- | :--- | :--- | :--- |
+| **Pulsierende Extraktor-Zyklen** | Zieldepot stößt ständig an Kapazitätsgrenze | Depots schwanken zwischen 95–100 % Füllstand | Parallele Ladestationen anlegen; schnellere Transporte einsetzen |
+| **Leere Depots / Unterversorgung** | Fahrzeug-Abholrate übersteigt Förderung | Depots verharren dauerhaft unter 10 % | Mehr Extraktoren bauen oder Fahrzeuganzahl auf der Route reduzieren |
+| **Fahrzeug-Stau an der Zufahrt** | Einspurige Kreuzungen mit Gegenverkehr | Sichtbare Fahrzeugrückstaus auf Zufahrtsstraßen | Straßen zu einer Einbahnstraßen-Außenschleife umbauen |
+| **Verzögerungen bei der Zugbeladung** | Unzureichende Transferrate zwischen Depot und Ladedock | Züge stehen mit leeren Waggons am Bahnhof | Kontaktfläche der Depots entlang der Bahnhofsgleise vergrößern |
+
+Das Beheben typischer Engpässe in Ihrem Plan B Terraform Bergbau-Layout verwandelt chaotische Rohstoff-Außenposten in reibungslose, automatisierte Versorgungsschlagadern.
+
+## Häufig gestellte Fragen (FAQ)
+
+### Was ist das effizienteste Plan B Terraform Bergbau-Layout für Roherze?
+Das effizienteste Muster ist ein zentrales Depot-Rückgrat, das beidseitig von Extraktor-Reihen flankiert wird, während der Abtransport entlang des äußeren Rands verläuft. Diese Konfiguration maximiert den Kontakt der Extraktoren mit den Erzkacheln und hält Transportfahrzeuge von den Förderanlagen fern.
+
+### Warum hören meine Extraktoren auf zu arbeiten, obwohl noch Erz im Boden liegt?
+Extraktoren stoppen, sobald ihr direktes Ziel – sei es ein Depot, ein Förderband oder eine Frachthaltestelle – vollkommen gefüllt ist. Wenn abtransportierende LKWs oder Züge das gelagerte Erz nicht schnell genug abholen, pausieren die angeschlossenen Extraktoren sofort, bis wieder Lagerplatz frei wird.
+
+### Sollte ich Eisenerz direkt an der Mine schmelzen oder das Rohgestein transportieren?
+Das Schmelzen von Erz zu Barren direkt am Abbaufeld ist in der Regel weitaus effizienter. Veredelte Güter belegen insgesamt weniger Frachtplätze beim Transport, was die Anzahl der benötigten LKWs oder Waggons im gesamten planetaren Verkehrsnetz drastisch reduziert.
+
+### Wie schütze ich Eis-Bergbau-Layouts vor dem Schmelzen bei steigender Erwärmung?
+Behalten Sie die Temperaturindikatoren des Planeten bei Terraforming-Meilensteinen genau im Auge. Platzieren Sie Eisförderanlagen auf Hochebenen oder in kühleren Polarregionen und stellen Sie sich darauf ein, Anlagen in Becken und Senken rechtzeitig abzubauen, bevor der Meeresspiegel steigt und Ihre Infrastruktur überflutet.

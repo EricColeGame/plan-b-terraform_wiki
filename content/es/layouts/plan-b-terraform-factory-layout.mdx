@@ -1,0 +1,142 @@
+export const metadata = {
+  title: "Guía de diseño de fábricas en Plan B Terraform: logística modular y expansión de ciudades",
+  description: "Domina el diseño de tu fábrica en Plan B Terraform con estructuras modulares, mecánicas de depósitos, logística ferroviaria y planos escalables para el juego avanzado.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Dominar un **diseño de fábrica en Plan B Terraform** (plan b terraform factory layout) eficiente es el factor más crítico que diferencia una colonia estancada de una biosfera próspera y autosuficiente. A medida que la extracción de recursos escala de modestas vetas de hierro a redes de suministro multicontinentales, las líneas de ensamblaje caóticas colapsan rápidamente bajo la parálisis logística. Adoptar un **diseño de fábrica en Plan B Terraform** modular desde el principio previene bloqueos catastróficos de entregas, garantizando que el acero, los polímeros y los gases de efecto invernadero atmosféricos fluyan sin interrupción hacia tus crecientes ciudades.
+
+En la superficie hexagonal del juego, la conciencia espacial dicta el poder económico. A diferencia de los constructores tradicionales de cuadrícula lineal, esta simulación prospera con la dispersión circular, la proximidad a los depósitos y los circuitos de transporte de baja fricción.
+
+---
+
+## Mecánicas fundamentales del diseño de fábricas en Plan B: Terraform
+
+Diseñar una base óptima comienza por comprender cómo procesa las entradas y salidas la cuadrícula de casillas hexagonales. En este título, las instalaciones de producción no dependen de cintas transportadoras. En su lugar, interactúan directamente con las casillas de inventario adyacentes, principalmente **depósitos** (Depots), extractores y terminales de transporte.
+
+Según los datos de los desarrolladores disponibles en la [página de Steam de Plan B: Terraform](https://store.steampowered.com/app/1894430/Plan_B_Terraform/), el espacio físico y la tasa de rendimiento determinan la rapidez con la que la materia prima se convierte en infraestructura planetaria. Dado que las líneas de transporte deben mantener el ritmo de procesamiento de las fábricas, el espaciado estructural es crítico.
+
+### El papel de los depósitos hexagonales
+
+Un depósito actúa como amortiguador (buffer) universal en cada cadena de producción. Cualquier fábrica ubicada directamente adyacente a un depósito extrae automáticamente los ingredientes correspondientes y deposita los productos terminados en la capacidad disponible. 
+
+* **Adyacencia directa:** Una fábrica puede extraer de cualquier casilla de depósito dentro de su anillo directo de 6 casillas vecinas.
+* **Cadenas de depósitos:** Los depósitos conectados en línea propagan los objetos lentamente a través de las casillas, funcionando como pseudo-cintas transportadoras.
+* **Paradas logísticas:** Las paradas de camiones y trenes cargan y descargan exclusivamente en depósitos adyacentes, formando la interfaz principal entre el transporte y el procesamiento.
+
+| Tipo de estructura | Ocupación hexagonal base | Rango de interacción adyacente | Función logística principal |
+| :--- | :--- | :--- | :--- |
+| **Extractor** | 1 hexágono (Yacimiento de recursos) | Anillo de 1 vecino | Extracción de mineral bruto y gas |
+| **Fábrica / Ensamblador** | 1 hexágono | Anillo de 1 vecino | Fabricación de piezas intermedias y productos finales |
+| **Depósito** | 1 hexágono (Apilable) | Anillo de 1 vecino | Amortiguación, transferencias entre instalaciones, carga de vehículos |
+| **Puesto / Parada de carretera** | 1 hexágono | Depósitos adyacentes | Gestión de carga de camiones de corto y medio alcance |
+| **Parada de tren** | 1 hexágono (Vía lineal) | Depósitos adyacentes | Transporte intercontinental masivo de gran volumen |
+
+Comprender estas propiedades básicas te permite construir módulos compactos y repetibles en lugar de fábricas extensas y enredadas que impiden la expansión.
+
+---
+
+## Centro y radios modular: el diseño de fábrica fundamental en Plan B Terraform
+
+La plantilla de producción más versátil desarrollada por planificadores experimentados es el **diseño modular de centro y radios (Hub-and-Spoke)**. En esta configuración, un pequeño grupo de depósitos forma el núcleo central, rodeado por un anillo operativo de fábricas, que a su vez limita con paradas de camiones o vías de tránsito ferroviario hacia el exterior.
+
+```
+       [ Fábrica ]   [ Fábrica ]
+            \             /
+    [ Parada camión ] - [ Depósito central ] - [ Parada tren ]
+            /             \
+       [ Fábrica ]   [ Fábrica ]
+```
+
+Al organizar un **diseño de fábrica en Plan B Terraform**, los depósitos actúan como reservas dinámicas de inventario. Al centralizar los insumos brutos en un grupo de depósitos de dos o tres hexágonos, puedes rodear ese núcleo con cuatro a seis ensambladores produciendo componentes simultáneamente sin necesidad de trazar líneas de suministro independientes para cada máquina.
+
+### Anillos de fundición y procesamiento primario
+
+Los metales en bruto (hierro, aluminio y azufre) requieren una fundición rápida antes de que se pueda llevar a cabo la fabricación de nivel superior. La principal ventaja de un diseño en centro y radios es que múltiples extractores pueden alimentar hacia el interior un centro de procesamiento, el cual luego envía los lingotes refinados directamente a la distribución de salida.
+
+| Receta | Insumos brutos | Producción | Proporción ideal fábrica-depósito | Enlace de transporte recomendado |
+| :--- | :--- | :--- | :--- | :--- |
+| **Lingote de hierro** | 1x Mineral de hierro | 1x Lingote de hierro | 6 fábricas : 2 depósitos E/S | Alimentación directa de extractor / Camión corto |
+| **Lingote de acero** | 2x Lingote de hierro | 1x Lingote de acero | 4 fábricas : 2 depósitos E/S | Lanzadera interna dedicada de camiones |
+| **Lingote de aluminio** | 1x Mineral de aluminio | 1x Lingote de aluminio | 6 fábricas : 2 depósitos E/S | Alimentación directa de extractor / Camión corto |
+| **Piezas mecánicas**| 1x Lingote de acero | 1x Pieza mecánica | 4 fábricas : 2 depósitos centrales | Cadena interna de depósitos |
+| **Hormigón** | 1x Azufre + 1x Arena | 2x Hormigón | 5 fábricas : 3 depósitos equilibrados | Bucle divisor multidepósito |
+
+Los informes de la comunidad destacan que aislar los complejos de fundición directamente cerca de los campos de extracción de mineral elimina costes de transporte innecesarios. Transportar lingotes refinados en lugar de mineral en bruto reduce a la mitad la congestión de vehículos en tus rutas principales de transporte.
+
+---
+
+## Diseño de corredores logísticos de alto rendimiento
+
+Las redes logísticas son el sistema circulatorio de tu planeta. Una instalación industrial impecable se detendrá en cuestión de minutos si los camiones de reparto se atascan en las intersecciones o los trenes se quedan esperando la autorización de carga.
+
+Un **diseño de fábrica en Plan B Terraform** modular se basa en bloques funcionales aislados y autónomos conectados por ejes dedicados de autopistas y vías férreas. Evita construir circuitos viales continuos que permitan a los transportistas deambular por las zonas de ensamblaje.
+
+### Camiones vs. Trenes: selección de la arteria adecuada
+
+Los jugadores al inicio de la partida a menudo cometen el error de utilizar flotas de camiones para el transporte de larga distancia. Aunque los camiones requieren un capital mínimo y ninguna infraestructura ferroviaria, un gran número de vehículos satura rápidamente los nodos viales alrededor de los accesos principales a las fábricas.
+
+| Métrica | Transporte por carretera (Camiones) | Locomotoras de carga (Trenes) |
+| :--- | :--- | :--- |
+| **Alcance óptimo** | De 1 a 25 casillas hexagonales | De 25 a más de 150 casillas hexagonales |
+| **Coste de instalación** | Extremadamente bajo (Caminos de tierra/asfalto) | Moderado a alto (Inversión en vías) |
+| **Capacidad de volumen** | Baja por unidad (Requiere gran cantidad de unidades) | Masiva por composición de tren |
+| **Impacto en intersecciones** | Propenso a atascos y retenciones | La señalización punto a punto preserva la velocidad |
+| **Interfaz con la fábrica** | Las paradas viales caben en huecos hexagonales compactos | Las estaciones de tren requieren espacio de aproximación lineal |
+
+Para obtener los mejores resultados, reserva los camiones para la recolección local de extracción y transferencias cortas entre depósitos. Para transferencias de recursos entre biomas —como el envío de hielo desde los casquetes polares o fluorita desde picos montañosos—, confía exclusivamente en líneas ferroviarias de alta velocidad con bucles de carga independientes.
+
+---
+
+## Plano para el juego medio y avanzado: la fábrica avanzada multinivel
+
+A medida que avanza el desarrollo planetario, la demanda de la población pasa de suministros mecánicos básicos a compuestos avanzados, componentes de alta tecnología y generadores de gases de efecto invernadero para la atmósfera. Integrar el transporte de mercancías de larga distancia en tu **diseño de fábrica en Plan B Terraform** requiere una clara separación de carriles para gestionar recetas de múltiples ingredientes.
+
+### El plano modular de doble anillo
+
+En los niveles avanzados del juego, los productos a menudo requieren tres o cuatro subcomponentes distintos. Un plano de ensamblaje de doble anillo utiliza dos capas concéntricas de depósitos y ensambladores:
+
+1. **Anillo interior:** Acepta componentes primarios (acero, polímeros) mediante descarga ferroviaria en depósitos con filtro dedicados.
+2. **Nivel intermedio:** Ensambla componentes de nivel medio (electrónica, piezas de alta tecnología).
+3. **Anillo exterior:** Las instalaciones de ensamblaje final extraen directamente de las salidas intermedias y envían el equipo de terraformación terminado hacia las vías de distribución urbana.
+
+| Producto complejo | Ingrediente 1 | Ingrediente 2 | Ingrediente 3 | Configuración óptima de diseño |
+| :--- | :--- | :--- | :--- | :--- |
+| **Piezas de alta tecnología** | Piezas mecánicas | Electrónica | Ninguno | Corredor lineal de depósitos escalonados |
+| **Generador de gas de efecto invernadero** | Piezas de alta tecnología | Hormigón armado | Barras de acero | Núcleo concéntrico de doble depósito |
+| **Extractor atmosférico** | Barras de acero | Piezas mecánicas | Electrónica | Clúster de doble anillo |
+| **Presa / Bomba de agua** | Hormigón armado | Piezas de alta tecnología | Cables de acero | Terminal integrada en cabecera de vía |
+
+La experiencia de los jugadores demuestra que dedicar un sector de producción independiente por cada producto avanzado evita los problemas de desabastecimiento en cascada comunes en las megabases masivas y unificadas.
+
+---
+
+## Cuellos de botella comunes y resolución de problemas de optimización
+
+Incluso un **diseño de fábrica en Plan B Terraform** bien planificado puede fallar si los depósitos de materias primas no se vacían o las líneas de suministro sufren desequilibrios. Diagnosticar estas ralentizaciones exige una inspección sistemática de los umbrales de almacenamiento y los intervalos de transporte.
+
+### Solución a la saturación de depósitos
+
+Cuando un depósito multiusos se llena por completo con un exceso de un ingrediente (por ejemplo, miles de lingotes de hierro), pierde la capacidad de recibir ingredientes secundarios (como azufre), lo que paraliza los ensambladores posteriores.
+
+* **Asignar depósitos a un solo artículo:** Evita que múltiples materias primas compartan una sola casilla de depósito. Configura las celdas de almacenamiento adyacentes para que acepten un único perfil de artículo.
+* **Vías de escape para excedentes y descarga para construcción:** Envía los componentes sobrantes a bóvedas de construcción o líneas de fabricación de equipos para que las cadenas de producción nunca se detengan del todo.
+* **Equilibrar los ratios de extracción:** Si tus fundiciones se saturan, reduce el ritmo de tus sitios de extracción en lugar de permitir que los puestos de carretera se congestionen con vehículos parados.
+
+### Mantener espacio despejado alrededor de las terminales principales
+
+Las paradas de carretera y ferrocarril requieren casillas adyacentes libres para facilitar vías de aproximación fluidas. Colocar fábricas directamente a ambos lados de un muelle de carga concurrido suele generar cuellos de botella de vehículos. Mantén las arterias principales de transporte despejadas al menos a una casilla hexagonal de distancia de la maquinaria pesada para maximizar la velocidad de tránsito.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Cuál es el mejor diseño de fábrica en Plan B Terraform para principiantes?
+El mejor diseño inicial es el **anillo de fundición compacto**. Coloca dos depósitos uno al lado del otro —uno designado para el mineral entrante y otro para las barras terminadas— y rodéalos con cuatro o cinco fundiciones. Conecta tu mina directamente al depósito de entrada con un circuito corto de carretera y dirige el depósito de salida hacia los ensambladores de piezas mecánicas.
+
+### ¿Cuánto espacio debo dejar entre los núcleos de producción en mi diseño de fábrica de Plan B Terraform?
+Deja una zona de amortiguación de al menos 2 a 3 casillas hexagonales vacías entre los bloques principales de producción. Este espacio libre proporciona el margen necesario para futuras expansiones ferroviarias, conjuntos de almacenamiento de depósitos de alta capacidad y carriles de desvío dedicados para camiones a medida que aumente la demanda de suministros.
+
+### ¿Debo combinar la producción de alimentos y la manufactura industrial dentro de la misma zona de fábrica?
+No. La producción de alimentos (agua y cultivos de invernadero) escala directamente con el consumo de la población municipal, mientras que la manufactura industrial fluctúa según los proyectos de infraestructura. Aislar las rutas de transporte biológico y agrícola de las vías de maquinaria pesada previene una escasez catastrófica de alimentos durante los períodos de mayor actividad de construcción.

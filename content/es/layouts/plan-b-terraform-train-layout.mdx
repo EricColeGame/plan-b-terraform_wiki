@@ -1,0 +1,179 @@
+export const metadata = {
+  title: "Dominando el diseño de trenes en Plan B Terraform: Guía ferroviaria de alto rendimiento",
+  description: "Construye redes ferroviarias de alta capacidad con nuestra guía de diseño de trenes en Plan B: Terraform. Domina bucles de vías, estaciones y rutas de carga planetarias.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Hacer que un mundo recién colonizado pase de ser un puesto avanzado solitario a una floreciente metrópolis requiere transportar millones de toneladas de minerales en bruto, gases atmosféricos y productos terminados a través de continentes enteros. Cuando tus primeras flotas de camiones inevitablemente colapsen ante las distancias planetarias, planificar un **diseño de trenes en Plan B: Terraform** eficiente se convierte en el hito más importante para sostener la expansión atmosférica y demográfica. Sin redes ferroviarias de alta capacidad, los extensos centros urbanos se verán privados de agua, alimentos y materiales de construcción esenciales. Invertir tiempo en optimizar tu **diseño de trenes en Plan B: Terraform** desde el principio garantiza que tu logística planetaria se mantenga fluida, escalable y totalmente libre de atascos a medida que la demanda de fabricación se dispare.
+
+Ya sea que estés transportando bloques de hielo desde glaciares polares o acarreando azufre y hierro desde cuencas volcánicas distantes, los trenes ofrecen la velocidad, la capacidad de carga masiva y la densidad de automatización que los camiones de carretera simplemente no pueden igualar. A continuación, desglosamos configuraciones ferroviarias comprobadas, mecánicas de estaciones, geometría de vías en cuadrícula hexagonal y técnicas de resolución de problemas para ayudarte a construir una red de transporte planetario indestructible.
+
+---
+
+## Por qué las redes ferroviarias dominan la logística de juego tardío
+
+En *Plan B: Terraform*, la logística determina tu velocidad de progreso. Los camiones son rápidos de desplegar y flexibles para líneas cortas de tolva, pero pronto muestran rendimientos decrecientes a medias y largas distancias. A medida que la cantidad de vehículos se dispara, las intersecciones de carreteras se embotellan, la latencia de las rutas aumenta y las inversiones en combustible o construcción rinden cada vez menos.
+
+Los trenes resuelven la ecuación de volumen-distancia transportando cientos de unidades de carga en un solo convoy sincronizado. Establecer corredores ferroviarios dedicados elimina los embotellamientos viales y concentra las operaciones de carga en patios de maniobras compactos y de alta eficiencia.
+
+| Métrica logística | Redes viales / Camiones | Redes ferroviarias / Trenes | Ventaja |
+| :--- | :--- | :--- | :--- |
+| **Capacidad de carga por viaje** | Baja a moderada (vehículos individuales) | Masiva (configuraciones de múltiples vagones) | Trenes |
+| **Eficiencia de ocupación hexagonal** | Gran dispersión de vías, carreteras anchas | Corredores lineales compactos simples/dobles | Trenes |
+| **Rendimiento a través de la distancia** | Cae drásticamente a largas distancias | Se mantiene constante a través de continentes | Trenes |
+| **Coste de configuración inicial** | Baja inversión de recursos | Inversión moderada en piezas mecánicas | Camiones (Juego temprano) |
+| **Escalabilidad del tráfico** | Propenso a graves cuellos de botella en depósitos | Altamente predecible en vías en bucle | Trenes |
+| **Sobrecarga de energía y construcción**| Distribuida entre decenas de unidades | Centralizada en vías y locomotoras | Trenes |
+
+Los informes de la comunidad y las pruebas de los jugadores demuestran que una vez que una línea de suministro supera los 40 o 50 hexágonos de distancia, cambiar de carretera a ferrocarril reduce el retraso de tránsito a más de la mitad, a la vez que simplifica drásticamente el control de inventario en tus cadenas de suministro. Para comprender mejor los sistemas del juego y las actualizaciones periódicas del motor, explora el [Plan B: Terraform Steam Community Hub](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) para ver las notas de los parches y las hojas de ruta de los desarrolladores.
+
+---
+
+## Principios fundamentales de un diseño de trenes en Plan B: Terraform
+
+La colocación de vías en *Plan B: Terraform* opera sobre un rígido sistema de coordenadas hexagonales. Dado que las curvas de las vías, los nodos de unión y las paradas interactúan directamente con los depósitos de fabricación adyacentes, construir un **diseño de trenes en Plan B: Terraform** óptimo requiere comprender cómo gestiona la simulación las rutas de los trenes y las ventanas de carga.
+
+```
+      [ Hexágonos de minería / extractores ]
+                         │
+           [ Depósito intermedio (Buffer) ]
+                         │
+       [=== Plataforma de carga de estación ===]
+                         │
+      (===== Bucle ferroviario de sentido único =====)
+                         │
+      [=== Plataforma de descarga de estación ===]
+                         │
+           [ Depósito intermedio (Buffer) ]
+                         │
+            [ Ciudad / Fábrica de ensamblaje ]
+```
+
+### 1. Flujo direccional y rutas de sentido único
+Los trenes funcionan con mayor eficiencia cuando nunca tienen que dar marcha atrás ni disputar el espacio de la vía con el tráfico en sentido contrario. Crear bucles unidireccionales cerrados elimina por completo los bloqueos frontales. Incluso al dar servicio a rutas punto a punto, construir un pequeño bucle o retorno en cada terminal permite que los trenes regresen sin problemas y sin detenerse.
+
+### 2. Espaciado hexagonal y ángulos de giro
+La cuadrícula hexagonal ofrece seis orientaciones direccionales (en incrementos de $60^\circ$). Realizar giros cerrados reduce el impulso y dificulta la colocación de estaciones. Procura trazar curvas amplias y suaves en terreno abierto. Al sortear pasos de montaña o masas de agua, nivela el terreno previamente donde sea necesario para mantener las vías troncales principales lo más rectas posible.
+
+### 3. Separación de líneas principales y vías de apartadero
+Nunca coloques una parada de carga directamente en una arteria de tránsito de alta velocidad. Si un tren expreso que transporta hielo a un generador de terraformación queda atrapado detrás de un carguero mineral vacío que está cargando hierro, toda tu red sufrirá retrasos en cadena. Desvía siempre los trenes que van a detenerse hacia vías de apartadero paralelas.
+
+---
+
+## Los mejores esquemas de diseño de trenes en Plan B: Terraform
+
+Elegir el **diseño de trenes en Plan B: Terraform** adecuado depende de la ubicación del recurso, la topografía del terreno y la tasa de consumo específica de la instalación de destino. Los siguientes esquemas han sido puestos a prueba a lo largo de miles de ciclos de juego.
+
+### Esquema 1: El bucle orbital cerrado
+El bucle orbital cerrado es el estándar de oro para recursos dedicados de alta demanda, como el transporte de agua o hielo hacia megaciudades sedientas. En esta configuración, una vía continua rodea el bioma de extracción y conduce directamente al núcleo urbano antes de retornar en bucle.
+
+*   **Ideal para:** Artículos esenciales de gran volumen (agua, alimentos, oxígeno, materiales de construcción).
+*   **Puntos fuertes:** Cero errores de cambio de agujas, cadencia de entrega constante, supervisión visual sencilla.
+*   **Puntos débiles:** Requiere muchas vías; necesita trayectos dedicados para cada tipo de carga principal.
+
+### Esquema 2: La lanzadera punto a punto con retorno en bulbo
+Al conectar un puesto de extracción remoto con una planta de procesamiento intermedio, una distribución de lanzadera con doble bulbo de retorno es la más fácil de instalar. La vía consiste en una línea troncal larga, simple o doble, con un bucle circular en forma de gota en cada extremo. Los trenes entran al bucle de carga, se llenan, recorren la línea recta, descargan la carga en el bucle de descarga y repiten el ciclo.
+
+*   **Ideal para:** Campos de azufre aislados, extracción de nitrógeno o minas de metal remotas.
+*   **Puntos fuertes:** Instalación rápida, costes mínimos de infraestructura, fácil de duplicar a través de valles.
+*   **Puntos débiles:** Menor límite de caudal si varios trenes comparten la misma línea troncal sin vías de adelantamiento señalizadas.
+
+### Esquema 3: La red troncal planetaria radial (Hub-and-Spoke)
+A medida que tu imperio industrial se expande para cubrir múltiples cuadrantes, los centros de procesamiento regionales se vuelven indispensables. Una terminal central de múltiples plataformas recibe materias primas de varios bucles de alimentación, las transforma en aleaciones compuestas o componentes electrónicos y exporta los productos terminados a través de troncales de salida de alta velocidad.
+
+| Tipo de esquema | Función logística ideal | Complejidad de vías | Límite de rendimiento | Espacio hexagonal ocupado |
+| :--- | :--- | :--- | :--- | :--- |
+| **Bucle orbital cerrado** | Líneas de suministro dedicadas para ciudades | Baja | Alto | Moderado |
+| **Lanzadera con retorno en bulbo**| Extracción remota de mineral y gas | Baja a moderada | Moderado | Mínimo |
+| **Red troncal radial (Hub-and-Spoke)** | Logística central multifábrica | Alta | Extremadamente alto | Alto |
+| **Línea principal doble en paralelo**| Transporte masivo transcontinental | Moderada | Muy alto | Compacto |
+
+Seleccionar un **diseño de trenes en Plan B: Terraform** adecuado te asegura no malgastar valioso acero y piezas mecánicas construyendo cruces complejos donde bastaría un simple bucle de retorno.
+
+---
+
+## Diseño de estaciones, depósitos intermedios y optimización del rendimiento
+
+Un tren solo es tan productivo como la plataforma de carga que le da servicio. Si tu locomotora de varios vagones pasa 90 segundos parada esperando a que los extractores depositen lentamente los objetos en los vagones, tu cadena logística se detendrá.
+
+```
+[Extractor / Taladro] ──> [Contenedor de depósito intermedio] ──> [Brazo de carga] ──> [Vagón de tren]
+```
+
+### Implementación de depósitos intermedios (Buffers)
+Nunca envíes materias primas directamente desde un extractor a una parada de tren. Los extractores producen a un ritmo constante y gradual, mientras que los trenes exigen una inyección rápida y masiva. Coloca siempre un contenedor de depósito automatizado entre los extractores de recursos y la vía de carga. 
+
+Al permitir que los extractores llenen un depósito intermedio mientras el tren está en camino, este puede cargarse instantáneamente al llegar mediante brazos mecánicos de alto rendimiento. Esto minimiza el tiempo de permanencia en la estación y mantiene los trenes en constante movimiento por la red de vías.
+
+| Tipo de vagón de tren | Carga de recurso objetivo | Vagones óptimos por locomotora | Asignación de depósitos intermedios | Tiempo de permanencia objetivo |
+| :--- | :--- | :--- | :--- | :--- |
+| **Vagón tolva para graneles** | Mineral de hierro, azufre, carbono | 4–6 vagones | 2 depósitos grandes por vagón | < 8 segundos |
+| **Vagón cisterna** | Agua, nitrógeno líquido, oxígeno| 4–8 vagones | 3 depósitos de fluidos por vagón | < 10 segundos |
+| **Vagón de contenedores** | Hormigón armado, acero | 3–5 vagones | 1 depósito estándar por vagón| < 6 segundos |
+| **Portador de alta tecnología**| Electrónica, piezas de maquinaria | 2–4 vagones | 1 depósito especializado | < 5 segundos |
+
+Para lograr la máxima eficiencia, equilibra la longitud del tren con la huella física de tus depósitos intermedios. Un tren demasiado largo cuyos vagones traseros sobresalgan de la plataforma bloqueará las intersecciones, impidiendo que los siguientes trenes entren en el bucle terminal.
+
+---
+
+## Resolución de problemas: Cuellos de botella y bloqueos
+
+Incluso un imperio ferroviario cuidadosamente planificado puede sufrir ralentizaciones a medida que la producción aumenta. Cuando tu **diseño de trenes en Plan B: Terraform** experimente caídas de rendimiento, utiliza esta tabla de diagnóstico de referencia para identificar y solucionar la causa raíz rápidamente:
+
+| Síntoma | Causa raíz | Solución estructural |
+| :--- | :--- | :--- |
+| **Tren detenido a la entrada de la vía de apartadero** | Espacio libre insuficiente en el bucle de salida | Alarga la vía de apartadero más allá de la plataforma para dar cabida a la longitud total del tren. |
+| **Carga acumulándose en el depósito de la mina** | Tiempo de ciclo del tren demasiado lento para la producción | Añade un segundo tren al bucle o acopla vagones de carga adicionales. |
+| **Estación de destino desbordada** | Fábricas receptoras paralizadas o desabastecidas | Inspecciona los ensambladores de destino; verifica el suministro de ingredientes secundarios. |
+| **Bloqueo mutuo entre trenes** | Dos trenes compartiendo un tramo de vía bidireccional | Convierte las líneas bidireccionales en circuitos de bucle unidireccionales paralelos. |
+| **Carga desigual de los vagones** | Cobertura incompleta de cargadores mecánicos | Alinea brazos de carga en cada hexágono adyacente a las bahías asignadas para los vagones. |
+
+La experiencia de los jugadores resalta que las colisiones frontales y los bloqueos rara vez ocurren si se aplica estrictamente un sentido de circulación horario o antihorario en todos los ramales que se cruzan.
+
+---
+
+## Guía paso a paso: Transición de carretera a ferrocarril
+
+Demoler carreteras de camiones activas sin un reemplazo ferroviario operativo puede desabastecer una metrópolis en crecimiento, haciendo caer en picado la satisfacción de la población. Sigue este plan de modernización por fases para actualizar tus corredores de tránsito de forma fluida:
+
+```
+[Fase 1: Inspección] ──> [Fase 2: Tender vías] ──> [Fase 3: Depósito intermedio] ──> [Fase 4: Transición]
+```
+
+### Fase 1: Inspección y nivelación
+Examina el trayecto entre el yacimiento de origen y la ciudad o fábrica de destino. Aplana desniveles pronunciados y elimina obstáculos. Asegúrate de que la ruta planificada tenga suficiente anchura hexagonal para futuras expansiones a doble vía.
+
+### Fase 2: Tender el bucle principal y las estaciones
+Construye el bucle ferroviario por completo antes de adquirir material rodante. Instala la vía de apartadero de carga en el yacimiento de recursos y la plataforma de descarga en el perímetro de la ciudad.
+
+### Fase 3: Construir los depósitos intermedios de carga
+Configura líneas de extracción de recursos que desemboquen directamente en depósitos de almacenamiento intermedio adyacentes a la vía. Deja que estos depósitos acumulen varios cientos de unidades de carga mientras se finalizan las vías.
+
+### Fase 4: Despliegue y desmantelamiento
+Genera la locomotora y configura sus vagones de carga. Una vez que el primer tren complete un circuito de prueba con carga completa con éxito, comienza a desmantelar los antiguos depósitos de camiones y reasigna esos vehículos para la distribución urbana local.
+
+| Etapa de mejora | Objetivo principal | Infraestructura clave requerida | Error crítico a evitar |
+| :--- | :--- | :--- | :--- |
+| **1. Inspección del terreno** | Despejar ruta y nivelar terreno | Nivelador de terreno, balizas de topografía | Ignorar desniveles del terreno que limitan el radio de giro |
+| **2. Colocación de vías**| Construir bucle cerrado de sentido único | Vías estándar, estaciones | Crear ramales sin salida y sin bucles de retorno |
+| **3. Depósito de reserva** | Acumular carga antes del lanzamiento | Depósitos de almacenamiento, brazos de carga | Conectar extractores directamente sin depósitos intermedios |
+| **4. Transición en vivo** | Lanzar el tren y recuperar activos viales | Locomotora, vagones, reciclador | Eliminar líneas de camiones antes de que el flujo ferroviario sea estable |
+
+Seguir este protocolo por fases garantiza que tus ciudades sigan creciendo sin interrupciones mientras el rendimiento de tu transporte de carga se multiplica notablemente.
+
+---
+
+## Preguntas frecuentes sobre el diseño de trenes en Plan B: Terraform
+
+### ¿Cómo evito los atascos de trenes en una red multilínea?
+La forma más fiable de prevenir bloqueos en cualquier **diseño de trenes en Plan B: Terraform** es imponer una estricta direccionalidad en bucles de sentido único. Evita las vías únicas bidireccionales compartidas por varios trenes. Si dos líneas deben cruzarse, diseña pasos a nivel específicos o separa sus bucles por completo con vías de circunvalación perimetrales para que los trenes en espera no bloqueen la arteria principal de tránsito.
+
+### ¿Cuántos vagones de carga debo acoplar a una sola locomotora?
+Para la mayoría de las operaciones estándar, de 4 a 6 vagones de carga por locomotora ofrecen el equilibrio perfecto entre velocidad de carga y capacidad total. Acoplar demasiados vagones prolonga el tiempo de parada en la estación y exige plataformas de amortiguación masivas, mientras que usar menos de 3 vagones desaprovecha el combustible y la eficiencia mecánica del transporte ferroviario.
+
+### ¿Cuándo debo hacer la transición de camiones a trenes?
+Pasa del transporte por carretera al ferrocarril en cuanto las distancias de suministro superen los 40 hexágonos, o cuando la congestión de camiones en los depósitos de carga empiece a frenar las líneas de producción. Los recursos básicos a granel como agua, azufre y mineral de hierro deben priorizarse para una conversión temprana a tren y respaldar así un rápido crecimiento urbano.
+
+### ¿Pueden los trenes transportar múltiples tipos de carga distintos en el mismo viaje?
+Aunque las configuraciones de carga mixta son mecánicamente posibles asignando diferentes tipos de vagones a una sola locomotora, los trenes dedicados a un único recurso son mucho más fáciles de gestionar. Los trenes mixtos corren el riesgo de sufrir bloqueos por descarga parcial si un tipo de carga llena su depósito de destino mientras otro aún no se ha vaciado por completo, lo que hace que todo el tren quede detenido indefinidamente en la estación.

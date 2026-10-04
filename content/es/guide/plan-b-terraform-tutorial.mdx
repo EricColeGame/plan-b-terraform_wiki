@@ -1,0 +1,162 @@
+export const metadata = {
+  title: "Tutorial de Plan B Terraform: Guía Completa de Logística Planetaria para Principiantes",
+  description: "Domina la logística planetaria, la gestión de recursos y la ingeniería climática con este completo tutorial de Plan B Terraform para jugadores principiantes e intermedios.",
+  category: "guide",
+  date: "2026-10-04",
+}
+
+Transformar una roca estéril y congelada en una próspera biosfera azul y verde es uno de los desafíos más satisfactorios de las simulaciones de gestión modernas. Si alguna vez has visto cómo tus redes de suministro se colapsaban o has sumergido por accidente tus principales centros de fabricación bajo el aumento del nivel del mar, este **tutorial de Plan B Terraform** orientará tu proyecto de colonización en la dirección correcta. Ya sea que estés colocando tu primera plataforma de extracción o trazando redes ferroviarias continentales, seguir un estructurado **tutorial de Plan B Terraform** garantiza que tu naciente civilización crezca sin cuellos de botella logísticos catastróficos.
+
+Al comprender cómo se entrelazan la extracción, las cadenas de producción, los sistemas de transporte y las mecánicas medioambientales, podrás convertir un mundo hostil en un hogar autosuficiente para millones de pioneros.
+
+---
+
+## Primeros pasos: Mecánicas básicas y primer aterrizaje
+
+Cuando aterrizas en la superficie en *Plan B: Terraform*, el planeta es una extensión árida e inhóspita con cero presión atmosférica y temperaturas bajo cero. Tu objetivo inmediato no es glamuroso: debes asegurar materias primas básicas, poner en marcha la fabricación autónoma y establecer tu primer puesto de suministro.
+
+Cada edificio, vehículo y casilla de infraestructura del juego se construye a partir de recursos planetarios. Si tus fábricas se detienen porque un único yacimiento de hierro se agota o un depósito se llena al máximo, el desarrollo se paraliza. La fase inicial exige una ubicación cuidadosa de extractores y centros de fabricación básicos cerca de concentraciones minerales como hierro, aluminio, azufre y depósitos de hielo congelado.
+
+```
+[Yacimiento de recursos: Hierro / Azufre] 
+       │ (Alcance adyacente directo)
+       ▼
+[Plataforma de extracción] ──► [Depósito / Almacén] ──► [Ensamblador básico] ──► [Componente terminado]
+```
+
+La eficiencia temprana depende de minimizar la distancia de transporte entre tus extractores y tus ensambladores. Situar ensambladores automatizados dentro del radio de suministro directo de las unidades mineras elimina rutas de vehículos innecesarias durante las frágiles primeras horas de juego.
+
+### Hoja de ruta de progresión para el inicio del juego
+
+La siguiente hoja de ruta de hitos describe los objetivos críticos que debes alcanzar durante las primeras horas de la campaña:
+
+| Fase | Objetivo principal | Tecnologías clave y desbloqueos | Punto común de fallo |
+| :--- | :--- | :--- | :--- |
+| **Fase 1: Cimientos** | Extraer hierro y aluminio en bruto | Ensamblador básico, Depósitos, Carreteras pavimentadas | Construir carreteras en exceso antes de asegurar reservas de hierro |
+| **Fase 2: Siembra urbana** | Fundar tu primer asentamiento | Depósitos de camiones, Plantas de hormigón, Hábitats | Situar ciudades lejos de depósitos naturales de agua dulce |
+| **Fase 3: Reestructuración logística** | Conectar nodos de recursos lejanos | Trenes, Terminales de carga, Vías de tren | Colapso de depósitos provocado por bloqueos en vías bidireccionales |
+| **Fase 4: Ignición climática** | Liberar los primeros gases de efecto invernadero | Generadores de gases de efecto invernadero, Plantas de azufre | Construir fábricas en cuencas inundables de baja altitud |
+| **Fase 5: Hidrosfera** | Derretir los casquetes polares | Estaciones de bombeo, Unidades de tratamiento de agua | No anticipar el desplazamiento de las costas a medida que el hielo se derrite |
+
+---
+
+## Construcción de una red logística escalable: Camiones vs. Trenes
+
+A medida que tu presencia se expande más allá de la zona de aterrizaje inicial, la extracción local ya no puede satisfacer las cuotas de producción. Transportar millones de toneladas métricas de mineral en bruto, piezas mecánicas y bienes de consumo requiere una estrategia de transporte de mercancías específica.
+
+En esta etapa de nuestro **tutorial de Plan B Terraform**, la logística es lo que distingue a los puestos de supervivencia aislados de las megaciudades en expansión. El juego ofrece varias opciones logísticas, principalmente camiones y trenes de mercancías, y cada uno cumple perfiles de tránsito diferenciados.
+
+### Matriz comparativa de logística: Moviendo carga por el planeta
+
+Elegir el método de transporte incorrecto para distancias masivas agotará tus materiales de construcción o causará atascos terminales. Utiliza la siguiente tabla comparativa para determinar qué sistema se adapta mejor a tu ruta de suministro:
+
+| Tipo de transporte | Distancia óptima | Capacidad de rendimiento | Coste de instalación | Mejor uso |
+| :--- | :--- | :--- | :--- | :--- |
+| **Cinta directa / Transferencia de depósito** | 1–3 Hexágonos | Extremadamente alta | Muy bajo | Líneas de enlace entre extractores y ensambladores adyacentes |
+| **Camiones de carga** | Corta a media (5–40 Hexágonos) | Moderada | Bajo a medio | Distribución local, abastecimiento inicial de ciudades, rutas flexibles |
+| **Trenes de mercancías** | Larga a intercontinental (40+ Hexágonos) | Alta a muy alta | Alto (Vías + Terminales) | Transporte masivo de hierro/azufre, corredores de envío continentales |
+| **Maglev de alta velocidad / Tránsito avanzado** | Tramos continentales | Máxima | Extremadamente alto | Líneas de suministro masivo de bienes de consumo a metrópolis de Nivel 4+ |
+
+### Prevención de colapsos en las terminales
+
+Un gran desafío señalado por la comunidad de jugadores es la saturación de los depósitos. Cuando un depósito de salida se llena por completo, las plataformas de extracción conectadas a él dejan de funcionar de inmediato. Para mantener el flujo continuo en las líneas:
+
+- **Establece depósitos de un solo producto**: Nunca configures un depósito central para recibir tanto materias primas como productos terminados, a menos que controles de forma estricta el volumen de entrada.
+- **Implementa zonas de amortiguación (Buffer Yards)**: Coloca depósitos de recepción secundarios cerca de tus fábricas para absorber las fluctuaciones de tránsito durante los trayectos de trenes de larga distancia.
+- **Aísla los bucles ferroviarios**: Diseña tus redes ferroviarias con bucles independientes o vías de adelantamiento exclusivas en lugar de una única vía bidireccional compartida.
+
+Para profundizar en la filosofía de diseño de los desarrolladores y conocer las últimas novedades de la comunidad, visita el [Centro de la Comunidad de Steam de Plan B: Terraform](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) para consultar notas de parches y hojas de ruta.
+
+---
+
+## Dominando la terraformación: Atmósfera, agua y biosfera
+
+La terraformación no es un simple telón de fondo pasivo en este juego; es un sistema mecánico activo que altera directamente el terreno, el clima y la geografía. Como se destaca en cualquier **tutorial de Plan B Terraform** exhaustivo, ignorar la topografía acabará sumergiendo líneas ferroviarias críticas bajo océanos recién formados.
+
+```
+[Extracción de azufre] ──► [Fábrica de GEI] ──► [Calentamiento atmosférico]
+                                                       │
+                                                       ▼
+[Evaporación oceánica] ◄── [Formación de mares y lagos] ◄── [Fusión de depósitos de hielo]
+```
+
+### Hitos e indicadores de la terraformación planetaria
+
+Para transformar el planeta en un paraíso, debes monitorizar la presión atmosférica, la temperatura global, la cobertura de agua líquida y la densidad de vegetación:
+
+| Métrica de terraformación | Valor inicial base | Nivel objetivo de biosfera | Maquinaria principal requerida | Impacto ambiental principal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Presión atmosférica** | ~0.00 bar | 1.00 bar | Inyectores atmosféricos | Permite retener el calor en superficie; detiene la sublimación del hielo |
+| **Temperatura media** | Bajo cero (-60°C a -40°C) | +15°C a +20°C | Generadores de GEI (gases de efecto invernadero) | Derrite los glaciares polares; desbloquea el flujo de agua líquida |
+| **Hidrosfera (Agua)** | 0% de agua superficial | 30%–45% de cobertura oceánica | Deshielo glacial + Infraestructura de bombeo | Llena cuencas de baja altitud; riesgo de inundación de asentamientos bajos |
+| **Biosfera (Vegetación)** | Roca estéril | Cobertura de bosques / pastizales | Esparcidores de musgo, Viveros de árboles | Genera oxígeno, estabiliza el suelo y satisface niveles urbanos avanzados |
+
+### Gestión de la subida del nivel del agua
+
+A medida que tus generadores de efecto invernadero bombean gases fluorados a la atmósfera, el planeta se calienta con rapidez. Una vez que la temperatura de la superficie global supera los 0°C, el hielo sólido se derrite en agua líquida que se acumula en los valles de menor altitud, convirtiendo depresiones secas en vastos mares.
+
+Antes de construir sectores industriales pesados, activa la capa visual de elevación. Cualquier instalación construida por debajo del nivel del mar proyectado quedará sumergida de forma permanente por el océano cuando el hielo se derrita. Construir tus corredores ferroviarios principales y centros de fabricación neurálgicos en mesetas elevadas garantizará que tu infraestructura permanezca seca durante toda la fase de calentamiento.
+
+---
+
+## Crecimiento urbano y gestión de la población
+
+La población en *Plan B: Terraform* no crece automáticamente; exige un suministro continuo e ininterrumpido de bienes. Las ciudades comienzan como modestos módulos residenciales y evolucionan gradualmente hacia densas e imponentes arcologías a medida que satisfaces sus sucesivos niveles de consumo.
+
+Cada nuevo ciudadano consume recursos y genera residuos. Si no se atienden las demandas municipales, el crecimiento se detiene, lo que limita las licencias de fabricación avanzada que puedes desbloquear.
+
+### Demandas por nivel de ciudad e hitos de población
+
+Planificar el crecimiento urbano exige escalar tus cadenas de suministro antes de que se alcancen las curvas de demanda. La siguiente tabla detalla lo que tus ciudades requieren en cada umbral poblacional:
+
+| Nivel de ciudad | Rango de población | Bienes de entrada requeridos | Infraestructura municipal necesaria |
+| :--- | :--- | :--- | :--- |
+| **Nivel 1: Puesto avanzado** | 1 – 500 | Hormigón, Módulos básicos de vivienda | Acceso por carretera pavimentada, parada de carga local |
+| **Nivel 2: Municipio** | 501 – 2.500 | Agua purificada, Raciones de comida | Tubería de distribución de agua, depósito de alimentos exclusivo |
+| **Nivel 3: Ciudad** | 2.501 – 10.000 | Electrónica de consumo, Tanques de oxígeno | Planta de reciclaje, líneas secundarias de transporte de residuos |
+| **Nivel 4: Metrópolis** | 10.001 – 50.000 | Polímeros avanzados, Artículos de lujo | Terminal ferroviaria multiandén, clasificación automática de residuos |
+| **Nivel 5: Megalópolis** | 50.000+ | Instrumentos de alta tecnología, Productos de bioma | Redes de transporte intercontinental, reciclaje en circuito cerrado |
+
+Los informes de la comunidad enfatizan con insistencia la importancia del reciclaje de residuos. Las ciudades de niveles superiores generan residuos sólidos que deben ser transportados y procesados de nuevo para convertirlos en materiales base. Desatender la extracción de residuos conduce a la degradación urbana, impidiendo que tu población se expanda al siguiente hito de nivel.
+
+---
+
+## Consejos avanzados de automatización y errores comunes que evitar
+
+Una vez que domines los conceptos básicos cubiertos en este **tutorial de Plan B Terraform**, optimizar tu red logística planetaria te ayudará a evitar la desaceleración a mitad de partida. Un alto volumen de transporte introduce ineficiencias sutiles que pueden agravarse a lo largo de miles de ciclos de producción.
+
+### 1. Evita las cintas transportadoras de larga distancia
+Aunque pueda resultar tentador tender cadenas continuas de cintas o depósitos a lo largo de medio continente, hacerlo consume cantidades colosales de hierro. Utiliza camiones para la recolección local y haz una transición inmediata a trenes de mercancías de alta capacidad para rutas de larga distancia.
+
+### 2. Equilibra los ratios de suministro de forma conservadora
+Un patrón de fallo frecuente implica asignar demasiados extractores a una sola línea de montaje. Si tus plantas de hormigón solo requieren dos unidades de azufre por ciclo, dirigir seis líneas de alimentación de azufre hacia el mismo depósito desperdicia materias primas y bloquea la infraestructura vial con camiones de transporte inactivos.
+
+### 3. Construye complejos de fábricas modulares
+En lugar de edificar un único complejo industrial gigantesco que fabrique todos los artículos del juego, construye células de producción modulares y autónomas:
+- **Polígono metalúrgico**: Extracción de hierro, fundición, placas de acero y piezas mecánicas.
+- **Complejo químico**: Procesamiento de azufre, síntesis de polímeros y gases de efecto invernadero.
+- **Sector de apoyo urbano**: Fabricación de hormigón, purificación de agua y bienes de consumo.
+
+Conectar estos complejos especializados mediante líneas ferroviarias de alta velocidad mantiene el tráfico de camiones disperso y reduce los cuellos de botella en tu red de tránsito global.
+
+---
+
+## Preguntas frecuentes sobre Plan B: Terraform
+
+### ¿Qué debo construir primero en Plan B: Terraform?
+Tu prioridad inmediata debe ser colocar extractores de hierro, un ensamblador básico y un depósito de almacenamiento para producir piezas mecánicas y hormigón. Estos dos materiales fundamentales son indispensables para construir todas las plataformas de extracción posteriores, camiones y redes de carreteras pavimentadas.
+
+### ¿Por qué es necesario un tutorial de Plan B Terraform especializado para la gestión del agua?
+A diferencia de los juegos con terreno estático, *Plan B: Terraform* cuenta con simulación fluida dinámica. A medida que la temperatura del planeta sube de los 0°C, el hielo derretido inunda valles y tierras bajas. Una guía especializada te ayuda a interpretar el mapa topográfico de elevación con antelación para que no construyas fábricas en zonas destinadas a convertirse en lechos lacustres o fondos marinos.
+
+### ¿Cómo evito que los camiones se amontonen y causen atascos de tráfico?
+La acumulación de camiones suele ocurrir cuando un depósito de descarga está lleno o cuando demasiados vehículos comparten una carretera de tierra o de un solo carril. Mejora los caminos de tierra a carreteras pavimentadas, añade bahías de descarga adicionales y asegúrate de que las fábricas receptoras consuman los artículos entrantes a un ritmo igual o superior a la velocidad de entrega.
+
+### ¿Cómo suben las ciudades a niveles de población superiores?
+Las ciudades mejoran automáticamente cuando todas las demandas demográficas se satisfacen al mismo tiempo. Consulta el panel de vista general de la ciudad para identificar qué recurso escasea —ya sea agua, comida o bienes de consumo— y amplía tu red logística para estabilizar el flujo de entrada.
+
+---
+
+## Conclusión
+
+Conquistar un mundo deshabitado exige previsión, paciencia e ingeniería iterativa. Aplicando los principios logísticos, la planificación de elevaciones y las proporciones de producción explicadas en este **tutorial de Plan B Terraform**, podrás transformar sistemáticamente un planeta inerte en una civilización próspera y con gran biodiversidad. Vigila los pronósticos de nivel del mar, mantén despejados tus corredores ferroviarios y contempla cómo tu mundo terraformado cobra vida.

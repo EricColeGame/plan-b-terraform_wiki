@@ -1,0 +1,181 @@
+export const metadata = {
+  title: "Guía del mejor diseño en Plan B Terraform: Automatización modular en cuadrícula hexagonal",
+  description: "Domina la eficiencia de tu fábrica con la guía del mejor diseño en Plan B Terraform. Optimiza cuadrículas hexagonales, estaciones de tren, suministros urbanos y megaproyectos de terraformación.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Transformar una roca árida y congelada en una biosfera próspera repleta de millones de ciudadanos no es tarea fácil. Encontrar el **mejor diseño en Plan B Terraform** es esencial si deseas que tu colonia se expanda sin colapsar bajo un caos logístico. Ya sea que estés luchando por equilibrar los extractores de minerales en las primeras fases o diseñando redes ferroviarias de gran capacidad hacia ciudades en pleno auge, adoptar un **mejor diseño en Plan B Terraform** de eficacia probada te ahorrará docenas de horas de frustrantes demoliciones y reconstrucciones.
+
+A diferencia de los juegos de construcción de fábricas tradicionales basados en cuadrículas cuadradas, *Plan B: Terraform* utiliza una cuadrícula hexagonal esférica. La geometría hexagonal plantea retos singulares e increíbles oportunidades de simetría, inserción directa y rendimiento radial. En esta guía completa, analizamos los diseños modulares óptimos, los sistemas de distribución para ciudades y los centros logísticos evaluados por los terraformadores más dedicados de la comunidad.
+
+---
+
+## Principios fundamentales de la geometría de fábrica hexagonal
+
+Antes de colocar tu primera línea de maquinaria automatizada, debes comprender cómo interactúan las celdas hexagonales. Cada hexágono en el juego comparte aristas con seis casillas vecinas. Esta regla fundamental rige la transferencia de recursos, el almacenamiento intermedio entre fábricas y depósitos, y las limitaciones de radio de las líneas ferroviarias.
+
+En los constructores de fábricas con cuadrículas cuadradas, las orientaciones ortogonales y diagonales generan penalizaciones de distancia desiguales. En una cuadrícula hexagonal, todos los centros adyacentes son equidistantes entre sí. El principal desafío no radica en la longitud del trayecto, sino en la convergencia direccional. Colocar máquinas en líneas rectas puede bloquear rápidamente la infraestructura circundante.
+
+```
+        [ Fábrica ]
+      /             \
+[ Extractor ]     [ Extractor ]
+      \             /
+        [ Depósito/Cinta ]
+```
+
+A la hora de estructurar líneas de ensamblaje, los planificadores de fábricas suelen elegir entre **Anillos radiales** y **Cintas paralelas**:
+
+*   **Anillos radiales**: Ideales para montajes iniciales y de mitad de partida, donde una unidad de ensamblaje o depósito central se abastece de 4 a 6 extractores o ensambladores de nivel uno situados a su alrededor.
+*   **Cintas paralelas**: Indispensables para la producción en masa en fases avanzadas, donde las cintas transportadoras paralelas discurren a lo largo de ejes alternos alimentando hileras consecutivas de instalaciones de procesamiento.
+*   **Clústeres de inserción directa**: Los hexágonos permiten que tres ensambladores alimenten directamente a un único fabricante posterior sin necesidad de cintas, lo que ahorra una cantidad enorme de espacio y energía.
+
+### Panorama general de los sistemas logísticos
+
+Elegir el nivel de transporte adecuado determina la morfología que deben adoptar los diseños de tu fábrica. Las cintas transportadoras son ideales para el procesamiento local de alta densidad, los camiones cubren distancias intermedias y los trenes gestionan transferencias masivas de largo recorrido.
+
+| Tipo de transporte | Alcance óptimo | Capacidad de transporte | Flexibilidad de huella | Caso de uso principal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Cintas transportadoras** | 1–15 hexágonos | Alta (Continua) | Alta (Giros cerrados) | Subensamblajes internos de la fábrica |
+| **Cintas de alta velocidad** | 5–30 hexágonos | Muy alta (Continua) | Alta (Requiere mejoras) | Vías principales de mineral y lingotes de gran volumen |
+| **Camiones y depósitos** | 10–60 hexágonos | Moderada (Por pulsos) | Moderada (Requiere carreteras) | Suministro urbano inicial y transporte de mineral |
+| **Trenes de mercancías** | Más de 50 hexágonos | Extrema (Lotes masivos) | Baja (Requiere radio de giro amplio) | Transporte de carga transcontinental a larga distancia |
+
+---
+
+## Diseños de minería y fundición para el juego temprano
+
+Durante las primeras horas de una campaña planetaria, tu objetivo primordial es procesar hierro, azufre y hielo para obtener materiales de construcción básicos. Muchos jugadores cometen el error de crear redes enmarañadas de cintas transportadoras a través de los yacimientos de recursos vírgenes. Al diseñar el **mejor diseño en Plan B Terraform** para materias primas, mantener las áreas minerales de forma modular garantiza una escalabilidad fluida cuando se actualiza la velocidad de extracción.
+
+La experiencia de los jugadores demuestra que los yacimientos de materias primas se agotan a lo largo de campañas extensas, por lo que los esquemas modulares "conectar y usar" son la mejor opción. Si un yacimiento pierde densidad, una celda modular puede desmantelarse o redirigirse con un mínimo de fricción.
+
+### El patrón de extractor en flor hexagonal
+
+El esquema con mayor eficiencia de espacio para un grupo aislado de mineral es la "Flor hexagonal":
+
+1.  Identifica el grupo de 7 hexágonos más denso sobre la veta de mineral.
+2.  Coloca un depósito de almacenamiento o contenedor de clasificación directamente en el hexágono central.
+3.  Rodea el depósito central con 5 extractores en los hexágonos perimetrales.
+4.  Utiliza la arista del 6.º hexágono restante como salida de la cinta transportadora o bahía de carga de camiones.
+
+Esta disposición garantiza una cobertura de extracción máxima mientras canaliza hasta 5 entradas directamente hacia un único canal logístico de salida sin molestos cruces de cintas.
+
+| Línea de producción | Materiales de entrada | Proporción óptima (Extractores : Fundiciones) | Objeto producido | Consumo de destino |
+| :--- | :--- | :--- | :--- | :--- |
+| **Fundición de hierro** | Mineral de hierro | 2 : 1 | Lingote de hierro | Construcción básica y piezas mecánicas |
+| **Procesamiento de azufre** | Azufre bruto | 3 : 2 | Fertilizante químico | Proyectos agrícolas tempranos |
+| **Producción de hormigón** | Roca / Piedra | 4 : 2 | Losas de hormigón | Expansión de cimientos y torres urbanas |
+| **Extracción de hielo** | Glaciares polares | Alimentación directa (1 : 1 Depósito) | Cápsulas de agua | Suministro atmosférico y urbano |
+
+---
+
+## Nodos ferroviarios y diseños modulares de trenes para fases intermedias y avanzadas
+
+Una vez que tus demandas de producción se disparen a miles de piezas por minuto, los camiones en carretera provocarán cuellos de botella catastróficos. Los sistemas ferroviarios se convierten en el eje vital del desarrollo planetario. Integrar trenes de alta velocidad en el **mejor diseño en Plan B Terraform** requiere un espaciado geométrico riguroso.
+
+Según los informes de la comunidad, los atascos ferroviarios casi siempre se producen en dos puntos: desvíos de unión de vía única y zonas de descarga de depósitos sobresaturadas. Para evitar estos problemas, adopta un circuito de circulación unidireccional de doble vía.
+
+```
+[Vía principal entrante] ────────────────► [Plataforma de descarga] ──┐
+                                                                      │
+[Vía principal saliente] ◄──────────────── [Plataforma de carga]    ◄─┘
+```
+
+### Arquetipos de estaciones de tren
+
+Diseñar terminales de tren en un mapa hexagonal exige planificar las curvas con antelación. Los trenes conservan velocidades de desplazamiento superiores al entrar en curvas suaves y amplias en lugar de giros cerrados en zigzag.
+
+| Diseño de estación | Tamaño de plataforma | Capacidad de transporte | Espacio ocupado (Hexágonos) | Aplicación recomendada |
+| :--- | :--- | :--- | :--- | :--- |
+| **Terminal en línea** | 1 vía, 1 parada | Baja (Un solo tren) | 12 × 3 | Puestos mineros remotos |
+| **Roll-On / Roll-Off (RoRo)** | Vías paralelas dobles | Alta (Flujo continuo) | 20 × 6 | Megabases regionales de fundición de mineral |
+| **Nodo de rotonda hexagonal** | Unión de 6 vías | Extrema (Múltiples líneas) | 25 × 25 | Cruces logísticos continentales |
+| **Anillo de entrega con depósitos divididos** | Bucle circular alrededor de la ciudad | Alta (Entrega por lotes) | Rodea la ciudad | Logística urbana de alimentos y agua |
+
+Una regla de diseño fundamental al trazar tu red ferroviaria es mantener las plataformas de carga completamente aisladas de las líneas de tránsito. Nunca coloques una parada de tren directamente en la arteria principal. Construye siempre apartaderos de desaceleración específicos para que los trenes de carga en cola no paralicen el tráfico regional.
+
+Para conocer más mecánicas de juego, actualizaciones y notas de equilibrio, visita el [punto de encuentro oficial de la comunidad de Plan B: Terraform en Steam](https://store.steampowered.com/app/1894430/Plan_B_Terraform/), donde encontrarás hojas de ruta y notas de parches detalladas.
+
+---
+
+## Suministro a ciudades y diseños para el crecimiento urbano
+
+Las ciudades son tu principal condición de victoria y los motores tecnológicos de la partida. A medida que las poblaciones urbanas crecen desde pequeños asentamientos bajo cúpulas hasta metrópolis imponentes de decenas de miles de habitantes, sus necesidades de consumo se diversifican con rapidez.
+
+No obstante, las ciudades se expanden hacia el exterior automáticamente a medida que alcanzan determinados umbrales de población. Si construyes fundiciones pesadas inmediatamente pegadas a las zonas residenciales, la ciudad acabará devorando tus terrenos industriales o quedará asfixiada por la infraestructura vecina. Por lo tanto, implementar el **mejor diseño en Plan B Terraform** en torno a asentamientos en crecimiento requiere una zona de amortiguamiento específica.
+
+### El sistema de entrega en anillo periférico
+
+El esquema más eficaz para centros metropolitanos es el **Anillo radial de amortiguamiento**:
+
+1.  **Núcleo urbano (Radio: 1–5 hexágonos)**: Deja esta zona completamente libre de vías, fábricas y carreteras principales. Permite que los rascacielos residenciales se expandan sin trabas.
+2.  **Cinturón verde municipal (Radio: 6–8 hexágonos)**: Reserva este espacio para parques, generadores atmosféricos y depósitos de gestión de residuos locales.
+3.  **El anillo logístico (Radio: 9–11 hexágonos)**: Construye un circuito perimetral de carreteras o vías de tren con plataformas de descarga dedicadas para agua, alimentos y bienes de consumo.
+
+```
+       [Anillo logístico (Depósitos y estaciones)]
+                     │ (Cinta corta)
+                     ▼
+            [Cinturón verde municipal]
+                     │
+                     ▼
+          (( Núcleo de población urbana ))
+```
+
+| Nivel de crecimiento urbano | Demanda principal de recursos | Método de entrega | Zona de amortiguamiento mínima |
+| :--- | :--- | :--- | :--- |
+| **Nivel 1 (Puesto avanzado)** | Hormigón, agua básica | Pequeños depósitos de camiones | 3 hexágonos |
+| **Nivel 2 (Municipio)** | Cápsulas de comida, vigas de acero | Flotas medianas de camiones | 6 hexágonos |
+| **Nivel 3 (Metrópolis)** | Artículos de alta tecnología, agua filtrada | Cintas de alta velocidad / Tren | 10 hexágonos |
+| **Nivel 4 (Megaciudad)** | Componentes de lujo, flora para biomas | Tren RoRo con múltiples plataformas | 15 hexágonos |
+
+Al utilizar cintas transportadoras para salvar la distancia entre el anillo logístico exterior y el núcleo municipal, las estaciones de tren de gran tonelaje permanecen a salvo fuera de la ruta de expansión de la ciudad.
+
+---
+
+## Megaproyectos de terraformación: Diseños para la gestión de gases de efecto invernadero y océanos
+
+La terraformación modifica el mapa de manera dinámica. A medida que inyectas gases de efecto invernadero en la atmósfera y calientas el planeta, los glaciares congelados se derriten formando ríos caudalosos y vastos océanos. ¡Una fábrica que está en suelo seco en el día 50 podría quedar sumergida bajo el agua en el día 300!
+
+Al proyectar un complejo industrial duradero, es fundamental garantizar que tu **mejor diseño en Plan B Terraform** sea resistente a la subida del nivel del mar. Construir complejos de fundición masivos en cuencas continentales profundas es un error común de principiante que suele derivar en inundaciones desastrosas.
+
+### Agrupación industrial protegida por elevación
+
+Abre siempre la vista topográfica antes de desplegar infraestructura a largo plazo. Las depresiones de baja altitud deben reservarse para futuras cuencas de embalses, canales de navegación o estaciones de bombeo.
+
+| Tipo de instalación | Elevación óptima | Emisión de calor / gas | Factor de riesgo | Recomendación de diseño |
+| :--- | :--- | :--- | :--- | :--- |
+| **Fábrica de gases de efecto invernadero** | Mesetas elevadas | Alta | Bajo | Agrupadas en cuadrículas de 6 alrededor de nodos de azufre |
+| **Fundidores de glaciares** | Casquetes polares | Muy alta | Medio | Disposición perimetral a lo largo de los bordes del hielo en retroceso |
+| **Bombas de extracción de agua** | Depresiones en cuencas | Ninguna | Extremo (Sumergimiento) | Disposición en terrazas escalonadas a lo largo de futuras costas |
+| **Estaciones de siembra de árboles** | Llanuras de altitud media | Ninguna | Bajo | Patrón de celosía hexagonal espaciado cada 8 hexágonos |
+
+Para maximizar la producción atmosférica, agrupa los generadores de gases de efecto invernadero en hexágonos autosuficientes. Abastécelos mediante tuberías subterráneas dedicadas o redes de cintas protegidas desde los campos de azufre vecinos. Al construir sobre mesetas elevadas, protegerás tus líneas de suministro fundamentales del avance de las mareas planetarias.
+
+---
+
+## Resumen de consejos de optimización
+
+Dominar el **mejor diseño en Plan B Terraform** se reduce al diseño celular modular, la planificación direccional y el respeto por la geografía natural del planeta:
+
+*   **Aprovecha el triángulo y la flor**: Estandariza tus estructuras mineras en diseños florales de 5 a 1 o de 7 hexágonos para maximizar la densidad de extracción.
+*   **Desacopla las arterias ferroviarias de las terminales**: No permitas nunca que un tren en proceso de carga permanezca inmóvil en una vía de paso.
+*   **Dale margen de expansión a las ciudades**: Mantén los centros ferroviarios al menos a 10 o 12 hexágonos de distancia del centro urbano para adaptarte al crecimiento de la población sin costosas demoliciones.
+*   **Anticípate a la crecida del agua**: Comprueba siempre la altitud del terreno antes de tender líneas ferroviarias continentales o levantar nodos industriales principales.
+
+---
+
+## Preguntas frecuentes (FAQ)
+
+### ¿Cuál es el mejor diseño en Plan B Terraform para la extracción mineral en el juego temprano?
+El diseño más eficiente para la extracción temprana es el patrón de Flor hexagonal. Consiste en ubicar un depósito de recolección central o un nodo de cinta de alta velocidad justo en el medio de un yacimiento denso y rodearlo con cinco extractores. Esto proporciona una distribución de entrada equilibrada a través de las caras hexagonales adyacentes y evita el cruce desordenado de cintas.
+
+### ¿Cómo cambia el mejor diseño en Plan B Terraform en las fases avanzadas de la partida?
+En el juego tardío, el enfoque pasa de redes locales de camiones a enormes redes ferroviarias unidireccionales de varias vías y fábricas organizadas en cintas paralelas. En lugar de cadenas directas de extractor a ensamblador, los jugadores levantan centros de refinado continentales dedicados, conectados por estaciones de tren RoRo (Roll-On/Roll-Off) para abastecer a las ciudades en constante expansión por todo el planeta.
+
+### ¿Cómo evito que las ciudades en crecimiento destruyan mis líneas de producción?
+Las ciudades crecen hacia el exterior de forma automática a medida que cumplen sus objetivos de población. Para proteger tus fábricas, emplea un diseño de anillo perimetral: sitúa la manufactura pesada y las terminales de tren a una distancia mínima de 10 a 15 hexágonos del centro urbano, y utiliza cintas transportadoras o camiones de enlace para trasladar los suministros hasta el límite urbano.
+
+### ¿Puede el nivel del agua destruir mis diseños de fábrica?
+Sí. A medida que terraformas el planeta y elevas la temperatura global, los glaciares se derriten y llenan las cotas bajas con lagos y océanos. Examina con atención el mapa topográfico de elevación antes de construir núcleos permanentes y ubica las fábricas y redes ferroviarias críticas en terrenos elevados para prevenir inundaciones.

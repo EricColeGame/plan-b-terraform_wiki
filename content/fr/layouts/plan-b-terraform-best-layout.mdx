@@ -1,0 +1,181 @@
+export const metadata = {
+  title: "Guide du meilleur agencement pour Plan B Terraform : Automatisation modulaire sur grille hexagonale",
+  description: "Maîtrisez l'efficacité de vos usines avec le guide du meilleur agencement pour Plan B Terraform. Optimisez grilles hexagonales, gares, livraisons urbaines et mégaprojets.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Transformer un rocher stérile et glacé en une biosphère florissante peuplée de millions de citoyens n'est pas une mince affaire. Trouver le **meilleur agencement dans Plan B: Terraform** est indispensable si vous souhaitez développer votre colonie sans vous retrouver paralysé par des goulets d'étranglement logistiques. Que vous ayez du mal à équilibrer vos premiers extracteurs de minerais ou à acheminer des réseaux ferroviaires à fort trafic vers des métropoles en plein essor, adopter un **agencement optimal pour Plan B: Terraform** vous évitera des dizaines d'heures de démolitions et de reconstructions frustrantes.
+
+Contrairement aux jeux de gestion d'usine traditionnels basés sur une grille carrée, *Plan B: Terraform* utilise une grille hexagonale sphérique. La géométrie hexagonale engendre des contraintes uniques mais offre également des opportunités remarquables en matière de symétrie, d'insertion directe et de débit radial. Dans ce guide complet, nous détaillons les conceptions modulaires optimales, les systèmes de distribution urbaine et les plateformes logistiques éprouvés par les bâtisseurs les plus dévoués de la communauté.
+
+---
+
+## Principes fondamentaux de la géométrie d'usine hexagonale
+
+Avant de poser votre première ligne de machines automatisées, vous devez comprendre comment interagissent les cellules hexagonales. Chaque hexagone du jeu partage ses arêtes avec six cases voisines. Cette règle fondamentale conditionne le transfert des ressources, le stockage tampon entre usines et dépôts, ainsi que les limites de rayon de courbure des voies ferrées.
+
+Dans les jeux de construction d'usines à grille orthogonale, les orientations perpendiculaires et diagonales entraînent des pénalités de distance inégales. Sur une grille hexagonale, tous les centres adjacents sont situés à égale distance les uns des autres. Le défi majeur ne réside pas dans la longueur du trajet, mais dans la convergence des directions. Aligner des machines en ligne droite peut très rapidement bloquer l'accès aux infrastructures adjacentes.
+
+```
+        [ Usine ]
+      /           \
+[ Extracteur ]   [ Extracteur ]
+      \           /
+      [ Dépôt/Bande ]
+```
+
+Lors de la conception des lignes d'assemblage, les concepteurs d'usines choisissent généralement entre les **Anneaux radiaux** et les **Rubans parallèles** :
+
+*   **Anneaux radiaux** : Idéaux pour la production en début et milieu de partie, où une unité d'assemblage ou un dépôt central est alimenté par 4 à 6 extracteurs ou usines de niveau 1 situés en périphérie.
+*   **Rubans parallèles** : Indispensables pour la production de masse en fin de partie, où des convoyeurs parallèles courent le long d'axes alternés pour alimenter des rangées successives de structures de traitement.
+*   **Pôles d'insertion directe** : La structure hexagonale permet à trois assembleurs d'alimenter directement un seul fabricant en aval sans aucun convoyeur, ce qui économise énormément d'espace et d'énergie.
+
+### Aperçu des systèmes logistiques
+
+Le choix du bon niveau de transport détermine la manière dont vos agencements d'usine doivent être structurés. Les convoyeurs conviennent parfaitement au traitement local à haute densité, les camions assurent la liaison sur des distances moyennes, et les trains prennent en charge le transport massif longue distance.
+
+| Type de transport | Portée optimale | Débit estimé | Flexibilité d'emprise | Cas d'usage principal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Convoyeurs** | 1–15 Hexagones | Élevé (Continu) | Élevée (Virages serrés) | Sous-ensembles internes d'usine |
+| **Convoyeurs haute vitesse** | 5–30 Hexagones | Très élevé (Continu) | Élevée (Nécessite améliorations) | Bus de minerais et de lingots à haut volume |
+| **Camions & Dépôts** | 10–60 Hexagones | Modéré (Par flux pulsés) | Modérée (Nécessite des routes) | Alimentation urbaine et transport de minerai en début de partie |
+| **Trains de fret** | 50+ Hexagones | Extrême (Gros volumes) | Faible (Rayon de braquage large) | Fret lourd transcontinental longue distance |
+
+---
+
+## Plans d'extraction et de fonderie en début de partie
+
+Durant les premières heures d'une campagne planétaire, votre objectif premier consiste à transformer le fer, le soufre et la glace en matériaux de construction fondamentaux. De nombreux joueurs commettent l'erreur de tisser des toiles de convoyeurs désordonnées au-dessus des gisements de ressources brutes. Lors de la conception du **meilleur agencement dans Plan B: Terraform** pour les matières premières, la modularité des parcelles minières garantit une mise à l'échelle fluide lorsque la cadence d'extraction augmente.
+
+L'expérience montre que les gisements de ressources brutes s'épuisent au cours des campagnes de longue haleine, ce qui rend les conceptions modulaires « prêtes à l'emploi » indispensables. Si un gisement s'appauvrit, une cellule modulaire peut être démantelée ou réorientée avec un minimum de perturbations.
+
+### Le modèle d'extraction en « Fleur hexagonale »
+
+L'agencement le plus économe en espace pour un gisement minéral isolé est la « Fleur hexagonale » :
+
+1.  Repérez le groupe de 7 hexagones le plus dense sur le filon de minerai.
+2.  Placez un dépôt de stockage central ou un conteneur de tri directement sur l'hexagone du milieu.
+3.  Entourez ce dépôt central de 5 extracteurs sur les hexagones périphériques.
+4.  Utilisez le 6e côté d'hexagone restant pour faire partir le convoyeur de sortie ou installer une station de chargement pour camions.
+
+Cette disposition garantit une couverture d'extraction maximale tout en canalisant jusqu'à 5 flux entrants directement vers un unique canal logistique sortant, sans croisements de convoyeurs superflus.
+
+| Ligne de production | Matières premières | Ratio optimal (Extracteurs : Fonderies) | Produit fini | Utilisation visée |
+| :--- | :--- | :--- | :--- | :--- |
+| **Fonderie de fer** | Minerai de fer | 2 : 1 | Lingot de fer | Construction de base et pièces mécaniques |
+| **Traitement du soufre** | Soufre brut | 3 : 2 | Engrais chimique | Projets agricoles de début de partie |
+| **Production de béton** | Roche / Pierre | 4 : 2 | Dalles de béton | Expansion des fondations et tours urbaines |
+| **Extraction de glace** | Glaciers polaires | Alimentation directe (1 : 1 Dépôt) | Capsules d'eau | Approvisionnement atmosphérique et urbain |
+
+---
+
+## Pôles ferroviaires et réseaux modulaires pour le milieu et la fin de partie
+
+Dès que vos besoins de production atteignent des milliers de pièces par minute, les camions routiers provoquent des embouteillages catastrophiques. Le rail devient alors l'épine dorsale du développement planétaire. Intégrer un réseau ferroviaire à haut débit dans un **agencement optimal pour Plan B: Terraform** exige une rigueur géométrique absolue.
+
+D'après les retours de la communauté, les blocages ferroviaires surviennent presque toujours à deux endroits : les aiguillages de convergence sur voie unique et les quais de déchargement saturés. Pour éliminer ces problèmes, adoptez une boucle de circulation à double voie et à sens unique.
+
+```
+[Voie principale entrante]  ────────────────► [Quai de déchargement] ──┐
+                                                                       │
+[Voie principale sortante]  ◄──────────────── [Quai de chargement]   ◄─┘
+```
+
+### Archétypes de gares ferroviaires
+
+La conception de terminaux ferroviaires sur une carte hexagonale implique d'anticiper vos virages. Les trains conservent une vitesse de déplacement bien plus élevée lorsqu'ils abordent de longues courbes fluides plutôt que des aiguillages serrés en zigzag.
+
+| Configuration de gare | Taille de quai | Capacité de débit | Emprise (Hexagones) | Application recommandée |
+| :--- | :--- | :--- | :--- | :--- |
+| **Terminal en ligne** | 1 Voie, 1 Arrêt | Faible (Train unique) | 12 × 3 | Avant-postes miniers isolés |
+| **Traversante (RoRo)** | Doubles voies parallèles | Élevée (Flux continu) | 20 × 6 | Mégabases régionales de fonderie de minerai |
+| **Rond-point hexagonal** | Jonction à 6 directions | Extrême (Lignes multiples) | 25 × 25 | Carrefours logistiques continentaux |
+| **Boucle urbaine de livraison** | Anneau circulaire autour de la ville | Élevée (Livraison par lots) | Encercle la ville | Logistique alimentaire et hydrique urbaine |
+
+Une règle de conception essentielle lors du tracé de votre réseau ferré consiste à isoler totalement les quais de chargement des voies de transit. Ne placez jamais un arrêt de train directement sur l'artère principale. Construisez toujours des voies de garage dédiées afin que les trains en attente ne bloquent pas le trafic régional.
+
+Pour approfondir les mécaniques de jeu, les mises à jour et les notes d'équilibrage, consultez le hub officiel [Plan B: Terraform sur la communauté Steam](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) afin de découvrir les feuilles de route de développement et les correctifs détaillés.
+
+---
+
+## Approvisionnement des villes et agencements pour l'expansion urbaine
+
+Les villes constituent votre principale condition de victoire et le moteur de votre progression technologique. À mesure que les populations urbaines passent de modestes dômes d'habitation à des métropoles imposantes de plusieurs dizaines de milliers d'habitants, leurs besoins de consommation se diversifient rapidement.
+
+Cependant, les villes s'étendent automatiquement vers l'extérieur dès que certains paliers de population sont atteints. Si vous construisez des fonderies et des usines lourdes juste à côté des zones résidentielles, la ville finira par englober vos parcelles industrielles ou se retrouvera asphyxiée par les infrastructures environnantes. Par conséquent, mettre en place le **meilleur agencement dans Plan B: Terraform** autour des colonies en expansion nécessite de prévoir des zones tampons dédiées.
+
+### Le système de livraison par anneau périphérique
+
+Le plan le plus efficace pour les centres métropolitains est l'**Anneau tampon radial** :
+
+1.  **Cœur urbain (Rayon : 1–5 Hexagones)** : Laissez cette zone totalement vierge de rails, d'usines et de routes lourdes. Permettez aux gratte-ciels résidentiels de s'étendre librement.
+2.  **Ceinture verte municipale (Rayon : 6–8 Hexagones)** : Réservez cet espace aux parcs, aux générateurs atmosphériques et aux dépôts locaux de traitement des déchets.
+3.  **L'Anneau logistique (Rayon : 9–11 Hexagones)** : Aménagez une voie périphérique ou un circuit ferroviaire équipé de quais de déchargement dédiés pour l'eau, la nourriture et les biens de consommation.
+
+```
+       [Anneau logistique (Dépôts & Gares)]
+                     │ (Convoyeur court)
+                     ▼
+         [Ceinture verte municipale]
+                     │
+                     ▼
+        (( Cœur de population urbaine ))
+```
+
+| Niveau d'expansion urbaine | Demandes de ressources prioritaires | Mode d'acheminement | Zone tampon minimale |
+| :--- | :--- | :--- | :--- |
+| **Niveau 1 (Avant-poste)** | Béton, Eau basique | Dépôts de petits camions | 3 Hexagones |
+| **Niveau 2 (Bourgade)** | Capsules de nourriture, Poutres d'acier | Flottes de camions moyens | 6 Hexagones |
+| **Niveau 3 (Métropole)** | Produits de haute technologie, Eau filtrée | Convoyeurs rapides / Rail | 10 Hexagones |
+| **Niveau 4 (Mégapole)** | Composants de luxe, Flore de biome | Gares ferroviaires RoRo multiquais | 15 Hexagones |
+
+En utilisant des convoyeurs pour faire la liaison entre l'anneau logistique extérieur et le centre municipal, les gares ferroviaires à fort tonnage restent bien à l'écart de la trajectoire d'expansion de la ville.
+
+---
+
+## Mégaprojets de terraformation : Agencements pour gaz à effet de serre et gestion océanique
+
+La terraformation modifie la carte de manière dynamique. À mesure que vous injectez des gaz à effet de serre dans l'atmosphère et que la planète se réchauffe, les glaciers fondent pour former des fleuves tumultueux et de vastes océans. Un complexe industriel parfaitement au sec au jour 50 peut se retrouver entièrement submergé au jour 300 !
+
+Lors de la construction d'un complexe industriel pérenne, s'assurer que votre **agencement dans Plan B: Terraform** résiste à la montée des eaux est primordial. Construire d'importantes infrastructures de raffinage au fond de bassins continentaux profonds est une erreur classique de débutant qui conduit inévitablement à des inondations catastrophiques.
+
+### Regroupement industriel sécurisé en altitude
+
+Ouvrez systématiquement votre vue topographique avant d'implanter des infrastructures à long terme. Les fosses et dépressions de basse altitude doivent être réservées aux futurs bassins de retenue, aux canaux de navigation ou aux stations de pompage.
+
+| Type d'installation | Altitude optimale | Production de chaleur / gaz | Facteur de risque | Recommandation d'agencement |
+| :--- | :--- | :--- | :--- | :--- |
+| **Usine de gaz à effet de serre** | Hauts plateaux | Élevée | Faible | Disposées en grilles de 6 autour des nœuds de soufre |
+| **Fondeurs de glaciers** | Calottes polaires | Très élevée | Moyen | Placement périphérique le long des bords de glace en recul |
+| **Pompes d'extraction d'eau** | Dépressions de bassins | Nulle | Extrême (Submersion) | Agencement en terrasses étagées le long des futurs rivages |
+| **Stations d'ensemencement forestier** | Plaines d'altitude moyenne | Nulle | Faible | Trame hexagonale avec un espacement de 8 cases |
+
+Pour optimiser la production atmosphérique, regroupez les générateurs de gaz à effet de serre en hexagones autonomes. Alimentez-les à l'aide de conduites souterraines dédiées ou de réseaux de convoyeurs protégés depuis les gisements de soufre voisins. En bâtissant sur des plateaux, vous mettez vos lignes d'approvisionnement majeures à l'abri des marées montantes planétaires.
+
+---
+
+## Résumé des conseils d'optimisation
+
+Maîtriser le **meilleur agencement dans Plan B: Terraform** repose sur une conception cellulaire modulaire, une bonne gestion des orientations et le respect de la géographie naturelle de la planète :
+
+*   **Exploitez le triangle et la fleur** : Standardisez vos installations minières selon des modèles floraux à 5 pour 1 ou 7 hexagones afin d'optimiser la densité d'extraction.
+*   **Dissociez les voies ferrées principales des gares** : Ne laissez jamais un train en cours de chargement stationner sur une voie de transit.
+*   **Laissez respirer les villes** : Maintenez les pôles ferroviaires à une distance d'au moins 10 à 12 hexagones du centre-ville pour absorber la croissance urbaine sans démolitions onéreuses.
+*   **Anticipez la montée des eaux** : Contrôlez systématiquement l'altitude du relief avant de poser des voies ferrées continentales ou de grands complexes industriels.
+
+---
+
+## Foire aux questions (FAQ)
+
+### Quel est le meilleur agencement pour l'extraction minière en début de partie dans Plan B: Terraform ?
+L'agencement le plus performant en début de partie est le modèle en « Fleur hexagonale ». Placez un dépôt de collecte central ou un nœud de convoyeur rapide directement au milieu d'un gisement dense, puis entourez-le de cinq extracteurs. Cette structure répartit harmonieusement les apports sur les faces adjacentes de l'hexagone et évite l'entrecroisement des convoyeurs.
+
+### Comment le meilleur agencement évolue-t-il en fin de partie ?
+En fin de partie, l'organisation délaisse les réseaux locaux de camions au profit de vastes réseaux ferrés à sens unique et à voies multiples, combinés à des usines agencées en rubans parallèles. Au lieu de chaînes directes liant extracteur et assembleur, les joueurs érigent de grands centres de raffinage continentaux connectés par des gares ferroviaires traversantes (RoRo) pour approvisionner les métropoles du monde entier.
+
+### Comment empêcher les villes en pleine expansion d'engloutir mes lignes de production ?
+Les villes s'étendent automatiquement vers l'extérieur dès qu'elles franchissent des seuils de population. Pour préserver vos usines, adoptez une disposition en anneau périphérique : installez l'industrie lourde et les gares ferroviaires à au moins 10 à 15 hexagones du centre urbain, puis utilisez des convoyeurs ou des navettes de camions pour acheminer les marchandises jusqu'aux limites de l'agglomération.
+
+### La montée des eaux peut-elle détruire mes agencements d'usines ?
+Oui. Au fur et à mesure que vous terraformez la planète et augmentez sa température globale, les glaciers fondent et remplissent les zones de basse altitude pour former des lacs et des mers. Consultez toujours la carte topographique avant de bâtir des infrastructures pérennes, et installez vos usines névralgiques ainsi que vos réseaux ferrés sur les hauteurs afin d'éviter toute inondation.

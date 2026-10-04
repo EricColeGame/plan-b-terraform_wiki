@@ -1,0 +1,144 @@
+export const metadata = {
+  title: "Plan B Terraform Mining Layout Guide: Maximize Extraction & Throughput",
+  description: "Master every Plan B Terraform mining layout with optimal extractor patterns, depot placements, and rail logistics to scale planetary extraction.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Scaling an uninhabited planet into a bustling industrial powerhouse requires a staggering amount of raw resources. In this planetary management sim, perfecting your plan b terraform mining layout is the difference between rapid population growth and catastrophic supply chain paralysis. Without an optimized plan b terraform mining layout, critical ores sit abandoned on deposit nodes while manufacturing hubs starve across entire continents.
+
+Every city tier and terraforming threshold demands greater volumes of sulfur, iron, copper, aluminum, and ice. By understanding tile connectivity, logistical buffers, and transit integration, you can extract every resource patch cleanly without redesigning your logistical backbone halfway through the campaign.
+
+## Core Principles of Efficient Ore Extraction
+
+Resource extraction operates on a strict geometric grid where proximity and buffer limits dictate throughput. Extractors pull material from raw planetary patches and push them to adjacent depots, road stops, or conveyors. If an extractor lacks an immediate destination, it ceases operation instantly. 
+
+A successful mining grid balances three elements: extraction density, collection buffering, and outbound capacity. When building on large ore fields, simply placing extractors haphazardly leads to deadlocks where vehicles block access or depots overflow.
+
+```
+[ Extractor ] -> [ Extractor ] -> [ Central Depot / Stop ] <- [ Extractor ] <- [ Extractor ]
+```
+
+Every node in your footprint should direct items inward toward logistical hubs. Rather than running transport lines directly to every individual excavator, a consolidated plan b terraform mining layout concentrates materials into unified staging points. This configuration cuts down on road sprawl and simplifies high-capacity pickup routes.
+
+| Component | Grid Role | Optimal Placement | Key Limitation |
+| :--- | :--- | :--- | :--- |
+| **Extractor** | Pulls raw ore from terrain | Direct contact with resource nodes | Zero internal storage; halts if output blocks |
+| **Depot** | Local inventory buffer | Directly adjacent to 2–4 extractors | Finite capacity; vulnerable to deadlocks |
+| **Truck Stop / Depot Line** | Interfaces with wheeled transit | Flanking extraction perimeter | Limited throughput compared to rail |
+| **Train Cargo Station** | Mass bulk transit interface | Linear alignment along resource edge | Requires straight clearance and dedicated track loops |
+
+Depot buffers act as shock absorbers for fluctuating transportation times. When your trucks encounter traffic or long transit legs, depots accumulate stock so extractors never halt their production cycles.
+
+## Early-Game Truck-Fed Mining Blueprints
+
+During the initial colonization phases, road trucks handle the bulk of transportation between resource fields and your central manufacturing base. Because trucks have modest cargo limits, early extraction networks must prioritize short loading turnaround times.
+
+When planning an early-game setup, place two rows of extractors feeding directly into a single central column of depots. Flank these depots with road segments to allow continuous vehicle access. This "spine" design avoids complex road branching, which frequently triggers traffic jams when vehicle counts increase.
+
+```
+[Road] [Depot] [Extractor] [Deposit Tile]
+[Road] [Depot] [Extractor] [Deposit Tile]
+[Road] [Depot] [Extractor] [Deposit Tile]
+```
+
+Community reports show that dedicating single-direction loops around mining zones prevents vehicle crowding. Trucks entering the pickup lane should load immediately from saturated depots and loop outward toward the destination highway without reversing along the same path.
+
+| Patch Size (Tiles) | Extractor Count | Dedicated Depots | Recommended Truck Fleet | Target Output (Items/Min) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Small (4–8)** | 4–8 | 2–3 | 4–6 Trucks | 120–240 |
+| **Medium (9–16)** | 10–14 | 4–6 | 8–14 Trucks | 300–450 |
+| **Large (17–30)** | 18–24 | 8–10 | 16–24 Trucks | 550–750 |
+| **Massive (30+)** | 28+ | 12+ | Transition to Rail | 800+ |
+
+Adopting this modular plan b terraform mining layout allows you to extend the spine as your technology unlocks wider access to the patch. Never route transit through the heart of the raw ore field; keep internal grid space reserved purely for extractors and collection depots.
+
+## High-Density Rail and Station Mining Layouts
+
+As cities expand and consume advanced parts like mechanical components and composite materials, road freight collapses under the sheer volume of goods. Transitioning to a high-capacity plan b terraform mining layout backed by dedicated rail infrastructure becomes essential.
+
+Rail stations pull goods rapidly from adjacent depots, but trains require structured track geometry to prevent network deadlocks. Build cargo stations along the outer edge of large deposits, utilizing a ladder layout where trains peel off the main transit line, enter a loading dock, and merge back smoothly.
+
+```
+Main Track ========\                           /======== Main Track
+                    \--- [ Cargo Station ] ---/
+                         [ Depot Buffer  ]
+                         [ Extractor Row ]
+```
+
+Maintaining station throughput requires an unbroken chain of materials. In an advanced plan b terraform mining layout, depot saturation must match the full loading rate of multi-car trains. If a train sits waiting at an empty terminal, it blocks following trains and throttles downriver assembly lines.
+
+| Rail Configuration | Train Length | Station Depots | Round-Trip Target | Ideal Resource Application |
+| :--- | :--- | :--- | :--- | :--- |
+| **Direct Branch** | 1 Engine, 2 Cars | 2–4 | Short (< 1,000 m) | Sulfur, Iron Ore to local smelting |
+| **Dual Loop Depot** | 1 Engine, 4 Cars | 4–8 | Medium (1,000–3,000 m) | Concrete, Carbon to factory hubs |
+| **Express Freight Trunk** | 2 Engines, 6 Cars | 8–12 | Long (> 3,000 m) | Remote Ice & Nitrogen hauling |
+| **Multi-Dock Interchange**| 2 Engines, 6+ Cars | 12+ | Continental | Mega-city food & supply corridors |
+
+Player experience demonstrates that separating loading loops from through-traffic eliminates station queuing. Keep your main logistics arteries clear by giving every mining terminal its own dedicated acceleration siding. For detailed mechanics on game systems and updates, check out the official [Plan B: Terraform on Steam](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) page.
+
+## Resource-Specific Layout Strategies
+
+Not every mineral behaves identically in planetary logistics. While iron and aluminum form the foundation of physical structures, volatile elements like ice and nitrogen involve unique environmental and processing considerations.
+
+Ice deposits require careful planning because global terraforming alters surface conditions. As planetary temperatures rise, surface ice melts into liquid water, permanently drowning stationary extractors built across low basins. When establishing an ice extraction base, prioritize elevated plateaus or build dynamic networks capable of rapid relocation.
+
+```
+[Ore Nodes] -> [Extractors] -> [On-Site Smelting/Crushing] -> [Depot] -> [Transit]
+```
+
+Smelting ores like iron and sulfur directly adjacent to mining fields cuts shipping bulk in half. Transporting refined bars or chemical containers occupies fewer vehicle cargo slots than shipping raw rocks, lowering the strain on long-distance transit.
+
+| Resource | Melting Risk | Local Pre-Processing | Bulk Factor | Layout Recommendation |
+| :--- | :--- | :--- | :--- | :--- |
+| **Iron Ore** | None | Yes (Iron Bars) | Moderate | Dense linear spine with adjacent smelters |
+| **Sulfur** | None | Optional (Chemicals) | High | Clustered grid feeding chemical depots |
+| **Ice** | High (Melts with warming) | Yes (Water extraction) | Extreme | Rapid-harvest layout; peripheral rail |
+| **Aluminum** | None | Yes (Alloy plates) | Low | High-density extractors; direct train loading |
+| **Nitrogen** | Low | Direct transit | Moderate | Edge-buffered station layout |
+
+Fine-tuning your plan b terraform mining layout for train logistics according to resource traits ensures you never waste rail capacity on intermediate materials that could have been refined right at the extraction site.
+
+## Step-by-Step Optimization and Bottleneck Troubleshooting
+
+Even cleanly designed extraction facilities degrade over time as planetary demands surge. Regularly auditing material movement helps catch logistical friction before factory outputs stall.
+
+Follow this sequential checklist to diagnose throughput bottlenecks:
+
+1. **Verify Extractor Activity:** Check whether extractors display idle status icons. An idle extractor signals that its target depot is completely full.
+2. **Examine Buffer Balances:** If depots remain at 100% capacity, increase outbound transportation capacity by adding vehicles or upgrading rails.
+3. **Inspect Vehicle Traffic:** Look for clustering at intersections. Vehicles waiting to enter loading stops decrease total turnaround frequency.
+4. **Audit Deposit Depletion:** Peripheral extractors eventually run dry as ore patches exhaust. Compact your layout inward to maintain high extraction density.
+
+```
+[Patch Status] -> [Idle Extractors?] -> [Full Depots?] -> [Transit Shortage]
+                       |                      |
+                     (No)                   (Yes)
+                       v                      v
+               [System Optimal]       [Add Rail/Truck Lines]
+```
+
+Applying systematic adjustments keeps your mining zones operating at peak theoretical output without wasted footprint.
+
+| Symptom | Root Cause | Immediate Diagnostic | Permanent Solution |
+| :--- | :--- | :--- | :--- |
+| **Flickering Extractor Cycles** | Target depot bouncing at max capacity | Depots hover near 95–100% full | Add parallel loading stations; deploy faster transit |
+| **Empty Depot Starvation** | Vehicle pickup rate exceeds extraction | Depots consistently sit below 10% | Add more extractors or reduce vehicle count on route |
+| **Vehicle Gridlock at Entrance** | Single-lane intersections handling two-way traffic | Visible vehicle backup on access roads | Convert road to one-way perimeter loop |
+| **Station Loading Delays** | Inadequate depot-to-dock transfer rates | Trains idle at docks with empty cars | Increase depot contact surface around station track |
+
+Troubleshooting common bottlenecks in your plan b terraform mining layout transforms chaotic raw extraction outposts into seamless, automated supply arteries.
+
+## Frequently Asked Questions (FAQ)
+
+### What is the most efficient plan b terraform mining layout for raw ores?
+The most efficient pattern is a central depot spine surrounded on both sides by rows of extractors, with outbound transit running along the exterior perimeter. This configuration maximizes extractor contact with deposit tiles while keeping transport vehicles clear of production equipment.
+
+### Why do my extractors stop working even when ore remains in the ground?
+Extractors halt when their direct output destination—whether a depot, conveyor, or cargo stop—becomes completely full. If outbound trucks or trains do not pick up stored ore quickly enough, the connected extractors immediately enter a paused state until inventory space clears.
+
+### Should I smelt iron ore directly at the mine or ship raw rock?
+Smelting ore into bars directly beside the extraction patch is generally far more efficient. Refined goods require fewer total cargo slots to transport, dramatically cutting down the number of trucks or train cars needed across your planetary transit network.
+
+### How do I protect ice mining layouts from melting as the planet warms?
+Monitor planetary temperature indicators closely during terraforming milestones. Place ice extraction facilities on high-elevation topography or cooler polar zones, and be prepared to decommission basin installations before sea levels rise and submerge your infrastructure.

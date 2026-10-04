@@ -1,0 +1,142 @@
+export const metadata = {
+  title: "Guide d'agencement d'usine dans Plan B Terraform : Logistique modulaire et expansion urbaine",
+  description: "Maîtrisez l'agencement de vos usines dans Plan B Terraform grâce à des modèles en étoile modulaires, la mécanique des dépôts, la logistique ferroviaire et des plans de production évolutifs pour la fin de partie.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Maîtriser un **plan b terraform factory layout** (agencement d'usine) efficace est le facteur le plus déterminant pour transformer une colonie stagnante en une biosphère florissante et autosuffisante. À mesure que l'extraction des ressources passe de modestes filons de fer à des réseaux d'approvisionnement intercontinentaux, les lignes d'assemblage désorganisées s'effondrent rapidement sous le poids de la paralysie logistique. Adopter tôt un **plan b terraform factory layout** modulaire permet d'éviter les blocages critiques de livraison, garantissant ainsi un approvisionnement continu en acier, en polymères et en gaz à effet de serre atmosphériques pour vos villes en pleine expansion.
+
+Sur la surface hexagonale du jeu, la vision spatiale dicte la puissance économique. Contrairement aux jeux de construction classiques sur grille linéaire, cette simulation repose sur la dispersion circulaire, la proximité des dépôts et des boucles de transport à faible friction.
+
+---
+
+## Mécaniques fondamentales de conception d'usine dans Plan B: Terraform
+
+La conception d'une base optimale commence par la compréhension de la manière dont la grille hexagonale gère les entrées et les sorties. Dans ce jeu, les installations de production ne dépendent pas de tapis roulants. Elles interagissent directement avec les cases d'inventaire adjacentes, principalement les **Dépôts**, les extracteurs et les terminaux de transport.
+
+D'après les informations partagées par les développeurs sur la [page Steam de Plan B: Terraform](https://store.steampowered.com/app/1894430/Plan_B_Terraform/), l'espace physique et le débit de traitement déterminent la vitesse à laquelle les matières brutes sont transformées en infrastructures planétaires. Les lignes de transport devant suivre le rythme de traitement des usines, l'espacement structurel s'avère donc essentiel.
+
+### Le rôle des dépôts hexagonaux
+
+Un dépôt sert de zone tampon universelle dans chaque chaîne de production. Toute usine placée directement à côté d'un dépôt prélève automatiquement les ingrédients correspondants et y dépose les produits finis selon la capacité disponible.
+
+* **Adjacence directe :** Une usine peut puiser dans n'importe quelle case de dépôt située dans son anneau immédiat de 6 cases voisines.
+* **Chaînes de dépôts :** Les dépôts reliés en ligne propagent lentement les objets d'une case à l'autre, agissant comme de pseudo-convoyeurs.
+* **Arrêts logistiques :** Les arrêts de camions et de trains chargent et déchargent exclusivement dans les dépôts adjacents, constituant l'interface principale entre le transport et la production.
+
+| Type de structure | Empreinte hexagonale de base | Rayon d'interaction adjacent | Fonction logistique principale |
+| :--- | :--- | :--- | :--- |
+| **Extracteur** | 1 hexagone (gisement de ressource) | 1 anneau voisin | Récolte de minerai brut et de gaz |
+| **Usine / Assembleur** | 1 hexagone | 1 anneau voisin | Fabrication de pièces intermédiaires et de produits finis |
+| **Dépôt** | 1 hexagone (empilable) | 1 anneau voisin | Stockage tampon, transfert inter-installations, chargement de véhicules |
+| **Poste routier / Arrêt** | 1 hexagone | Dépôts adjacents | Gestion du fret par camion à courte et moyenne portée |
+| **Arrêt ferroviaire** | 1 hexagone (voie linéaire) | Dépôts adjacents | Transport intercontinental en vrac à grand volume |
+
+La compréhension de ces propriétés fondamentales vous permet de construire des modules compacts et reproductibles plutôt que des usines tentaculaires et encombrées qui résistent à toute extension.
+
+---
+
+## Modèle modulaire en étoile (Hub-and-Spoke) : Le cœur du Plan B Terraform Factory Layout
+
+Le schéma de production le plus polyvalent développé par les planificateurs chevronnés est le **modèle modulaire en étoile (Hub-and-Spoke)**. Dans cette configuration, un petit groupe de dépôts forme le cœur central, entouré d'un anneau opérationnel d'usines, lui-même bordé par des arrêts de camions ou des voies ferrées de transit sortantes.
+
+```
+       [ Usine ]     [ Usine ]
+            \             /
+    [ Arrêt camion ] - [ Dépôt central ] - [ Arrêt train ]
+            /             \
+       [ Usine ]     [ Usine ]
+```
+
+Lors de l'organisation d'un **plan b terraform factory layout**, les dépôts agissent comme des réserves d'inventaire dynamiques. En centralisant les intrants bruts dans un groupe de deux ou trois dépôts hexagonaux, vous pouvez entourer ce pôle de quatre à six assembleurs produisant des composants en simultané, sans avoir à créer des lignes d'approvisionnement distinctes vers chaque machine.
+
+### Anneaux de fusion et de traitement primaire
+
+Les métaux bruts (le fer, l'aluminium et le soufre) nécessitent une fusion rapide avant de pouvoir être utilisés dans des fabrications de niveau supérieur. Le principal atout d'une disposition en étoile réside dans la capacité de plusieurs extracteurs à alimenter vers l'intérieur un pôle de traitement, qui envoie ensuite directement les lingots raffinés vers la distribution sortante.
+
+| Recette | Entrées brutes | Sortie | Ratio idéal Usine/Dépôt | Liaison de transport recommandée |
+| :--- | :--- | :--- | :--- | :--- |
+| **Lingot de fer** | 1x Minerai de fer | 1x Lingot de fer | 6 Usines : 2 Dépôts E/S | Alimentation directe par extracteur / Camion court |
+| **Lingot d'acier** | 2x Lingots de fer | 1x Lingot d'acier | 4 Usines : 2 Dépôts E/S | Navette interne dédiée par camion |
+| **Lingot d'aluminium** | 1x Minerai d'aluminium | 1x Lingot d'aluminium | 6 Usines : 2 Dépôts E/S | Alimentation directe par extracteur / Camion court |
+| **Pièces mécaniques** | 1x Lingot d'acier | 1x Pièce mécanique | 4 Usines : 2 Dépôts centraux | Chaîne de dépôts en cascade intra-base |
+| **Béton** | 1x Soufre + 1x Sable | 2x Béton | 5 Usines : 3 Dépôts équilibrés | Boucle de répartition multi-dépôts |
+
+Les retours de la communauté soulignent que l'isolation des complexes de fonderie à proximité immédiate des gisements miniers bruts élimine les coûts de transport superflus. Transporter des lingots raffinés plutôt que du minerai brut réduit de moitié l'encombrement des véhicules sur vos artères de transit principales.
+
+---
+
+## Conception de couloirs logistiques à haut débit
+
+Les réseaux logistiques constituent le système circulatoire de votre planète. Une installation industrielle irréprochable se retrouvera paralysée en quelques minutes si les camions de livraison se retrouvent coincés dans des intersections ou si les trains restent en attente de déchargement.
+
+Un **plan b terraform factory layout** modulaire repose sur des blocs fonctionnels isolés et autonomes, reliés par des axes routiers et ferroviaires dédiés. Évitez de concevoir des boucles routières continues qui permettent aux transporteurs d'errer au milieu des ateliers d'assemblage.
+
+### Camions vs Trains : Choisir la bonne artère
+
+En début de partie, les joueurs commettent souvent l'erreur de déployer des flottes de camions sur de longues distances. Bien que les camions ne demandent que peu de capitaux et aucune infrastructure de rails, un nombre élevé de véhicules sature rapidement les carrefours aux abords des grandes usines.
+
+| Critère | Transporteurs routiers (Camions) | Locomotives de fret (Trains) |
+| :--- | :--- | :--- |
+| **Portée optimale** | 1 à 25 cases hexagonales | 25 à 150+ cases hexagonales |
+| **Coût d'installation** | Extrêmement faible (routes de terre/pavées) | Modéré à élevé (investissement ferroviaire) |
+| **Capacité volumique** | Faible par unité (nécessite beaucoup d'unités) | Massive par rame de train |
+| **Impact aux intersections** | Sujet aux embouteillages et aux blocages | La signalisation point à point préserve la vitesse |
+| **Interface usine** | Les arrêts routiers logent dans des espaces compacts | Les gares exigent un espace d'accès rectiligne |
+
+Pour obtenir les meilleurs résultats, réservez les camions à la collecte locale autour des gisements et aux transferts courts entre dépôts. Pour les transferts de ressources entre biomes (comme l'acheminement de glace depuis les calottes polaires ou de fluorite depuis les sommets montagneux), misez exclusivement sur des lignes ferroviaires à grande vitesse dotées de boucles de chargement indépendantes.
+
+---
+
+## Plan pour le milieu et la fin de partie : L'usine avancée à plusieurs niveaux
+
+Au fur et à mesure du développement planétaire, les besoins de la population passent des fournitures mécaniques de base aux composites sophistiqués, aux composants de haute technologie et aux générateurs de gaz à effet de serre atmosphériques. Intégrer le fret longue distance dans votre **plan b terraform factory layout** requiert une séparation stricte des voies pour gérer les recettes multi-ingrédients.
+
+### Le plan modulaire à double anneau
+
+Dans les phases avancées du jeu, les produits exigent fréquemment trois ou quatre sous-composants distincts. Un schéma d'assemblage à double anneau utilise deux couches concentriques de dépôts et d'assembleurs :
+
+1. **Anneau intérieur :** Reçoit les composants primaires (acier, polymères) via les déchargements ferroviaires dans des dépôts à filtre dédié.
+2. **Niveau intermédiaire :** Assemble les composants de niveau intermédiaire (électronique, pièces de haute technologie).
+3. **Anneau extérieur :** Les installations d'assemblage final puisent directement dans les sorties intermédiaires et expédient le matériel de terraformation terminé vers les voies de distribution urbaines.
+
+| Produit complexe | Ingrédient 1 | Ingrédient 2 | Ingrédient 3 | Configuration optimale d'agencement |
+| :--- | :--- | :--- | :--- | :--- |
+| **Pièces high-tech** | Pièces mécaniques | Électronique | Aucun | Couloir linéaire de dépôts décalés |
+| **Générateur de gaz à effet de serre** | Pièces high-tech | Béton armé | Barres d'acier | Hub concentrique à double dépôt |
+| **Extracteur atmosphérique** | Barres d'acier | Pièces mécaniques | Électronique | Pôle à double anneau |
+| **Barrage / Pompe à eau** | Béton armé | Pièces high-tech | Câbles d'acier | Terminal intégré en tête de ligne ferroviaire |
+
+L'expérience des joueurs montre que dédier un secteur de production autonome à chaque marchandise avancée évite les pénuries en cascade, fréquentes dans les mégabases interconnectées trop massives.
+
+---
+
+## Goulots d'étranglement courants et résolution des problèmes d'optimisation
+
+Même un **plan b terraform factory layout** rigoureusement calculé peut fléchir si les stocks tampons de ressources brutes ne s'évacuent pas ou si les chaînes d'approvisionnement se déséquilibrent. Le diagnostic de ces ralentissements impose une inspection méthodique des seuils de stockage et des cadences de transport.
+
+### Résoudre la saturation des dépôts
+
+Lorsqu'un dépôt polyvalent se remplit entièrement d'un ingrédient en surplus (par exemple, des milliers de lingots de fer), il perd la capacité d'accueillir les ingrédients secondaires (comme le soufre), ce qui stoppe net les assembleurs situés en aval.
+
+* **Assigner des dépôts à ressource unique :** Évitez de laisser plusieurs matières premières partager une même case de dépôt. Configurez les cellules de stockage voisines pour qu'elles n'acceptent qu'un seul profil d'objet.
+* **Incinérateurs de surplus et déchargeurs de construction :** Acheminez les composants excédentaires vers des réservoirs de construction ou des lignes de fabrication d'équipements pour que la production ne s'interrompe jamais totalement.
+* **Équilibrer les ratios d'extraction :** Si vos fonderies saturent, ralentissez vos sites d'extraction plutôt que de laisser les postes routiers s'engorger de camions immobiles.
+
+### Maintenir un dégagement autour des terminaux majeurs
+
+Les arrêts routiers et ferroviaires exigent des cases adjacentes dégagées pour faciliter des trajectoires d'accès fluides. Placer des usines de part et d'autre d'un quai de chargement très fréquenté engendre régulièrement des blocages de véhicules. Conservez les artères de transport majeures à au moins une case hexagonale de distance de toute machinerie lourde pour préserver une vitesse de transit maximale.
+
+---
+
+## Foire aux questions
+
+### Quel est le meilleur plan b terraform factory layout de départ pour les débutants ?
+La meilleure conception initiale est l'**anneau de fusion compact**. Disposez deux dépôts côte à côte — l'un dédié au minerai entrant et l'autre aux barres finies — et entourez-les de quatre à cinq fonderies. Reliez votre mine directement au dépôt d'entrée avec une courte boucle routière, et orientez le dépôt de sortie vers des assembleurs de pièces mécaniques.
+
+### Combien d'espace dois-je laisser entre les pôles de production dans mon plan b terraform factory layout ?
+Laissez une zone tampon d'au moins 2 à 3 cases hexagonales vides entre les grands blocs de production. Cet espace libre offre le dégagement nécessaire aux futures extensions ferroviaires, aux zones de stockage de grande capacité et aux voies de déviation réservées aux camions à mesure que la demande s'intensifie.
+
+### Dois-je combiner la production alimentaire et la fabrication industrielle au sein de la même zone d'usine ?
+Non. La production alimentaire (eau et cultures sous serre) s'ajuste directement à la consommation de la population urbaine, tandis que la production industrielle fluctue selon les chantiers d'infrastructure. Isoler les circuits logistiques agricoles et biologiques des voies dédiées aux machines lourdes évite des pénuries alimentaires dramatiques lors des pics de construction.

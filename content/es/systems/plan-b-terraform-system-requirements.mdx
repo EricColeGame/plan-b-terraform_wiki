@@ -1,0 +1,141 @@
+export const metadata = {
+  title: "Requisitos del sistema de Plan B Terraform: Especificaciones completas para PC, guía de rendimiento y pruebas",
+  description: "Consulta los requisitos del sistema oficiales de Plan B Terraform, recomendaciones de hardware para PC, rendimiento en Steam Deck y consejos de optimización para el final del juego.",
+  category: "systems",
+  date: "2026-10-04",
+};
+
+Transformar un exoplaneta árido y congelado en un paraíso exuberante repleto de bosques verdes, agua corriente y ciudades bulliciosas requiere una inmensa planificación logística. Antes de construir redes de transporte planetario y gestionar ciclos masivos de producción automatizada, conocer los **requisitos del sistema de plan b terraform** oficiales es fundamental para que tu colonia funcione sin problemas. Evaluar tu equipo de juego frente a los **requisitos del sistema de plan b terraform** verificados garantiza que no sufrirás tirones a mitad de la partida ni cuellos de botella de hardware que arruinen la experiencia a medida que tus sistemas de transporte automatizados escalen hacia millones de piezas en movimiento.
+
+Plan B: Terraform simula ecosistemas planetarios completos junto con una densa logística de fábricas, lo que ejerce presiones únicas sobre tu procesador y tarjeta gráfica. Aunque el motor de simulación indie es notablemente ligero durante tus primeras horas colocando mineros y almacenes de suministros, la terraformación planetaria añade complejas dinámicas de fluidos, ajustes climáticos y rutas de transporte globales. Esta guía desglosa los requisitos de hardware mínimos y recomendados, analiza los cuellos de botella de los componentes, evalúa el rendimiento en consolas portátiles y ofrece ajustes de optimización probados para megafábricas.
+
+---
+
+## Requisitos oficiales mínimos y recomendados para PC de Plan B: Terraform
+
+El juego está diseñado pensando en la accesibilidad, utilizando un estilo visual limpio y un motor de simulación subyacente eficiente desarrollado en solitario por Florian van Strien. En consecuencia, la barrera de entrada es gratamente baja en comparación con muchos títulos modernos de construcción de fábricas.
+
+La siguiente tabla detalla tanto el hardware básico necesario para iniciar el juego como el hardware recomendado por los informes de la comunidad para una gestión planetaria fluida en las fases intermedia y avanzada de la partida.
+
+| Componente de hardware | Requisitos mínimos del sistema | Hardware recomendado por la comunidad | Configuración de gama alta / Megacolonias |
+| :--- | :--- | :--- | :--- |
+| **Sistema operativo** | Windows 10 (64 bits) | Windows 10 / 11 (64 bits) | Windows 11 (64 bits) / Linux |
+| **Procesador (CPU)** | Intel / AMD de 64 bits de doble núcleo (2.5 GHz+) | CPU de 4 núcleos (Intel Core i5-6600K / Ryzen 5 1600) | De 6 a 8 núcleos (Intel i5-13600K / Ryzen 7 7800X3D) |
+| **Memoria (RAM)** | 4 GB de RAM | 8 GB de RAM | De 16 GB a 32 GB DDR4 / DDR5 |
+| **Tarjeta gráfica (GPU)**| Intel HD Graphics 4000 / Radeon Vega 8 | NVIDIA GeForce GTX 1050 Ti / AMD Radeon RX 560 | NVIDIA GeForce RTX 3060 / AMD Radeon RX 6600 |
+| **VRAM** | 1 GB dedicada o compartida | De 2 GB a 4 GB de VRAM dedicada | 6 GB+ de VRAM dedicada |
+| **DirectX / API** | Compatible con versión 11 | Compatible con versión 11 | DirectX 11 / Capa Vulkan (wrapper) |
+| **Espacio de almacenamiento** | 500 MB de espacio disponible | 1 GB en SSD (para caché y copias de seguridad) | SSD NVMe M.2 rápido |
+
+Al evaluar los **requisitos del sistema de plan b terraform** básicos, prácticamente cualquier portátil de oficina moderno o equipo de escritorio económico adquirido en los últimos ocho años puede ejecutar el juego inicial. Sin embargo, los juegos de automatización de fábricas rara vez mantienen la misma carga de recursos desde el inicio hasta el final de la partida, lo que significa que los jugadores deberían aspirar al nivel recomendado para disfrutar de una experiencia sin interrupciones.
+
+---
+
+## Desglose del hardware: Por qué la simulación escala más allá de las especificaciones base
+
+Las primeras fases del juego implican recolectar minerales de hierro básicos y desplegar pequeñas flotas de camiones de carga para abastecer tu asentamiento inicial. Durante esta etapa, el uso de hardware se mantiene al mínimo. Sin embargo, a medida que los generadores de gases de efecto invernadero se activan, el hielo polar se derrite en cuencas de agua dinámicas y las redes ferroviarias de alta velocidad se extienden por miles de casillas hexagonales, las exigencias de hardware cambian drásticamente.
+
+```
+Fase inicial (Baja CPU/RAM)  -->  Fase intermedia (Carga moderada)  -->  Fase tardía (Simulación pesada)
+[Mineros básicos y camiones]      [Líneas de tren y fábricas]            [Océanos dinámicos, bosques, +50k camiones]
+```
+
+Comprender cómo responde cada componente de hardware al escalado planetario ayuda a prevenir caídas inesperadas de rendimiento.
+
+### Procesador (CPU): El corazón del motor de simulación
+
+El procesador central se encarga de la lógica de cada objeto, camión, vagón de tren, emisor de gases de efecto invernadero y celda termodinámica en todo el planeta. Si bien los **requisitos del sistema de plan b terraform** mínimos indican una CPU básica de doble núcleo, los bucles de simulación procesan cientos de miles de comprobaciones dinámicas de rutas por segundo en colonias de gran tamaño.
+
+La velocidad de reloj mononúcleo determina qué tan rápido se resuelve cada ciclo interno (tick) de la simulación. Si tu CPU no puede terminar de calcular el movimiento de todos los suministros antes del siguiente ciclo, la velocidad interna del juego se ralentizará, sin importar qué tan alta sea la tasa de fotogramas en pantalla.
+
+### Memoria (RAM): Gestión de datos globales en expansión
+
+Aunque la especificación mínima solo exige 4 GB de RAM, las pruebas de la comunidad revelan que 8 GB es el verdadero umbral práctico para partidas prolongadas. El juego rastrea millones de objetos físicos que se desplazan por nodos de ensamblaje, depósitos y puntos de entrega. A medida que tu archivo de guardado crece, la asignación de memoria se amplía para mantener las redes logísticas activas accesibles al instante sin pausas de carga.
+
+### Tarjeta gráfica (GPU): Apartado visual y renderizado de hexágonos en todo el planeta
+
+Dado que el juego utiliza una estética poligonal limpia y estilizada en lugar de trazado de rayos fotorrealista, las exigencias gráficas son moderadas. La carga principal de la GPU consiste en renderizar la superficie planetaria curva, los reflejos del agua, la capa de nubes y los vastos bosques de árboles plantados. Una GPU dedicada para juegos de gama de entrada mantiene fácilmente 60 FPS a 1080p, mientras que las gráficas integradas pueden requerir reducir la resolución de las sombras al alejar la cámara por completo hacia la órbita.
+
+| Subsistema de hardware | Demanda de recursos (Fase inicial) | Demanda de recursos (Fase tardía) | Factor principal de cuello de botella |
+| :--- | :--- | :--- | :--- |
+| **CPU (Mononúcleo)** | Baja (~15-25% de uso) | Muy alta (~85-100% de saturación del hilo) | Lógica de búsqueda de rutas y transferencia de objetos |
+| **CPU (Multinúcleo)** | Baja | Moderada a alta | Cálculos de logística en segundo plano |
+| **RAM del sistema** | ~2.5 GB asignados | ~5.5 GB a 7.2 GB asignados | Seguimiento del estado de guardado y listas globales de objetos |
+| **Núcleo de GPU** | Moderada (mallas básicas) | Moderada a alta (vegetación densa y océanos) | Renderizado planetario con zoom alejado |
+| **Almacenamiento (E/S de disco)**| Insignificante | Baja (guardados automáticos periódicos) | Compresión de archivos de guardado del mundo |
+
+---
+
+## Optimización gráfica y de pantalla para mundos a gran escala
+
+Si tu equipo se encuentra justo en el límite de los **requisitos del sistema de plan b terraform** recomendados, ajustar las opciones visuales del juego puede liberar un margen de procesamiento crucial. El menú de gráficos ofrece varias opciones que permiten a los sistemas económicos mantener tasas de fotogramas estables, incluso al observar sectores industriales masivos.
+
+Según la experiencia de los jugadores y las pruebas de rendimiento en equipos modestos, ajustar controles visuales específicos proporciona mejoras notables de fluidez sin perder claridad visual:
+
+| Ajuste del juego | Recomendado (PC de bajo presupuesto) | Recomendado (PC de gama media) | Impacto en el rendimiento | Impacto visual |
+| :--- | :--- | :--- | :--- | :--- |
+| **Resolución** | 1080p (Nativa) | 1440p / 4K | Alto | Alto |
+| **Límite de fotogramas** | 60 FPS (o 30 en iGPU) | 60 FPS / Sin límite | Alto (carga térmica de la GPU) | Bajo a medio |
+| **Calidad del agua** | Baja / Media | Alta | Moderado | Bajo |
+| **Densidad de árboles** | Media | Alta | Moderado a alto | Medio |
+| **Efectos de nubes** | Bajos / Desactivados | Altos | Bajo a moderado | Bajo |
+| **Calidad de sombras** | Baja | Media | Alto | Medio |
+| **Antialiasing** | FXAA o 2x MSAA | 4x MSAA / TAA | Moderado | Bajo a medio |
+
+Limitar la tasa de fotogramas a 60 FPS estables (o 30 FPS en equipos de muy bajo consumo) evita que la GPU trabaje a plena capacidad en momentos sencillos de la partida. Esto deja un margen térmico y energético para que tu CPU procese la compleja logística de suministros sin contratiempos.
+
+---
+
+## Rendimiento en Steam Deck y consolas portátiles para PC
+
+Gracias a su interfaz limpia y a su arquitectura ligera, Plan B: Terraform se ha convertido en uno de los títulos favoritos para los entusiastas de las consolas portátiles para PC. Cumplir con los **requisitos del sistema de plan b terraform** en formato portátil en Steam Deck, ASUS ROG Ally o Lenovo Legion Go es sencillo, aunque la optimización prolonga notablemente la duración de la batería.
+
+Los informes oficiales de la comunidad indican que el juego funciona directamente desde el primer momento a través de Proton en SteamOS. Para consultar las especificaciones técnicas verificadas y los detalles de la tienda, visita la [página de Steam de Plan B: Terraform](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) oficial para revisar las actualizaciones de compatibilidad más recientes.
+
+La siguiente tabla muestra configuraciones probadas para jugar en dispositivos portátiles:
+
+| Dispositivo | Resolución objetivo | Límite de potencia / TDP | Ajuste predeterminado | Tasa de fotogramas esperada | Duración estimada de la batería |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Steam Deck (LCD)** | 1280x800 | 9 W – 10 W | Ajustes medios | 45 – 60 FPS | ~3.0 a 3.5 horas |
+| **Steam Deck (OLED)**| 1280x800 | 8 W – 9 W | Ajustes altos | 60 FPS | ~4.0 a 4.5 horas |
+| **ROG Ally (Z1 Extreme)**| 1080p | 15 W (Modo Rendimiento)| Ajustes altos | 60 FPS (Estables) | ~1.8 a 2.2 horas |
+| **Consolas portátiles económicas (ej. Win600)**| 720p | 12 W | Ajustes bajos | 30 FPS | ~1.5 a 2.0 horas |
+
+Dado que los títulos de gestión de fábricas implican clics continuos y arrastrar el mapa frecuentemente, asignar los trackpads a la entrada del ratón en la Steam Deck ofrece la experiencia portátil más cómoda. Limitar la frecuencia de actualización de la pantalla portátil a 45 Hz o 50 Hz proporciona una experiencia sumamente fluida manteniendo el consumo de batería bajo control.
+
+---
+
+## Solución de problemas: FPS bajos y tirones en las fases avanzadas
+
+Incluso si tu equipo supera con creces los **requisitos del sistema de plan b terraform** estándar, la escala masiva del juego puede provocar ocasionalmente variaciones en los tiempos de cuadro (frame timing). Si empiezas a notar microtirones una vez que tu población asciende a decenas de miles, una serie de comprobaciones diagnósticas puede aislar el problema.
+
+Sigue esta lista de comprobación para restaurar el rendimiento óptimo:
+
+1. **Verifica la densidad logística:** Un exceso de líneas de camiones pequeños genera muchos más cálculos de rutas que las líneas ferroviarias de alta capacidad. Reemplaza las rutas de camiones de gran volumen por trenes para reducir drásticamente los hilos de cálculo de rutas activos.
+2. **Ajusta los intervalos de guardado automático:** Escribir mapas de mundos masivos en el disco produce una breve pausa cada pocos minutos. Modifica el intervalo de guardado automático de cada 5 minutos a cada 15 o 30 minutos en el menú de ajustes.
+3. **Revisa las aplicaciones en segundo plano:** Los navegadores web, las transmisiones de vídeo y las aplicaciones superpuestas (overlays) en segundo plano consumen memoria y ciclos de CPU que la simulación de tu fábrica necesita.
+4. **Actualiza los controladores gráficos:** Los controladores de GPU desactualizados pueden gestionar incorrectamente la paginación de memoria entre la RAM del sistema y la VRAM compartida, especialmente en sistemas integrados como Intel Iris Xe o AMD Radeon 680M/780M.
+5. **Controla el estrangulamiento térmico (thermal throttling):** Las cargas prolongadas de simulación en la CPU pueden sobrecalentar los portátiles compactos, obligándolos a reducir sus frecuencias de reloj. Asegúrate de contar con una refrigeración adecuada y eleva la base del portátil para facilitar la ventilación.
+
+| Síntoma | Causa probable | Solución práctica |
+| :--- | :--- | :--- |
+| **El juego va a cámara lenta a pesar de mostrar 60 FPS** | Saturación de hilos de la CPU (cuello de botella de simulación) | Cambia el transporte por carretera a trenes; elimina depósitos redundantes |
+| **Movimiento brusco de cámara al alejar el zoom** | Sobrecarga de llamadas de dibujado (draw-calls) / renderizado de vegetación densa | Reduce la densidad de árboles y baja la calidad de las sombras en los ajustes |
+| **Congelamiento periódico de 1 segundo** | Latencia de escritura en disco durante los guardados automáticos | Traslada el directorio del juego a un SSD; incrementa el intervalo de guardado automático |
+| **Caída progresiva de FPS tras jugar varias horas** | Saturación de memoria o estrangulamiento térmico de la GPU | Reinicia el cliente del juego; limpia las rejillas de ventilación para mantener las frecuencias turbo |
+
+---
+
+## Preguntas frecuentes sobre las especificaciones del sistema de Plan B: Terraform
+
+### ¿Puede mi portátil económico cumplir con los requisitos del sistema de plan b terraform?
+Sí. La mayoría de los portátiles económicos modernos equipados con un procesador Intel Core i3 de 10.ª generación (o equivalente de la serie AMD Ryzen 3000) y al menos 8 GB de RAM pueden ejecutar el juego sin problemas. Aunque las tarjetas gráficas integradas pueden requerir reducir la resolución de las sombras y el detalle de los bosques, la simulación en sí sigue siendo perfectamente jugable durante las fases intermedias de terraformación.
+
+### ¿Funciona Plan B: Terraform en macOS y Linux?
+Plan B: Terraform es compatible de forma nativa con Windows, mientras que los usuarios de Linux y SteamOS pueden jugar con total fluidez mediante la capa de compatibilidad Proton integrada en Steam. Los usuarios de Mac pueden ejecutar el juego mediante herramientas de compatibilidad como CrossOver o Whisky, aunque el soporte nativo para macOS depende de las versiones del desarrollador. Consultar el punto de encuentro de la comunidad de Steam te permitirá confirmar las soluciones de compatibilidad más recientes.
+
+### ¿Es obligatorio un SSD según los requisitos del sistema de plan b terraform?
+Aunque las especificaciones oficiales indican que los discos duros tradicionales son suficientes debido a su modesto tamaño de instalación de 500 MB, se recomienda encarecidamente un SSD. El almacenamiento de estado sólido elimina prácticamente todos los microtirones durante los guardados automáticos periódicos cuando tu planeta contiene cientos de miles de estructuras automatizadas y vehículos de transporte.
+
+### ¿Por qué se calienta mi CPU al jugar a Plan B: Terraform?
+A diferencia de los juegos de acción centrados en los gráficos que exigen principalmente a la GPU, los títulos de gestión y automatización ejecutan bucles continuos de simulación matemática en todos los núcleos activos de la CPU. El seguimiento de millones de unidades de carga, la dispersión termodinámica del calor y los niveles de gases de efecto invernadero en la atmósfera mantienen el procesador trabajando constantemente, lo que genera temperaturas sostenidas comparables a las de un banco de pruebas (benchmark) intensivo de productividad.

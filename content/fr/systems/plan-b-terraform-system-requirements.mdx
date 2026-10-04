@@ -1,0 +1,141 @@
+export const metadata = {
+  title: "Configuration requise pour Plan B Terraform : Specs PC complètes, guide de performances et benchmarks",
+  description: "Découvrez la configuration requise officielle de Plan B Terraform, les recommandations matérielles pour PC, les performances sur Steam Deck et des astuces d'optimisation.",
+  category: "systems",
+  date: "2026-10-04",
+};
+
+Transformer une exoplanète stérile et gelée en un paradis verdoyant regorgeant de forêts denses, de cours d'eau et de métropoles animées exige une planification logistique colossale. Avant d'établir des réseaux de transport planétaires et de gérer d'immenses boucles de production automatisées, il est essentiel de connaître la **configuration requise pour Plan B Terraform** afin de garantir le bon fonctionnement de votre colonie. Évaluer votre configuration matérielle par rapport à la **configuration requise officielle pour Plan B Terraform** vous évitera des saccades en milieu de partie ou des goulets d'étranglement matériels critiques à mesure que vos systèmes de transport automatisés s'étendront à des millions d'éléments mobiles.
+
+Plan B: Terraform simule des écosystèmes planétaires entiers tout en gérant une logistique industrielle complexe, ce qui met votre processeur et votre carte graphique à rude épreuve. Si le moteur de simulation de ce jeu indépendant est particulièrement fluide durant vos premières heures d'extraction minière et d'implantation de dépôts, la terraformation planétaire introduit des dynamiques de fluides complexes, des variations climatiques et des itinéraires de transport mondiaux. Ce guide détaille les configurations minimale et recommandée, analyse les goulets d'étranglement potentiels, évalue les performances sur consoles portables et propose des réglages d'optimisation éprouvés pour vos méga-usines.
+
+---
+
+## Configuration PC minimale et recommandée officielle pour Plan B: Terraform
+
+Le jeu a été pensé pour être accessible, s'appuyant sur un style visuel épuré et un moteur de simulation sous-jacent performant développé par le créateur solo Florian van Strien. Par conséquent, la configuration d'entrée requise est remarquablement modeste par rapport à de nombreux jeux de construction d'usines modernes.
+
+Le tableau ci-dessous présente à la fois le matériel de base indispensable pour lancer le jeu et les recommandations de la communauté pour assurer une gestion fluide de la planète en milieu et fin de partie.
+
+| Composant matériel | Configuration minimale | Recommandations de la communauté | Configuration haut de gamme / Méga-colonie |
+| :--- | :--- | :--- | :--- |
+| **Système d'exploitation** | Windows 10 (64 bits) | Windows 10 / 11 (64 bits) | Windows 11 (64 bits) / Linux |
+| **Processeur (CPU)** | Intel / AMD double cœur 64 bits (2,5 GHz+) | Processeur quatre cœurs (Intel Core i5-6600K / Ryzen 5 1600) | 6 à 8 cœurs (Intel i5-13600K / Ryzen 7 7800X3D) |
+| **Mémoire vive (RAM)** | 4 Go de RAM | 8 Go de RAM | 16 Go à 32 Go DDR4 / DDR5 |
+| **Carte graphique (GPU)**| Intel HD Graphics 4000 / Radeon Vega 8 | NVIDIA GeForce GTX 1050 Ti / AMD Radeon RX 560 | NVIDIA GeForce RTX 3060 / AMD Radeon RX 6600 |
+| **VRAM** | 1 Go dédié ou partagé | 2 Go à 4 Go de VRAM dédiée | 6 Go+ de VRAM dédiée |
+| **DirectX / API** | Compatible version 11 | Compatible version 11 | DirectX 11 / couche Vulkan |
+| **Espace de stockage** | 500 Mo d'espace libre | 1 Go sur SSD (pour le cache et les sauvegardes) | SSD NVMe M.2 rapide |
+
+En examinant la **configuration minimale pour Plan B Terraform**, on constate que pratiquement n'importe quel ordinateur portable bureautique moderne ou PC de bureau économique conçu au cours des huit dernières années peut faire tourner les premières phases du jeu. Cependant, les jeux d'automatisation d'usines maintiennent rarement une charge de ressources constante entre le lancement et la fin de partie ; les joueurs ont donc tout intérêt à viser la configuration recommandée pour profiter d'une expérience sans ralentissements.
+
+---
+
+## Analyse matérielle : Pourquoi la simulation dépasse les spécifications de base
+
+Le début de partie se résume à extraire du minerai de fer de base et à déployer de petites flottes de camions pour ravitailler votre première colonie. Durant cette phase, l'utilisation des ressources matérielles reste minime. Toutefois, dès que les générateurs de gaz à effet de serre s'activent, que les calottes polaires fondent pour former des bassins fluviaux dynamiques et que les réseaux ferroviaires à grande vitesse traversent des milliers d'hexagones, les exigences matérielles augmentent de façon spectaculaire.
+
+```
+Début de partie (CPU/RAM faibles) --> Milieu de partie (Charge modérée) --> Fin de partie (Simulation lourde)
+[Mineurs & camions basiques]          [Lignes de train & usines]            [Océans dynamiques, forêts, 50k+ camions]
+```
+
+Comprendre comment chaque composant matériel gère cette montée en charge planétaire aide à prévenir les chutes de performances imprévues.
+
+### Processeur (CPU) : Le cœur du moteur de simulation
+
+Le processeur central gère la logique de chaque ressource, camion, wagon, émetteur de gaz à effet de serre et cellule thermodynamique sur l'ensemble du globe. Bien que la **configuration minimale pour Plan B Terraform** ne demande qu'un processeur double cœur basique, les boucles de calcul de la simulation effectuent plusieurs centaines de milliers de vérifications de recherche d'itinéraire par seconde dans les grandes colonies.
+
+La fréquence d'horloge monocœur détermine la rapidité d'exécution de chaque étape (tick) de simulation. Si votre processeur ne parvient pas à calculer le déplacement de tous les flux logistiques avant le tick suivant, la vitesse interne du jeu ralentira, même si le nombre d'images par seconde affiché à l'écran reste élevé.
+
+### Mémoire vive (RAM) : Gérer l'explosion des données mondiales
+
+Alors que la configuration minimale ne demande que 4 Go de RAM, les retours des joueurs confirment que 8 Go constituent le seuil pratique indispensable pour les longues campagnes. Le jeu assure le suivi de millions d'objets physiques transitant entre les nœuds d'assemblage, les dépôts et les points de déchargement. Au fur et à mesure que la sauvegarde s'étoffe, l'allocation de mémoire s'accroît pour maintenir les réseaux logistiques actifs immédiatement accessibles, sans micro-chargements.
+
+### Carte graphique (GPU) : Visuels et rendu des hexagones à l'échelle planétaire
+
+Grâce à sa direction artistique low-poly stylisée et épurée plutôt qu'au ray tracing photoréaliste, les exigences graphiques restent mesurées. La charge principale du GPU consiste à afficher la surface sphérique de la planète, les reflets de l'eau, la couverture nuageuse et les vastes étendues d'arbres replantés. Une carte graphique gaming d'entrée de gamme dédiée maintient sans difficulté 60 FPS en 1080p, tandis que les cartes graphiques intégrées devront réduire la résolution des ombres lors d'un dézoom maximal en vue orbitale.
+
+| Sous-système matériel | Demande en début de partie | Demande en fin de partie | Facteur de goulet d'étranglement |
+| :--- | :--- | :--- | :--- |
+| **CPU (Monocœur)** | Faible (~15-25 % d'utilisation) | Très élevée (~85-100 % de saturation) | Logique de pathfinding & transferts d'objets |
+| **CPU (Multicœur)** | Faible | Modérée à élevée | Calculs logistiques en arrière-plan |
+| **RAM système** | ~2,5 Go alloués | ~5,5 Go à 7,2 Go alloués | Suivi des états de sauvegarde & listes d'objets |
+| **Puce GPU** | Modérée (maillages simples) | Modérée à élevée (végétation dense & océans) | Rendu de la planète en vue dézoomée |
+| **Stockage (E/S disque)**| Négligeable | Faible (sauvegardes auto périodiques) | Compression du fichier de sauvegarde |
+
+---
+
+## Optimisation des graphismes et de l'affichage pour les mondes géants
+
+Si votre machine se situe à la limite de la **configuration recommandée pour Plan B Terraform**, ajuster quelques réglages graphiques peut libérer une marge de calcul précieuse. Le menu des options graphiques offre plusieurs paramètres permettant aux configurations modestes de maintenir un framerate stable, même avec une vue panoramique sur de gigantesques secteurs industriels.
+
+D'après les tests de référence et les retours d'expérience des joueurs sur des machines d'entrée de gamme, le réglage de certains curseurs offre un gain de performance notable sans dégrader la lisibilité :
+
+| Paramètre graphique | Recommandé (PC modestes) | Recommandé (PC intermédiaires) | Impact sur les performances | Impact visuel |
+| :--- | :--- | :--- | :--- | :--- |
+| **Résolution** | 1080p (Native) | 1440p / 4K | Élevé | Élevé |
+| **Limite de framerate** | 60 FPS (ou 30 sur iGPU) | 60 FPS / Sans limite | Élevé (charge thermique GPU) | Faible à modéré |
+| **Qualité de l'eau** | Faible / Moyenne | Élevée | Modéré | Faible |
+| **Densité des arbres** | Moyenne | Élevée | Modéré à élevé | Modéré |
+| **Effets de nuages** | Faible / Désactivé | Élevé | Faible à modéré | Faible |
+| **Qualité des ombres** | Faible | Moyenne | Élevé | Modéré |
+| **Anticrénelage (AA)** | FXAA ou 2x MSAA | 4x MSAA / TAA | Modéré | Faible à modéré |
+
+Bloquer le framerate à 60 FPS constants (ou 30 FPS sur les machines ultra-basse consommation) évite à votre GPU de tourner à pleine charge lors des phases de jeu plus calmes. Cela permet de préserver de la puissance et de la marge thermique pour que votre processeur traite sans encombre les calculs logistiques complexes.
+
+---
+
+## Performances sur Steam Deck et consoles PC portables
+
+Grâce à son interface ergonomique et à son moteur léger, Plan B: Terraform s'est imposé comme un titre très apprécié des amateurs de consoles PC portables. Respecter la **configuration requise pour Plan B Terraform** sur Steam Deck, ASUS ROG Ally ou Lenovo Legion Go ne pose aucune difficulté, même si quelques optimisations permettent d'augmenter considérablement l'autonomie de la batterie.
+
+Les retours de la communauté confirment que le jeu tourne parfaitement dès l'installation via Proton sous SteamOS. Pour consulter les spécifications techniques officielles et les détails du magasin, rendez-vous sur la [page Steam officielle de Plan B: Terraform](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) pour vérifier les dernières mises à jour de compatibilité.
+
+Le tableau ci-dessous présente les configurations testées sur appareils portables :
+
+| Appareil | Résolution cible | TDP / Limite de puissance | Préréglage en jeu | Framerate attendu | Autonomie estimée |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Steam Deck (LCD)** | 1280x800 | 9W – 10W | Paramètres moyens | 45 – 60 FPS | ~3,0 à 3,5 heures |
+| **Steam Deck (OLED)**| 1280x800 | 8W – 9W | Paramètres élevés | 60 FPS | ~4,0 à 4,5 heures |
+| **ROG Ally (Z1 Extreme)**| 1080p | 15W (Mode Performance)| Paramètres élevés | 60 FPS (Stable) | ~1,8 à 2,2 heures |
+| **Consoles d'entrée de gamme (ex. Win600)**| 720p | 12W | Paramètres faibles | 30 FPS | ~1,5 à 2,0 heures |
+
+Comme les jeux de gestion d'usines impliquent de fréquents clics et déplacements sur la carte, attribuer les pavés tactiles du Steam Deck à l'émulation de la souris offre l'expérience nomade la plus fluide et agréable. Bloquer le taux de rafraîchissement de l'écran à 45 Hz ou 50 Hz garantit un rendu visuel impeccable tout en préservant l'autonomie de la batterie.
+
+---
+
+## Dépannage : Résoudre les baisses de FPS et saccades en fin de partie
+
+Même lorsque votre machine dépasse largement la **configuration requise pour Plan B Terraform**, l'échelle titanesque de vos installations peut parfois provoquer des variations du temps d'affichage des images. Si vous constatez des micro-saccades lorsque la population de votre colonie atteint des dizaines de milliers d'habitants, cette liste de vérifications vous permettra d'isoler l'origine du problème.
+
+Suivez ces recommandations de dépannage pour restaurer des performances optimales :
+
+1. **Vérifiez la densité logistique :** Des lignes de petits camions surpeuplées génèrent bien plus de calculs d'itinéraires que les lignes de train à grande capacité. Remplacez les trajets routiers denses par des voies ferrées pour réduire massivement les threads de pathfinding actifs.
+2. **Ajustez l'intervalle de sauvegarde automatique :** L'écriture d'une vaste carte sur le disque provoque une brève pause toutes les quelques minutes. Passez l'intervalle de sauvegarde auto de 5 minutes à 15 ou 30 minutes dans les paramètres.
+3. **Fermez les applications en arrière-plan :** Les navigateurs web, vidéos en streaming et utilitaires d'overlay consomment de la mémoire et des cycles CPU indispensables à la simulation de votre usine.
+4. **Mettez à jour les pilotes graphiques :** Des pilotes GPU obsolètes peuvent mal gérer la pagination mémoire entre la RAM système et la VRAM partagée, en particulier sur les circuits intégrés Intel Iris Xe ou AMD Radeon 680M/780M.
+5. **Surveillez le throttling thermique :** Une charge de simulation prolongée sur le processeur fait chauffer les ordinateurs portables compacts, entraînant une baisse forcée des fréquences d'horloge. Veillez à maintenir une bonne ventilation et à surélever la base de votre PC portable.
+
+| Symptôme | Cause probable | Solution recommandée |
+| :--- | :--- | :--- |
+| **Le jeu tourne au ralenti malgré 60 FPS affichés** | Saturation des cœurs CPU (goulet de simulation) | Remplacer le transport routier par le rail ; supprimer les dépôts superflus |
+| **Mouvements de caméra saccadés au dézoom** | Surcharge de draw-calls / rendu de la végétation | Réduire la densité des arbres et la qualité des ombres |
+| **Gel d'image périodique d'une seconde** | Temps d'accès disque lors de la sauvegarde auto | Déplacer le jeu sur un SSD ; espacer les sauvegardes automatiques |
+| **Chute progressive des FPS après plusieurs heures** | Fuite de mémoire ou bridage thermique du GPU | Redémarrer le jeu ; dépoussiérer les aérations du PC |
+
+---
+
+## Foire aux questions sur la configuration de Plan B: Terraform
+
+### Mon ordinateur portable d'entrée de gamme peut-il faire tourner Plan B: Terraform ?
+Oui. La plupart des PC portables bureautiques récents équipés d'un processeur Intel Core i3 de 10e génération (ou équivalent AMD Ryzen série 3000) et d'au moins 8 Go de RAM peuvent exécuter le jeu sans souci. Bien qu'une puce graphique intégrée impose de baisser la résolution des ombres et le niveau de détail des forêts, la simulation reste parfaitement jouable tout au long des phases intermédiaires de terraformation.
+
+### Plan B: Terraform fonctionne-t-il sur macOS et Linux ?
+Plan B: Terraform prend en charge Windows de manière native, tandis que les utilisateurs de Linux et de SteamOS peuvent y jouer sans accroc grâce à la couche de compatibilité Proton intégrée à Steam. Sur Mac, le jeu peut être exécuté via des solutions de compatibilité telles que CrossOver ou Whisky, la prise en charge native de macOS dépendant des versions publiées par le développeur. Pensez à vérifier le hub communautaire Steam pour connaître les dernières avancées.
+
+### Un SSD est-il obligatoire d'après la configuration requise de Plan B Terraform ?
+Bien que les spécifications officielles indiquent qu'un disque dur mécanique traditionnel suffit en raison de la taille d'installation modeste (500 Mo), un SSD est vivement conseillé. Le stockage sur mémoire flash élimine quasiment toutes les micro-saccades causées par les sauvegardes automatiques régulières lorsque votre planète compte des centaines de milliers de structures et de véhicules de transport automatisés.
+
+### Pourquoi mon processeur chauffe-t-il autant sur Plan B: Terraform ?
+Contrairement aux jeux d'action centrés sur les graphismes qui sollicitent avant tout la carte graphique, les jeux d'automatisation et de gestion exécutent en continu des boucles de simulation mathématique complexes sur tous les cœurs actifs du CPU. Le suivi de millions de marchandises en transit, la dissipation thermique thermodynamique et les concentrations atmosphériques de gaz à effet de serre mobilisent constamment votre processeur, entraînant des températures soutenues comparables à celles d'un benchmark de calcul intensif.

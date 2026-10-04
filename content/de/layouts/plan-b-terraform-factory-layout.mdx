@@ -1,0 +1,142 @@
+export const metadata = {
+  title: "Plan B: Terraform Fabriklayout-Leitfaden: Modulare Logistik & Stadtskalierung",
+  description: "Meistern Sie Ihr Plan B Terraform Fabriklayout mit modularen Hub-Designs, Depot-Mechaniken, Schienenlogistik und skalierbaren Produktionsbauplänen für das Endgame.",
+  category: "layouts",
+  date: "2026-10-04",
+};
+
+Das Meistern eines effizienten **Plan B Terraform Fabriklayouts** ist der entscheidende Faktor, der eine stagnierende Kolonie von einer florierenden, sich selbst versorgenden Biosphäre unterscheidet. Sobald der Ressourcenabbau von bescheidenen Eisenerzadern zu multikontinentalen Versorgungsnetzen anwächst, brechen planlose Produktionslinien schnell unter logistischer Lähmung zusammen. Ein frühzeitiges modulares **Plan B Terraform Fabriklayout** verhindert katastrophale Lieferengpässe und stellt sicher, dass Stahl, Polymere und Treibhausgase für die Atmosphäre ununterbrochen zu Ihren wachsenden Städten fließen.
+
+Auf der sechseckigen Oberfläche des Spiels bestimmt das räumliche Vorstellungsvermögen Ihre Wirtschaftskraft. Im Gegensatz zu traditionellen Spielen mit linearen Rastern lebt diese Simulation von kreisförmiger Verteilung, Depot-Nähe und reibungsarmen Transportschleifen.
+
+---
+
+## Grundlegende Mechaniken des Fabrikdesigns in Plan B: Terraform
+
+Der Entwurf einer optimalen Basis beginnt mit dem Verständnis, wie das hexagonale Kachelraster Ein- und Ausgänge verarbeitet. In diesem Spiel verlassen sich Produktionsstätten nicht auf Förderbänder. Stattdessen interagieren sie direkt mit angrenzenden Inventarfeldern – primär **Depots**, Extraktoren und Transportterminals.
+
+Laut Entwickler-Einblicken auf der [Steam-Seite von Plan B: Terraform](https://store.steampowered.com/app/1894430/Plan_B_Terraform/) bestimmen physischer Raum und Durchsatzrate, wie schnell sich Rohstoffe in planetare Infrastruktur verwandeln. Da Transportlinien mit der Arbeitsgeschwindigkeit der Fabriken Schritt halten müssen, ist der strukturelle Abstand entscheidend.
+
+### Die Rolle der Hex-Depots
+
+Ein Depot dient als universeller Puffer in jeder Produktionskette. Jede Fabrik, die direkt an ein Depot angrenzt, zieht automatisch passende Zutaten ab und lagert fertige Güter in freie Kapazitäten ein. 
+
+* **Direkte Angrenzung:** Eine Fabrik kann Ressourcen von jedem Depotfeld innerhalb ihres direkten 6-Kachel-Nachbarrings beziehen.
+* **Depot-Ketten:** Aneinandergereihte Depots leiten Gegenstände langsam über Kacheln weiter und fungieren als eine Art Behelfsförderband.
+* **Logistikhaltestellen:** Lkw- und Zughaltestellen be- und entladen ausschließlich in benachbarte Depots und bilden die wichtigste Schnittstelle zwischen Transport und Verarbeitung.
+
+| Strukturtyp | Grundfläche (Hex-Kacheln) | Angrenzende Interaktionsreichweite | Primäre logistische Funktion |
+| :--- | :--- | :--- | :--- |
+| **Extraktor** | 1 Hex (Ressourcenvorkommen) | 1 Nachbarring | Abbau von Roherz und Gas |
+| **Fabrik / Montage** | 1 Hex | 1 Nachbarring | Fertigung von Zwischenteilen und Endprodukten |
+| **Depot** | 1 Hex (Stapelbar) | 1 Nachbarring | Zwischenspeicherung, standortübergreifender Transfer, Fahrzeugbeladung |
+| **Straßenposten / Haltestelle** | 1 Hex | Angrenzende Depots | Lkw-Frachtabwicklung im Nah- bis Mittelstreckenbereich |
+| **Bahnhaltestelle** | 1 Hex (Lineares Gleis) | Angrenzende Depots | Großvolumiger, interkontinentaler Massentransport |
+
+Das Verständnis dieser grundlegenden Eigenschaften ermöglicht es Ihnen, kompakte, wiederholbare Module zu errichten, anstatt ausufernde, unübersichtliche Fabriken zu bauen, die sich kaum erweitern lassen.
+
+---
+
+## Modulares Hub-and-Spoke-System: Das Herzstück des Fabriklayouts in Plan B: Terraform
+
+Die vielseitigste Produktionsvorlage erfahrener Planer ist das **modulare Hub-and-Spoke-Layout** (Nabe-und-Speiche-Prinzip). Bei diesem Aufbau bildet eine kleine Gruppe von Depots den zentralen Kern, umgeben von einem Funktionsring aus Fabriken, an den wiederum Lkw-Haltestellen oder abgehende Bahngleise grenzen.
+
+```
+       [ Fabrik ]     [ Fabrik ]
+            \             /
+    [ Lkw-Halt ] - [ Zentraldepot ] - [ Bahnhalt ]
+            /             \
+       [ Fabrik ]     [ Fabrik ]
+```
+
+Bei der Organisation eines **Plan B Terraform Fabriklayouts** fungieren Depots als dynamische Inventarpools. Indem Sie Rohstoffe in einem Cluster aus zwei oder drei Depot-Hexfeldern bündeln, können Sie diesen mit vier bis sechs Fertigungsstätten umgeben, die gleichzeitig Komponenten herstellen, ohne dass separate Versorgungsleitungen zu jeder einzelnen Maschine verlegt werden müssen.
+
+### Schmelz- und primäre Verarbeitungsringe
+
+Rohmetalle wie Eisen, Aluminium und Schwefel müssen rasch verhüttet werden, bevor höherwertige Fertigungsprozesse stattfinden können. Der Hauptvorteil eines Hub-Layouts besteht darin, dass mehrere Extraktoren nach innen in ein Verarbeitungszentrum einspeisen können, welches die raffinierten Barren anschließend direkt an die ausgehende Verteilung weiterleitet.
+
+| Rezept | Rohstoffeinsatz | Erzeugnis | Ideales Verhältnis Fabrik zu Depot | Empfohlene Transportverbindung |
+| :--- | :--- | :--- | :--- | :--- |
+| **Eisenbarren** | 1x Eisenerz | 1x Eisenbarren | 6 Fabriken : 2 Ein-/Ausgangsdepots | Direkte Extraktor-Zufuhr / Kurzer Lkw-Pendel |
+| **Stahlbarren** | 2x Eisenbarren | 1x Stahlbarren | 4 Fabriken : 2 Ein-/Ausgangsdepots | Eigener interner Lkw-Pendeldienst |
+| **Aluminiumbarren** | 1x Aluminiumerz | 1x Aluminiumbarren | 6 Fabriken : 2 Ein-/Ausgangsdepots | Direkte Extraktor-Zufuhr / Kurzer Lkw-Pendel |
+| **Mechanische Teile**| 1x Stahlbarren | 1x Mechanisches Teil | 4 Fabriken : 2 zentrale Depots | Basisinterne Depot-Reihenschaltung |
+| **Beton** | 1x Schwefel + 1x Sand | 2x Beton | 5 Fabriken : 3 ausbalancierte Depots| Multi-Depot-Verteilerschleife |
+
+Erfahrungsberichte aus der Community betonen, dass die Auslagerung von Schmelzkomplexen direkt in die Nähe der Förderfelder unnötigen Transportaufwand eliminiert. Der Transport von raffinierten Barren anstelle von rohem Erz halbiert das Fahrzeugaufkommen auf Ihren Haupttransportrouten effektiv.
+
+---
+
+## Entwurf von Logistikkorridoren mit hohem Durchsatz
+
+Logistiknetzwerke sind das Kreislaufsystem Ihres Planeten. Selbst die perfekteste Industrieanlage gerät innerhalb weniger Minuten ins Stocken, wenn Lieferwagen an Kreuzungen im Stau stehen oder Züge auf die Frachtfreigabe warten.
+
+Ein modulares **Plan B Terraform Fabriklayout** setzt auf isolierte, in sich geschlossene Funktionsblöcke, die über dedizierte Straßen- und Schienenhauptachsen verbunden sind. Vermeiden Sie durchgehende Straßenschleifen, die dazu führen, dass Transporter planlos durch die Werkshallen kurven.
+
+### Lkw vs. Züge: Die richtige Transportader wählen
+
+Im frühen Spiel machen viele Spieler den Fehler, Lkw-Flotten für lange Distanzen einzusetzen. Obwohl Lastwagen nur minimale Investitionen und keinerlei Schieneninfrastruktur erfordern, überlastet ein hohes Fahrzeugaufkommen schnell die Straßenknotenpunkte an wichtigen Werkstoren.
+
+| Metrik | Straßen-Transporter (Lkw) | Güterzüge (Lokomotiven) |
+| :--- | :--- | :--- |
+| **Optimale Reichweite** | 1 bis 25 Hex-Kacheln | 25 bis 150+ Hex-Kacheln |
+| **Einrichtungskosten** | Extrem niedrig (Erd-/Asphaltstraßen) | Mäßig bis hoch (Gleisinvestitionen) |
+| **Ladekapazität** | Gering pro Einheit (Hohe Fahrzeugzahl nötig) | Enorm pro Zugverband |
+| **Auswirkung auf Kreuzungen** | Anfällig für Staus und Blockaden | Punkt-zu-Punkt-Signalisierung erhält Streckengeschwindigkeit |
+| **Fabrikschnittstelle** | Straßenhaltestellen passen in kompakte Hex-Lücken | Bahnhöfe erfordern linearen Anfahrtsweg |
+
+Reservieren Sie Lastwagen für optimale Ergebnisse für den lokalen Erzabbau und kurze Depottransfers. Für biomübergreifende Ressourcentransporte – wie die Lieferung von Eis von den Polkappen oder Fluorit aus Gebirgszügen – sollten Sie ausschließlich auf Hochgeschwindigkeitsstrecken mit entkoppelten Ladeschleifen setzen.
+
+---
+
+## Bauplan für das Mid- bis Endgame: Die mehrstufige Hochtechnologiefabrik
+
+Mit fortschreitender Planetenentwicklung verlagert sich der Bedarf der Bevölkerung von einfachen mechanischen Gütern hin zu fortschrittlichen Verbundwerkstoffen, Hightech-Komponenten und atmosphärischen Treibhausgasgeneratoren. Die Einbindung von Fernfracht in Ihr **Plan B Terraform Fabriklayout** erfordert eine saubere Trennung der Fahrspuren, um Rezepte mit mehreren Komponenten zu bewältigen.
+
+### Der modulare Doppelring-Bauplan
+
+In späteren Spielphasen erfordern Produkte häufig drei oder vier verschiedene Teilkomponenten. Ein Doppelring-Montagebauplan nutzt zwei konzentrische Schichten aus Depots und Fabriken:
+
+1. **Innerer Ring:** Nimmt Primärkomponenten (Stahl, Polymere) via Zuganlieferung in dedizierte Filterdepots auf.
+2. **Mittlere Stufe:** Fertigt Zwischenkomponenten (Elektronik, Hightech-Teile).
+3. **Äußerer Ring:** Endmontageanlagen greifen direkt auf die Zwischenprodukte zu und befördern fertige Terraforming-Ausrüstung nach außen auf die städtischen Verteilungsgleise.
+
+| Komplexes Produkt | Zutat 1 | Zutat 2 | Zutat 3 | Optimale Layout-Konfiguration |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hightech-Teile** | Mechanische Teile | Elektronik | Keine | Linearer versetzter Depot-Korridor |
+| **Treibhausgasgenerator** | Hightech-Teile | Stahlbeton | Stahlbarren | Konzentrischer Doppel-Depot-Hub |
+| **Atmosphärenextraktor** | Stahlbarren | Mechanische Teile | Elektronik | Doppelring-Cluster |
+| **Staudamm / Wasserpumpe** | Stahlbeton | Hightech-Teile | Stahlkabel | Integriertes Schienenkopf-Terminal |
+
+Die Spielerfahrung zeigt, dass ein in sich geschlossener Produktionssektor pro hochentwickeltem Gut jene kaskadierenden Versorgungsengpässe verhindert, die in ausufernden Megabasen an der Tagesordnung sind.
+
+---
+
+## Häufige Engpässe und Fehlerbehebung zur Optimierung
+
+Selbst ein gut kalkuliertes **Plan B Terraform Fabriklayout** kann ins Wanken geraten, wenn Rohstoffpuffer nicht geleert werden oder Versorgungsleitungen aus dem Gleichgewicht geraten. Die Diagnose solcher Verlangsamungen erfordert eine systematische Überprüfung von Lagergrenzwerten und Transportintervallen.
+
+### Überfüllte Depots bereinigen
+
+Wenn sich ein Mehrzweckdepot vollständig mit einem überschüssigen Rohstoff füllt (z. B. Tausende von Eisenbarren), verliert es die Kapazität für Sekundärrohstoffe (wie Schwefel), was nachgelagerte Fabriken zum Stillstand bringt.
+
+* **Depots für einzelne Gegenstände zuweisen:** Vermeiden Sie es, dass sich mehrere Rohstoffe ein einziges Depotfeld teilen. Konfigurieren Sie benachbarte Lagerzellen so, dass sie nur ein bestimmtes Warenprofil annehmen.
+* **Überlauf-Senken & Bau-Entlader:** Leiten Sie überschüssige Komponenten in Bauspeicher oder Ausrüstungsfertigungslinien um, damit die Produktionslinien niemals vollständig zum Erliegen kommen.
+* **Förderquoten ausbalancieren:** Wenn sich das Material an den Schmelzöfen staut, drosseln Sie die Förderstätten, anstatt Straßenposten durch wartende Transporter verstopfen zu lassen.
+
+### Freiraum um wichtige Umschlagsterminals wahren
+
+Straßen- und Zughaltestellen benötigen freie Nachbarfelder für reibungslose Zufahrtswege. Werden Fabriken direkt an beiden Flanken einer stark frequentierten Laderampe platziert, führt dies oft zu Staus. Halten Sie die primären Transportachsen mindestens ein Hex-Feld frei von schweren Maschinen, um maximale Durchfahrtsgeschwindigkeiten zu gewährleisten.
+
+---
+
+## Häufig gestellte Fragen (FAQ)
+
+### Welches ist das beste Plan B Terraform Fabriklayout für Anfänger?
+Das beste Einstiegsdesign ist der **kompakte Schmelzring**. Platzieren Sie zwei Depots nebeneinander – eines für ankommendes Erz und eines für fertige Barren – und umgeben Sie diese mit vier bis fünf Schmelzen. Verbinden Sie Ihre Mine über eine kurze Straßenschleife direkt mit dem Eingangsdepot und leiten Sie das Ausgangsdepot zu den Fabriken für mechanische Teile weiter.
+
+### Wie viel Abstand sollte ich zwischen den Produktionszentren im Plan B Terraform Fabriklayout lassen?
+Lassen Sie eine Pufferzone von mindestens 2 bis 3 leeren Hex-Feldern zwischen großen Produktionsblöcken. Dieser Freiraum bietet den nötigen Spielraum für spätere Schienenerweiterungen, großflächige Depot-Lager und eigene Lkw-Umgehungsspuren bei steigendem Versorgungsbedarf.
+
+### Sollte ich Nahrungsmittel- und Industrieproduktion in derselben Fabrikzone kombinieren?
+Nein. Die Nahrungsmittelproduktion (Wasser und Gewächshauspflanzen) skaliert direkt mit dem städtischen Bevölkerungsverbrauch, während die Industrieproduktion je nach Infrastrukturprojekten schwankt. Die Trennung von biologischen und landwirtschaftlichen Transportwegen vom Schwerlastverkehr verhindert katastrophale Nahrungsmittelengpässe während intensiver Bauphasen.
